@@ -2,7 +2,7 @@
 id: 8a40fdd6-113c-480d-af35-32402e392ad7
 title: Apex
 desc: ''
-updated: 1602346403102
+updated: 1604092403416
 created: 1602346403102
 stub: false
 ---
@@ -10,8 +10,6 @@ stub: false
 # Apex is the programming language in Salesforce
 
 ### Here the basic of the languages:
-
-[[computer-science.lang.apex.data]]
 
 ## Three main tools to write Apex code:
 - #Setup, #Developer-Console, and #VSCode
