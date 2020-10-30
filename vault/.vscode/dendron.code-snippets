@@ -1,0 +1,45 @@
+{
+    "todo": {
+        "prefix": "to",
+        "scope": "markdown,yaml",
+        "body": "- [ ]",
+        "description": "render todo box"
+    },
+    "tag": {
+        "prefix": "#",
+        "scope": "markdown,yaml",
+        "body": "[[#${1:my-tag}|tag.${1}]]",
+        "description": "tag"
+    },
+    "date": {
+        "prefix": "date",
+        "scope": "markdown,yaml",
+        "body": "$CURRENT_YEAR.$CURRENT_MONTH.$CURRENT_DATE",
+        "description": "today's date"
+    },
+    "time": {
+        "prefix": "time",
+        "scope": "markdown,yaml",
+        "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE",
+        "description": "time"
+    },
+    "five-todos": {
+        "prefix": "five",
+        "scope": "markdown,yaml",
+        "body": "- [ ] Task \n- [ ] Task \n- [ ] Task \n- [ ] Task \n- [ ] Task \n ",
+        "description": "5 tasks at a time"
+    },
+    // Make a folding toggle
+    "fold": {
+        "prefix": "fold",
+        "body": [
+            "<details><summary>$1",
+            "</summary>",
+            "**Lorem ipsum dolor sit amet...**",
+            // "${TM_SELECTED_TEXT}",
+            "</details>",
+            "$0"
+        ],
+        "description": "Creates a toggle fold"
+    }
+}

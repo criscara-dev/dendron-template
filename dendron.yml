@@ -1,0 +1,12 @@
+# site:
+#     copyAssets: true
+#     siteHierarchies:
+#         - root
+#     siteRootDir: docs
+#     usePrettyRefs: true
+site:
+    copyAssets: true
+    siteHierarchies: [book, computer-science]
+    siteRootDir: docs
+    usePrettyRefs: true
+     

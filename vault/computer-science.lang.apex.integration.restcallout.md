@@ -1,0 +1,90 @@
+---
+id: 71584a3a-5a2b-47ba-bc5e-c031c2649424
+title: Restcallout
+desc: ''
+updated: 1603093602083
+created: 1603093602083
+stub: false
+---
+# Restcallout
+
+![](/assets/images/2020-10-12-16-51-14.png)
+
+## Common HTTP methods:
+|HTTP Method|Description|
+|--- |--- |
+|GET|Retrieve data identified by a URL.|
+|POST|Create a  resource or post data to the server.|
+|DELETE|Delete a resource identified by a URL.|
+|PUT|Create or replace the resource sent in the request body.|
+
+## Examples Apex HTTP request:
+
+###Get data from a service
+```Java
+Http http = new Http();
+HttpRequest request = new HttpRequest();
+request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals');
+request.setMethod('GET');
+HttpResponse response = http.send(request);
+// If the request is successful, parse the JSON response.
+if (response.getStatusCode() == 200) {
+    // Deserialize the JSON string into collections of primitive data types.
+    Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+    // Cast the values in the 'animals' key as a list
+    List<Object> animals = (List<Object>) results.get('animals');
+    System.debug('Received the following animals:');
+    for (Object animal: animals) {
+        System.debug(animal);
+    }
+}
+```
+###Post (send) data to a service
+```java
+Http http = new Http();
+HttpRequest request = new HttpRequest();
+request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals');
+request.setMethod('POST');
+request.setHeader('Content-Type', 'application/json;charset=UTF-8');
+// Set the body as a JSON object
+request.setBody('{"name":"mighty moose"}');
+HttpResponse response = http.send(request);
+// Parse the JSON response
+if (response.getStatusCode() != 201) {
+    System.debug('The status code returned was not expected: ' +
+        response.getStatusCode() + ' ' + response.getStatus());
+} else {
+    System.debug(response.getBody());
+}
+```
+
+---
+
+## Test callouts:
+Apex tests methods don't support callouts but testing runtime allow you to  **_fake_** or '**_mock_**' callouts.
+
+### how to mock a callout:
+- [ ] create a new Apex Class that contain the GET and POST requests you want to mock: from Developer Console, select File | New | Apex Class
+To mock a callout, you can either implementing an interface or load a static resource:
+    - [ ] create a static resource: from Developer Console, select File | New | Static Resource
+        ex. JSON:
+    -  {"animals": ["pesky porcupine", "hungry hippo", "squeaky squirrel"]} // this is the response body to return
+    - [ ] create the callout that use the static resource: In the Developer Console, select File | New | Apex Class
+    - [ ] Select Test | Always Run Asynchronously
+    - [ ] To run the test, select Test | New Run
+    or
+     - [ ] implement an interface:
+     - [ ] implement a HttpCalloutMock interface creating a new test Class: global class xxxHttpCalloutMock implements HttpCalloutMock {}
+     - [ ] in the main test class add a second method that contain the: Test.setMock(HttpCalloutMock.class, new xxxHttpCalloutMock()); and the
+            System.assertEquals(actualValue, expectedValue);
+
+
+---
+
+References:
+[Trailhead REST callout](https://trailhead.salesforce.com/content/learn/modules/apex_integration_services/apex_integration_rest_callouts)
+[JSON2Apex](https://json2apex.herokuapp.com/) (parser)
+[Invoking callouts using Apex](https://developer.salesforce.com/docs/atlas.en-us.224.0.apexcode.meta/apexcode/apex_callouts.htm)
+
+Example:
+![](/assets/images/2020-10-13-09-33-10.png)
