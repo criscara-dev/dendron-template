@@ -36,14 +36,19 @@ Ex. NO #productivity YES #how-to-journal #how-to-get-feedback
 - [x] setting up environment (run: bundle install from Terminal from Docs dir) 
 - [ ] Publishing Our Notes?
 I want a partial publish* (build pod with command Build Pod 'Dendron: Build Pod' from within cmd+shift+p
-- [ ]last step: from terminal run: 'bundle exec jekyll serve'
-- [x] leave advanced feature for future...
- 
+- [ ] comd: *bundle exec jekyll serve* and check on http://localhost:4000/
+- [ ] last step: from terminal run: 'bundle exec jekyll serve'
 
  *to publish only: 
  - root
-    - Dendron -> Playground
+    - book
     - Principles
         - work
         - Life
     - mental model
+
+Basically I'm missing:
+1. the preview. (first set files to publish)
+2. create a *pod*
+3. re-push to master/main
+4. 
