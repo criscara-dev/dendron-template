@@ -6,8 +6,7 @@
 #     usePrettyRefs: true
 site:
     copyAssets: true
-    siteHierarchies: [books, principles, mental-models]
+    siteHierarchies: [books, principles, mental-models,computer-science]
     siteRootDir: docs
     usePrettyRefs: true
      
-    
