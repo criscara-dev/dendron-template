@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604072545055
+updated: 1604163727392
 created: 1602692433243
 stub: false
 ---
@@ -96,3 +96,15 @@ Sciences
 
 </details>
 
+## career
+<details><summary>
+to do
+</summary>
+
+- [ ] Career exploration toolpack pdfs 
+- [ ] my profile - and for to work with me 
+- [ ] this [trail](https://trailhead.salesforce.com/content/learn/trails/build-your-career-with-salesforce-skills) and info from this trail
+- [ ] Get professional picture taken 
+- [ ] https://appexchange.salesforce.com/jobs 
+ 
+</details>

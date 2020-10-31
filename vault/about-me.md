@@ -2,7 +2,7 @@
 id: bcc23d9b-3e7a-413d-be29-ce680f1531a6
 title: About me
 desc: ''
-updated: 1602345930962
+updated: 1604170124137
 created: 1602345930962
 stub: false
 ---
@@ -71,3 +71,34 @@ What do you consider a stellar job for someone who reports to you? What do you c
 How I give and receive feedback
 What is your philosophy around feedback? What can others expect in receiving feedback from you? How would you prefer to receive feedback from others?
 
+## what motivate me? (my values)
+Overall those are my 5 top values:
+1. Autonomy; I love the freedom to determine the nature of my work and time without significant direction from others, TLDR; -> flexibility
+2. Predictability and structure; Yes, I like work well organized and when tasks don’t change much overtime.
+3. Making a difference; I want my work having a positive impact.
+4. Problem solving; I love solving problems and identifying solutions.
+5. Adventure; Exploring and experiencing new things to improve my creativity and innovation potential
+
+
+
+## My career goals
+I like either to work remotely or in a Office, ideal would be a mix if I'm living in the same City as my Company's Offices are.
+In the short term I'd like to learn better Apex but in the long term I'd like to be a better computational thinker and learn some other programing languages: Assembly, to understand how computer machines works, an imperative programming language such as Python, improve my knowledge of a functional programming language as JavaScript/Node.JS and finally learn something about Machine Learning language as PyTorch.
+
+## Where I want to be in the long term
+ Using data-driven decisions/tools to Help Companies choose the right technologies to achieve their goals.(connecting the dots)
+
+ ## jobseeker checklist
+- [ ] Have a professional headshot taken
+- [ ] Update social media profiles: Twitter, LinkedIn, Trailhead profile
+- [ ] Update resume
+- [ ] Get resume reviewed (by a professional or perhaps friends, family)
+- [ ] Craft an elevator pitch
+- [ ] Research prospective companies
+- [ ] Follow companies you are interested in on Twitter, LinkedIn
+
+## My 30" Pitch
+I’m an experienced web developer, recently certified as Salesforce Admin and Developer looking to move into a consulting role as a Developer
+I love helping clients to optimize their use of Salesforce and pursue new goals.
+I’ve been grown up in the mountains and I've been deeply in contact with nature since I was a kid, and I want to work for an organization that’s environmentally focused.
+I have only 6 months experience into the Salesforce Platform but since I started, I've already earn 2 Certifications, > 100 Trailhead badges and some Superbadges.
