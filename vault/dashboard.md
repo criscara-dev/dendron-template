@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604163727392
+updated: 1604225395136
 created: 1602692433243
 stub: false
 ---
@@ -35,7 +35,7 @@ Your registration ID is R-01486096
 - [?] : feedback
 - [>] : postponed
 ```
-
+## Keygen cmd: | openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 
 ### plan for my garden
 
