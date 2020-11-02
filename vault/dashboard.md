@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604225395136
+updated: 1604337600555
 created: 1602692433243
 stub: false
 ---
@@ -21,6 +21,7 @@ Your registration ID is R-01486096
 - [ ] [VSCode notes](https://trailhead.salesforce.com/en/content/learn/projects/quickstart-vscode-salesforce) 
 - [ ] cv / prepare for interview
 - [ ] Node training
+- [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder
 
 ## Recurrent to-do:
 - [ ] [weekly review for Kathryn](https://docs.google.com/document/d/1RcVrCH8Ch0T9X_k4-lo5Z8O21agcuhXG_AA9Zsb9CFc/edit)

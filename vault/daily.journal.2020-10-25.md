@@ -2,7 +2,7 @@
 id: 72abbdfa-cb88-44c6-b91b-4209cc71305e
 title: '2020-10-25'
 desc: ''
-updated: 1603621328913
+updated: 1604350517297
 created: 1603621328913
 stub: false
 ---
@@ -42,7 +42,7 @@ Di recente cercando una migliore alternativa ho scoperto Roam, Obsidian etc. nNe
 Alla fino ho optato per un estensione di VSCode che funziona perfettamente al caso mio. Si chiama Dendron (dendron.so), e' open source per ora e le note si prendono in markdown.
 
 
-## new concepts [here](https://www.youtube.com/watch?v=XlvfHOrF26M):
+## new concepts [here](https://www.youtube.com/watch?v=XlvfHOrF26M) from #George-Hotz and#Lex-Fridman:
 
  #programming-paradigm: 
  * #imperative

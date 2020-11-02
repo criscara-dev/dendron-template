@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1603993905880
+updated: 1604263215122
 created: 1602530634233
 stub: false
 ---
@@ -65,18 +65,19 @@ Fast, unopinionated, minimalist web framework for Node.js
 </details>
 
 <details><summary>
-Which tech brought seccess to Node?
+Which tech brought success to Node?
 </summary>
-NPM, MongoDB, RESTful API nd JSON, ExpressJS.
+NPM, MongoDB, RESTful API and JSON, ExpressJS.
 </details>
 
 <details><summary>
 Basics before Node
 </summary>
-#Interpreters -> execute directly source code (basically they read and compile): #v8 Chrome JS engine.
-#Compilers -> from source they create an executable file
-#transpilers -> one source code into another
-Modern day computer understand 1010001011...( #low-level ) you normally write #high-level language
+
+#Interpreters -> execute directly source code (basically they read and compile); an example is #v8 Chrome JS engine.
+#Compilers -> from source they create an executable file (a file a computer can execute)
+#transpilers -> one source code into another source code (CoffeeScript into JS, Less in CSS)
+Modern day computer understand 1010001011...( #low-level ) you normally write #high-level code / language
 </details>
 
 <details><summary>
@@ -88,7 +89,7 @@ Node is a #server-side javascript #runtime-environment.
 Is built on top of #v8 Chrome JS engine.
 It's a #C++ application that now run 2 Apps:
 - Script processor: in Terminal use cmd: > Node fileName
-- REPL (start after you tipe Node as a cmd)
+- REPL (start after you typed Node as a cmd)
 It's #non-blocking-IO (tasks keeping to be added to the task list) and has a #single-threated (one task at the time) but at the same time, ==it can schedule thing for later and can keep prioritising tasks as they get added==
 When you run a Node App you just specified and 'entry file'.
 
