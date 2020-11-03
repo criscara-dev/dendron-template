@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604337600555
+updated: 1604412137228
 created: 1602692433243
 stub: false
 ---
@@ -20,8 +20,7 @@ Your registration ID is R-01486096
 ## Tomorrow tasks:
 - [ ] [VSCode notes](https://trailhead.salesforce.com/en/content/learn/projects/quickstart-vscode-salesforce) 
 - [ ] cv / prepare for interview
-- [ ] Node training
-- [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder
+- [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder before exam
 
 ## Recurrent to-do:
 - [ ] [weekly review for Kathryn](https://docs.google.com/document/d/1RcVrCH8Ch0T9X_k4-lo5Z8O21agcuhXG_AA9Zsb9CFc/edit)
@@ -36,7 +35,6 @@ Your registration ID is R-01486096
 - [?] : feedback
 - [>] : postponed
 ```
-## Keygen cmd: | openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 
 ### plan for my garden
 
@@ -102,7 +100,6 @@ Sciences
 to do
 </summary>
 
-- [ ] Career exploration toolpack pdfs 
 - [ ] my profile - and for to work with me 
 - [ ] this [trail](https://trailhead.salesforce.com/content/learn/trails/build-your-career-with-salesforce-skills) and info from this trail
 - [ ] Get professional picture taken 

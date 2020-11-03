@@ -2,7 +2,7 @@
 id: 2a6fc1df-ac07-4af0-a2bc-074548fe58ff
 title: Developer
 desc: ''
-updated: 1602404064858
+updated: 1604411619068
 created: 1602404064858
 stub: false
 ---
@@ -25,3 +25,5 @@ Type of org:
 
 ## Contribute the the sample gallery:
 [references Docs](https://developer.salesforce.com/blogs/2020/09/contribute-to-the-sample-gallery.html)
+
+((ref: [[computer-science.platform.salesforce.developer.interview-questions]]))

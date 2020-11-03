@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1604057185337
+updated: 1604417580085
 created: 1603274675484
 stub: false
 ---
@@ -850,30 +850,24 @@ You can even install a package from the #AppExchange
 
 ### Lightning Experience Specialist Superbadge
 
-<details><summary>
-Superbadge notes
-</summary>
+---
 
-2. Provide in-app guidance to sales reps
-    - Rename all of the standard objects: setup-> Rename tabs and labels
-    - Update the Opportunity stage values
-    - create a sales path for sales reps (highlighting key fields and giving specific coaching guidance) : setup -> Sales Processes ->Individual Opportunity and select new stage picklists value added
-    - set the default page layouts for Adventure, Adventure Package, and Opportunity to the Relaxation Gauntlet custom layouts.
-        setup -> Record Types -> Relaxation Gauntlet
-    - create an approval process as specified in the business requirements:
-    setup -> Approval Process -> add name: Approval for Package Deal -> save
-    Now, add an Approval step: add name: Approval for Discount -> if discount > 25 -> select approver (Opp Owner)
-    - Opportunity Path -> enable -> from the table add fields/Guidance for Success to each path on Record type created as Relaxation Gauntlet.
-    Try to create a new opp and check picklists values are working
+## Reporting 5%
 
-3. create a Fulfillment Creation process:
-    - Update the Adventure Package Fulfillment Creation field to true
-    - Update the related Opportunity to reflect the waiver and insurance needs on the Adventure
-    - Create a task for the sales rep
-</details>
+[Reports & Dashboards for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
+[Create Reports and Dashboards for Sales and Marketing Managers](https://trailhead.salesforce.com/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+[Lightning Experience Reports & Dashboards Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge-lex-rd?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 ---
+## Mobile 5%
+
+[Salesforce Mobile App Customization](https://trailhead.salesforce.com/content/learn/modules/salesforce1_mobile_app?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+---
+
+## App Deployment 8%
 
 [Build a Battle Station App](https://trailhead.salesforce.com/content/learn/projects/workshop-battle-station/battle-station-1?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential) 
 
@@ -894,3 +888,68 @@ How to create a #Master-detail relationship?
 
 The relationship is create on the #custom-object (detail) where you select the #Master where you want the App to appear.
 </details>
+
+---
+
+### [Reports & Dashboards for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+<details><summary>
+What are Report?
+</summary>
+A report is a list of records (like opportunities or accounts) that meet the criteria you define.
+To get the data you need, you can filter, group, do math on records and  even display them graphically in a chart.
+</details>
+
+<details><summary>
+What are Dashboard?
+</summary>
+A dashboard is a visual display of key metrics and trends for records in your org.
+Each dashboard has a running user, whose security settings determine which data to display in a dashboard. If the running user is a specific user, all dashboard viewers see data based on the security settings of that user—regardless of their own personal security settings.
+</details>
+
+<details><summary>
+What is a report type?
+</summary>
+
+Choosing a report type, you’re picking the records and fields you’ll be able to see in your report.
+
+If you add a related object, here’s how you can configure a report type’s object relationship:
+- Primary object with related object—Records
+- Primary object with or without related object
+</details>
+
+<details><summary>
+Which Report formats do you know?
+</summary>
+
+Report Format | Primary Use Case | Supported in Dashboards | Report Charts Supported | Bucket Fields** | Formulas** | Cross-Object Formulas**
+--------------|------------------|-------------------------|-------------------------|-----------------|------------|------------------------
+Tabular | Make a list | :white_check_mark: |  | :white_check_mark:
+Summary | Group and summarize | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+Matrix | Group and summarize, by row and column | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+</details>
+
+<details><summary>
+What are dynamic dashboards?
+</summary>
+
+- With dynamic dashboards, each user sees the data they have access to without needing to create separate dashboards for each user.
+- This means a single powerful dashboard can be used for multiple users in your company, because the logged-in user viewing the dashboard sees the data they should see, based on their security and sharing settings.
+</details>
+
+<details><summary>
+How do you choose between a chart for your Report and a Dashboard?
+</summary>
+
+I reckon, if I have only one report I can even add a chart, I think, so that is going to give me the graphical representation I need.
+</details>
+
+<details><summary>
+What do you consider before create a dashboard?
+</summary>
+
+I don't want to reinvent the well, I can decide to visit the [AppExchange](https://appexchange.salesforce.com/) and look for a solution already there such as [#Salesforce CRM Dashboard](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000004g316EAA)
+</details>
+
+### [Create Reports and Dashboards for Sales and Marketing Managers](https://trailhead.salesforce.com/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+

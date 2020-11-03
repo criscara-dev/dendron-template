@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1604263215122
+updated: 1604412079817
 created: 1602530634233
 stub: false
 ---
@@ -178,3 +178,9 @@ From the browser to server-side, what is not available in the browser that is ex
 Interact with the Filesystem, with the OS etc. and there's no way End users can see your code.
 </details>
 
+<details><summary>
+cmd to generate keys for HTTPS?
+</summary>
+
+## Keygen cmd: | openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+</details>
