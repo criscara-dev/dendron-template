@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1604417580085
+updated: 1604482865178
 created: 1603274675484
 stub: false
 ---
@@ -482,7 +482,7 @@ If a delegate (like an admin or customer support representative) makes a setup c
 
 ---
 
-## Business Logic and Process Automation 27%
+## **Business Logic and Process Automation** 27%
 
 https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential
 
@@ -674,7 +674,7 @@ Workflow rules are always nondeterministic. In regular-person language: Salesfor
 
 ---
 
-## Social 3%
+## **Social** 3%
 
 ### [Chatter Administration for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_chatter?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
@@ -806,7 +806,7 @@ any robot setup date that would fall on Saturday or Sunday is set to the followi
 
 ---
 
-## User Interface 14 %
+## **User Interface** 14 %
 
 ## [Lightning App Builder](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
@@ -852,7 +852,7 @@ You can even install a package from the #AppExchange
 
 ---
 
-## Reporting 5%
+## **Reporting** 5%
 
 [Reports & Dashboards for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
@@ -953,3 +953,40 @@ I don't want to reinvent the well, I can decide to visit the [AppExchange](https
 
 ### [Create Reports and Dashboards for Sales and Marketing Managers](https://trailhead.salesforce.com/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
+<details><summary>
+Can i create a structure where Reports and dashboards can be orginized and shared?
+</summary>
+
+Yes, go to Reports or Dashboards and go to All Folders, Created by Me etc. and go from there.
+</details>
+
+<details><summary>
+How can I categorize further my Reports?
+</summary>
+
+You can use a buckets.(from Column section)
+Bucketing lets you segment your report data on the fly by defining a set of categories, or “buckets,” to sort, group, or filter the record.
+![](/assets/images/2020-11-04-09-26-44.png)
+</details>
+
+<details><summary>
+What can you do more on your Reports data? 
+</summary>
+
+You can:
+* Add Bucket Column 
+* Add Summary Formula 
+* Add Row Level Formula 
+* Remove All Columns
+![](/assets/images/2020-11-04-09-29-23.png)
+</details>
+
+<details><summary>
+Can you export reports?
+</summary>
+
+Yes, right click on :arrow_down_small:, -> export in .xlsx or .csv for second option, first one only .xlsx, and you're done!
+![](/assets/images/2020-11-04-09-36-43.png)
+</details>
+
+---
