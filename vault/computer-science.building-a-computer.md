@@ -2,7 +2,7 @@
 id: cb18c17b-5359-4c20-83f5-a9821c4b942d
 title: Building-a-computer
 desc: ''
-updated: 1604508628153
+updated: 1604517189581
 created: 1604354116803
 ---
 
@@ -125,7 +125,27 @@ Which of these statements are true?
 </details>
 
 <details><summary>
-Build Logic Gates with HDL
+Build Logic Gates with Hardware Description Language (HDL)
 </summary>
-**Lorem ipsum dolor sit amet...**
+
+![](/assets/images/2020-11-04-18-47-44.png)
+First draw the interface ( ----- )
+then the implementation PARTS:
+![](/assets/images/2020-11-04-19-06-32.png)
+</details>
+
+<details><summary>
+WHat is really HDL?
+</summary>
+
+![](/assets/images/2020-11-04-19-11-09.png)
+</details>
+
+<details><summary>
+
+WHich are 2 example of HDL?
+</summary>
+
+#VHDL
+#Verilog
 </details>
