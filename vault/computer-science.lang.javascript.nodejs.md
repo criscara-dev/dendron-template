@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1604412079817
+updated: 1604526640664
 created: 1602530634233
 stub: false
 ---
@@ -87,6 +87,7 @@ What is Node exactly?
 web browser App take the #source-code to ->  #v8 ... -> execute.
 Node is a #server-side javascript #runtime-environment.
 Is built on top of #v8 Chrome JS engine.
+#v8 can be called as well a JavaScript #interpreter
 It's a #C++ application that now run 2 Apps:
 - Script processor: in Terminal use cmd: > Node fileName
 - REPL (start after you typed Node as a cmd)
