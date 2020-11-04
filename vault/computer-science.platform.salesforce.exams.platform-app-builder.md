@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1604482865178
+updated: 1604506477236
 created: 1603274675484
 stub: false
 ---
@@ -10,14 +10,14 @@ stub: false
 
 # Platform App Builder
 <details><summary>
-Trailhead reference:
+Study reference:
 </summary>
 
 [[Salesforce exam|computer-science.platform.salesforce.exams]]
 sources:
 [Trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential)
 [Trailhead exam prep](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep)
-
+[Salesforceben](https://www.salesforceben.com/platform-app-builder-certification-guide-tips/)
 </details>
 
 ---
@@ -854,43 +854,6 @@ You can even install a package from the #AppExchange
 
 ## **Reporting** 5%
 
-[Reports & Dashboards for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-
-[Create Reports and Dashboards for Sales and Marketing Managers](https://trailhead.salesforce.com/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-
-[Lightning Experience Reports & Dashboards Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge-lex-rd?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-
----
-## Mobile 5%
-
-[Salesforce Mobile App Customization](https://trailhead.salesforce.com/content/learn/modules/salesforce1_mobile_app?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-
----
-
-## App Deployment 8%
-
-[Build a Battle Station App](https://trailhead.salesforce.com/content/learn/projects/workshop-battle-station/battle-station-1?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential) 
-
-1. Create the App container and tabs
-    <details><summary>
-    How to create an app?
-    </summary>
-    Setup -> App Manager
-    for UI In can use: Setup -> Lightning App Builder ...
-    </details>
-
-2. Build the #Object-model
-Use the  #ER-diagrams (Entity Relationship model) to understand how objects links together and create #tabs and add #custom-fields to #custom-object
-
-<details><summary>
-How to create a #Master-detail relationship?
-</summary>
-
-The relationship is create on the #custom-object (detail) where you select the #Master where you want the App to appear.
-</details>
-
----
-
 ### [Reports & Dashboards for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 <details><summary>
@@ -989,4 +952,67 @@ Yes, right click on :arrow_down_small:, -> export in .xlsx or .csv for second op
 ![](/assets/images/2020-11-04-09-36-43.png)
 </details>
 
+[Lightning Experience Reports & Dashboards Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge-lex-rd?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
 ---
+## Mobile 5%
+
+[Salesforce Mobile App Customization](https://trailhead.salesforce.com/content/learn/modules/salesforce1_mobile_app?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+We are going to see three features you can use to customize the mobile app.
+
+* Mobile navigation, for Lightning apps and the Mobile Only app
+* Quick actions
+* Compact layouts
+
+<details><summary>
+How and where I can set for the Mobile navigation?
+</summary>
+
+![](/assets/images/2020-11-04-09-51-43.png)
+</details>
+
+<details><summary>
+How can I set #Global-actions on mobile?
+</summary>
+
+Setup -> Global actions -> create the action -> add the action to the Publisher Layouts (Edit) -> Drag & Drop the New Action to the Salesforce Mobile and Lightning Experience Actions
+</details>
+
+<details><summary>
+How can you add a new Mobile custom Compact Layout?
+</summary>
+
+Setup -> Object Manager (select Object interested) -> Compact Layouts -> New (give it a name and select fields -> Save -> Compact Layout Assignment -> Edit Assignment...
+</details>
+
+
+---
+
+## App Deployment 8%
+
+[Build a Battle Station App](https://trailhead.salesforce.com/content/learn/projects/workshop-battle-station/battle-station-1?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential) 
+
+1. Create the App container and tabs
+    <details><summary>
+    How to create an app?
+    </summary>
+    Setup -> App Manager
+    for UI In can use: Setup -> Lightning App Builder ...
+    </details>
+
+2. Build the #Object-model
+Use the  #ER-diagrams (Entity Relationship model) to understand how objects links together and create #tabs and add #custom-fields to #custom-object
+
+<details><summary>
+How to create a #Master-detail relationship?
+</summary>
+
+The relationship is create on the #custom-object (detail) where you select the #Master where you want the App to appear.
+</details>
+
+[App Customization Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lightning_platform_app_builder?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+---
+
+
