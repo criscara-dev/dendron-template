@@ -2,9 +2,14 @@
 id: cb18c17b-5359-4c20-83f5-a9821c4b942d
 title: Building-a-computer
 desc: ''
-updated: 1604517189581
+updated: 1604610825587
 created: 1604354116803
 ---
+
+## References:
+- [Coursera](https://www.coursera.org/?skipBrowseRedirect=true) website
+- [Nand2Tetris](https://www.nand2tetris.org/software/HDL-Survival-Guide.html) website
+- [installation](https://drive.google.com/file/d/1QDYIvriWBS_ARntfmZ5E856OEPpE4j1F/view) etc.
 
 ## Project based on the Coursera course:
 
@@ -142,10 +147,60 @@ WHat is really HDL?
 </details>
 
 <details><summary>
-
 WHich are 2 example of HDL?
 </summary>
-
 #VHDL
 #Verilog
+</details>
+
+## Hardware simulation
+
+<details><summary>
+Interactive simulation
+</summary>
+
+![](/assets/images/2020-11-05-19-09-48.png)
+</details>
+
+<details><summary>
+Revisiting script-based simulation with output files
+</summary>
+
+![](/assets/images/2020-11-05-19-44-03.png)
+</details>
+
+<details><summary>
+Who are the players? (chip builders)
+</summary>
+
+System architects
+Developers
+</details>
+
+## Multi-bit Buses
+
+<details><summary>
+How would you xor the first and last bits of a 16-bit bus named ‘bus’?
+</summary>
+
+- [ ] Xor(a=bus[0], b=bus[15], out=out)[^1]
+- [ ] Xor(a=bus[0], b=bus[16], out=out)
+- [ ] Xor(a=bus[1], b=bus[15], out=out)
+- [ ] Xor(a=bus[1], b=bus[16], out=out)
+ 
+[^1]: Bus numbers start from 0 and go up to width-1
+</details>
+
+<details><summary>
+This is the interface declaration for an example chip named Example16, which we haven't discussed before:
+IN c, Bus1[16], Bus2[16];
+OUT out, out2[16];
+Which of these lines are valid in HDL, when implementing the Example16 chip?
+</summary>
+
+- [ ] Add16(a=Bus1[0..15], b=Bus2[0..15], out=out2[0..14]);
+- [ ] Add16(a=Bus1[0..15], b=Bus2[0..15], out[0..14]=out2[0..14]);[^2]
+- [ ] Add16(a=true, b=false, out=out2);[^2]
+- [ ] Add16(a=c, b=Bus2[0..15], out=out2);
+- [ ] And(a=c, b=Bus2[7], out=out);[^2]
 </details>

@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604529173046
+updated: 1604600901155
 created: 1602692433243
 stub: false
 ---
@@ -18,13 +18,8 @@ Thank you for registering for Dreamforce to You 2020.
 Your registration ID is R-01486096
 
 ## Tomorrow tasks:
-- [ ] finish this [badge](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lex?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)! 
-- [ ] finish [this](https://trailhead.salesforce.com/content/learn/projects/build-your-personal-portfolio-on-salesforce/clean-up-and-publish-your-site?trail_id=build-your-career-with-salesforce-skills) website! 
-- [ ] finish [this](https://trailhead.salesforce.com/content/learn/modules/get_ready_for_dreamforce_become_salesforce_speaker?trail_id=build-your-career-with-salesforce-skills) trail 
-- [ ] Webinars in the afternoon 
- 
-- [ ] [VSCode notes](https://trailhead.salesforce.com/en/content/learn/projects/quickstart-vscode-salesforce) 
-- [ ] cv / prepare for interview
+
+- [ ] [Essential Habits for New Admins](https://trailhead.salesforce.com/live/broadcasts/a2r3k000001n2IH/essential-habits-for-new-admins) 5:30 PM
 - [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder before exam
 
 ## Recurrent to-do:
