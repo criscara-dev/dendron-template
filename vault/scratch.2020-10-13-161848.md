@@ -2,7 +2,7 @@
 id: 3ab1f49b-306b-4b65-8854-c96c4685026c
 title: 2020-10-13-161848
 desc: ''
-updated: 1602602343945
+updated: 1604755993507
 created: 1602602343945
 stub: false
 ---
@@ -36,4 +36,8 @@ Principles:
 - it's easy to lose count without a general structure: use #list and #keep-organized; remember to UNDERSTAND the problem first.
 
 
-
+date| coin | price | day %
+--|--|--|--
+2020-11-07 13:20| yearn.finance YFI | £12,168.89 | +54.59%
+2020-11-07 13:31| Band Protocol BAND |£4.57 |+24.60%
+ 

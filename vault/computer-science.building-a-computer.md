@@ -2,7 +2,7 @@
 id: cb18c17b-5359-4c20-83f5-a9821c4b942d
 title: Building-a-computer
 desc: ''
-updated: 1604610825587
+updated: 1604673621957
 created: 1604354116803
 ---
 
@@ -203,4 +203,57 @@ Which of these lines are valid in HDL, when implementing the Example16 chip?
 - [ ] Add16(a=true, b=false, out=out2);[^2]
 - [ ] Add16(a=c, b=Bus2[0..15], out=out2);
 - [ ] And(a=c, b=Bus2[7], out=out);[^2]
+</details>
+
+## Project Overview
+
+Requirements:
+- build 15 gates
+    - Elementary logic gates
+        Not 
+        And 
+        Or 
+        Xor 
+        Mux
+        DMux
+    - 16-bit variants
+        Not16 
+        And16 
+        Or16 
+        Mux16 
+    - Multi-way variants 
+        Or8Way 
+        Mux4Way16 
+        Mux8Way16
+        DMax4Way
+        DMax8Way
+
+<details><summary>
+ex. implementing a Mux.hdl
+</summary>
+
+![](/assets/images/2020-11-06-14-06-18.png)
+</details>
+
+<details><summary>
+How Mux and DMux are used in communication networks?
+</summary>
+
+![](/assets/images/2020-11-06-14-20-47.png)
+</details>
+
+<details><summary>
+How to test the chip?
+</summary>
+
+![](/assets/images/2020-11-06-14-29-09.png)
+</details>
+
+<details><summary>
+HDL survival guide and project 1?
+</summary>
+
+https://www.nand2tetris.org/project01
+https://drive.google.com/file/d/1dPj4XNby9iuAs-47U9k3xtYy9hJ-ET0T/view
+[hack chipset API](https://drive.google.com/file/d/1IsDnH0t7q_Im491LQ7_5_ajV0CokRbwR/view) for names of in/out of chip bits
 </details>

@@ -2,7 +2,7 @@
 id: 63fbd198-3924-471e-9377-effe9453aceb
 title: Solving-business-problem
 desc: ''
-updated: 1604411543523
+updated: 1604749053221
 created: 1604351356138
 ---
 
@@ -74,9 +74,9 @@ Outline the budget for this project. Provide a breakdown of costs by department,
 
 1. create a demo: 
    Trailhead modules:
-   - [Demo Storytelling](https://trailhead.salesforce.com/content/learn/modules/demo-storytelling-public)
+   - [Demo Storytelling](https://trailhead.salesforce.com/content/learn/modules/demo-storytelling-public) #storyboard (used to orga nize thoughts) #hero-journey
    - [Demo Delivery Essentials](https://trailhead.salesforce.com/en/content/learn/modules/demo-delivery-essentials-public)
-   
+
 Outline:
 - [ ] beginning: identify what you will cover during the demo and set expectations
 - [ ] middle: identify the problems their business faces and how your application solves them
@@ -99,8 +99,11 @@ D—Define exactly what the problem is, in a single sentence.
 E—Explore possible solutions, capturing the pros and cons of each option.
 A—Act on your preferred solution. Implement it.
 L—Look critically at the completed solution. How can you improve it? Is there anything you’d do differently the next time?
+
+#### [Innovation Customer Discovery](https://trailhead.salesforce.com/content/learn/modules/innovation_customer_discovery?trail_id=innovation_salesforce_way)
  
 #### [Innovation Solution Trail](https://trailhead.salesforce.com/content/learn/modules/innovation_solution)
 
 #### [Project management Plan Lite](https://trailhead.salesforce.com/content/learn/modules/project-management-plan-lite)
 
+[test]

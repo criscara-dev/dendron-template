@@ -2,7 +2,7 @@
 id: 9fcded56-7635-4a16-a5ba-3bf7a1ce57fc
 title: Markdown
 desc: ''
-updated: 1602574007744
+updated: 1604756424791
 created: 1602574007744
 stub: false
 ---
@@ -14,6 +14,42 @@ stub: false
 ## [reference](https://www.dendron.so/notes/ba97866b-889f-4ac6-86e7-bb2d97f6e376.html)
 # Examples:
 
+---
+```mermaid
+graph LR
+    fa:fa-check-->fa:fa-coffee
+```
+---
+
+---
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2              :         des4, after des3, 5d
+```
+
+---
+```mermaid
+   sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+     
+```
 ---
 ```mermaid
 classDiagram
@@ -95,8 +131,5 @@ C --> A;
       +-------------------------+
   ```
 
----
-
-`
 ---
 

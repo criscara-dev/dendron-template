@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604600901155
+updated: 1604732969114
 created: 1602692433243
 stub: false
 ---
@@ -18,13 +18,13 @@ Thank you for registering for Dreamforce to You 2020.
 Your registration ID is R-01486096
 
 ## Tomorrow tasks:
-
-- [ ] [Essential Habits for New Admins](https://trailhead.salesforce.com/live/broadcasts/a2r3k000001n2IH/essential-habits-for-new-admins) 5:30 PM
+- [ ] finish this trail on #[public-speaking](https://trailhead.salesforce.com/content/learn/trails/build-your-career-with-salesforce-skills)
 - [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder before exam
 
 ## Recurrent to-do:
 - [ ] [weekly review for Kathryn](https://docs.google.com/document/d/1RcVrCH8Ch0T9X_k4-lo5Z8O21agcuhXG_AA9Zsb9CFc/edit)
 - [ ] complete trailhead [profile](https://trailblazer.me/id)
+- [ ] #[Computational-thinking](https://www.wolfram.com/wolfram-u/cbm-cause-or-correlation/) course
 - [ ] help Lucia to get SF Admin Cert
 
 ## Reference:
