@@ -2,7 +2,7 @@
 id: 2178d12c-aad6-4bac-b1c4-e3f691f72c1d
 title: My-apps
 desc: ''
-updated: 1604665955483
+updated: 1604869871183
 created: 1604331745347
 ---
 
@@ -15,5 +15,14 @@ created: 1604331745347
 - [Build an Event Registration App](https://trailhead.salesforce.com/en/content/learn/projects/build-an-event-registration-app)
 
 ## to do:
-- [Build Platform Apps in Lightning Experience](https://trailhead.salesforce.com/en/content/learn/trails/build-platform-apps-in-lightning-experience)
+- [ ] [Build Platform Apps in Lightning Experience](https://trailhead.salesforce.com/en/content/learn/trails/build-platform-apps-in-lightning-experience)
 
+- [ ] [Discount Calculator](https://trailhead.salesforce.com/en/content/learn/projects/flow_calculate)
+
+- [ ] [Build a suggestion box App](https://trailhead.salesforce.com/en/content/learn/projects/suggestion_box)
+
+- [ ] [Discover Trailhead sample Apps](https://trailhead.salesforce.com/en/content/learn/trails/discover-trailhead-sample-apps)
+
+- [ ] [to be ready to build App for the AppExchange, do this trail first](https://trailhead.salesforce.com/en/content/learn/trails/isv_developer_beginner)
+
+- [ ] [Discover Trailhead Sample Apps](https://trailhead.salesforce.com/en/content/learn/trails/discover-trailhead-sample-apps)

@@ -2,7 +2,7 @@
 id: cb18c17b-5359-4c20-83f5-a9821c4b942d
 title: Building-a-computer
 desc: ''
-updated: 1604673621957
+updated: 1604773876919
 created: 1604354116803
 ---
 
@@ -257,3 +257,6 @@ https://www.nand2tetris.org/project01
 https://drive.google.com/file/d/1dPj4XNby9iuAs-47U9k3xtYy9hJ-ET0T/view
 [hack chipset API](https://drive.google.com/file/d/1IsDnH0t7q_Im491LQ7_5_ajV0CokRbwR/view) for names of in/out of chip bits
 </details>
+
+2020-11-07 18:30
+Stuck 1 hour error [reason](http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Forever-stuck-on-Loading-chip-td4030698.html) 
