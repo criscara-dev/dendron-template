@@ -2,25 +2,24 @@
 id: 9fcded56-7635-4a16-a5ba-3bf7a1ce57fc
 title: Markdown
 desc: ''
-updated: 1604756424791
+updated: 1604934997570
 created: 1602574007744
 stub: false
 ---
 
-### [Emoji reference](https://github.com/ikatyang/emoji-cheat-sheet)
-### [from html tables to md](https://jmalarcon.github.io/markdowntables/)
-
-
 ## [reference](https://www.dendron.so/notes/ba97866b-889f-4ac6-86e7-bb2d97f6e376.html)
-# Examples:
+
+- ### [Emoji reference](https://github.com/ikatyang/emoji-cheat-sheet)
+- ### [from html tables to md](https://jmalarcon.github.io/markdowntables/)
+- ### [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
+
+### Examples:
 
 ---
 ```mermaid
 graph LR
     fa:fa-check-->fa:fa-coffee
 ```
----
-
 ---
 
 ```mermaid
@@ -133,3 +132,16 @@ C --> A;
 
 ---
 
+```mermaid
+    journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
+
+---
