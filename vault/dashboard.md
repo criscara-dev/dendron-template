@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1604943452739
+updated: 1605169049324
 created: 1602692433243
 stub: false
 ---
@@ -18,9 +18,7 @@ Thank you for registering for Dreamforce to You 2020.
 Your registration ID is R-01486096
 
 ## Tomorrow tasks:
-- [x] review Mimeo slides for Dev Part 2: 10 -> 12
-- [ ] re-do [superbadge](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lex?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-- [ ] finish this trail on #[public-speaking](https://trailhead.salesforce.com/content/learn/trails/build-your-career-with-salesforce-skills)
+- [ ] [London Trailblazers event](https://u6682178.ct.sendgrid.net/ls/click?upn=v3lFydCCL4vng1LN0PAxPdWFV-2BJGDdyfbd24O-2BGilMylNwi2KyIo-2F-2B6HKjfprteIuQ-2B6JbxVh1euF9l3fNkBCmeGQj2UgNZ-2BjDhGxCmropu-2BWPYWZTkBKxaqZWvfR9I5TGcOPrYh-2FevJ5XDb1rXGUw-3D-3DhDsB_FODTUQdMiBXDK1JRGsAgLhKVtheQ4SBstYL8EXlt1rKMaQ5-2FtCReR2-2FoA6g46JXOGZk6rDvu1QVUyw-2F5-2BhhJT1MGYhV7x8-2Bhyd-2BLo8Nzb7Wv-2BGJrsNKE14adVhL-2F89r2kDJeG-2FTgUczKCYixxobI3igz2yLfDsfPB8rIfkQ2e5kzZQZ0bg8zogEtkOrXD9RxM0RMmJn0hB8gUFnlrqvruZ7ZI1KvcPE-2BdHXF4sSZIkE-3D)  Wed 18 Nov
 - [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder before exam
 
 ## Recurrent to-do:

@@ -2,7 +2,7 @@
 id: a2e92f3c-235e-4e4f-98ed-02c788af748a
 title: 09
 desc: ''
-updated: 1604943461551
+updated: 1604946488329
 created: 1604911669003
 ---
 
@@ -15,7 +15,7 @@ to do:
 --- luch break ---
 
 - [x] review Mimeo slides for Dev Part 1: 10 -> 12
-- [ ] Dendron Backlinks 15:30 -> 16
+- [x] Dendron Backlinks 15:30 -> 16
 - [x] meeting Outlook 16:30 -> 17:30 
  
 ### Observation about color

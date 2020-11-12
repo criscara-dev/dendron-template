@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1604656894304
+updated: 1605095141311
 created: 1603274675484
 stub: false
 ---
@@ -40,8 +40,7 @@ Compact layouts control which fields your users see in the highlights panel at t
 </details>
 <details><summary>How to make a Lightning App?
 </summary>
-go to Setup -> #App-Manager
-No #Lightning-App-Builder since this one is used to Custom Lightning pages fo Lightning X and mobile App.
+go to Setup -> #App-Manager ->  #Lightning-App-Builder since this one is used to Custom Lightning pages fo Lightning X and mobile App.
 </details>
 
 <details><summary>
@@ -369,6 +368,8 @@ You can create a #Report in order to check for duplicate records.
 ---
 
 ## **Security** 10%
+
+[Who can see what series](https://salesforce.vidyard.com/watch/B1bQnMFg2VyZq7V6zXQjPg)
 
 ### [Data Security](https://trailhead.salesforce.com/content/learn/modules/data_security?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
@@ -1018,5 +1019,28 @@ The relationship is create on the #custom-object (detail) where you select the #
 [App Customization Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lightning_platform_app_builder?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 ---
+
+
+## Starting review process
+
+==The following trail contain flshcards and interesting questions==
+- [x] 2020-11-10 10:49 [Study for the Platform App Builder Exam](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+Concepts not clear to review later:
+
+- [ ] look-up relationship for external object -> direct | indirect lookup
+- [ ] security in general; still not 100% correct in understanding how to give right permission/profile etc to share etc. specifically look out for criteria-based sharing rules...
+- [ ] what's a group?
+- [ ] sharing rules types? (ower | criteria based)
+- [ ] extend record access? ( sharing | manual sharing rules)
+- [ ] What picklist fields are used in tru lead process are not available for record types? (Case | Lead Status)
+- [ ] approve via Email needs API Enabled permission on: profile | permission set
+- [ ] order execution for Validation Rules: VAAWPE
+- [ ] Which action is not executed after a reevaluated workflow? Time-dependent actions
+- [ ] social accounts to be seen by a user in an org, need to be linked to a personal social account first
+- [ ] What three objects can be connected to a social network? Accounts, Contacts, Leads
+- [ ] How many components a dashboard can have? (up to 20)
+- [ ] Which report can be converted in a joined report? -> All, Summary, Tabular and Matrix
+- [ ] What two permissions are needed to create custom reports that all users can view? (Manage Public report | Create and customize Reports)
 
 

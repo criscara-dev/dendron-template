@@ -2,7 +2,7 @@
 id: 78b1e12c-8d6a-4912-8eed-6c20e08c7841
 title: Apex
 desc: ''
-updated: 1602930717556
+updated: 1605097141114
 created: 1602930717556
 stub: false
 ---
@@ -33,3 +33,12 @@ info = error + warn + info
 trace = error + warn + info + trace 
 fatal = error + warn + info + trace + fatal
 
+## Apex definitions
+- Apex is Salesforce’s cloud-based, object-oriented programming language, specifically designed for customizing and extending apps on the Salesforce platform.
+
+<details><summary>
+In which forms Apex exist?
+</summary>
+
+Apex can be written in 2 forms: as a #class or a [[ trigger|computer-science.lang.apex.trigger]] (execution is triggered during processing DML statements);
+</details>

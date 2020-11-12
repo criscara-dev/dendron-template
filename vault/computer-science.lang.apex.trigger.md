@@ -2,14 +2,14 @@
 id: a2b154f3-79f5-49bc-8e95-451df731715e
 title: Trigger
 desc: ''
-updated: 1602596666973
+updated: 1605097693508
 created: 1602596666973
 stub: false
 ---
 
 # ask yourself
-When to sue triggers?
-what they are?
+- When to use triggers?
+- what they are?
 
 ((ref: [[computer-science.lang.apex.templates]]#Trigger:#end-trigger))
 
@@ -19,7 +19,7 @@ what they are?
 - trigger class
 - test class
 
-> explained like toi a 5 yo: a trigger is like a car, in order to run on the street and don't kill anyone, you have to be sure that the car is safe to drive for you and for the sake of other people.
+> explained like to a 5 yo: a trigger is like a car, in order to run on the street and don't kill anyone, you have to be sure that the car is safe to drive for you and for the sake of other people.
 
 #### Demo: Write a basic Apex trigger
     - Line by line explanation
@@ -116,7 +116,10 @@ trigger NonExistentId on Case (before insert) {
 - to fix it we just need to use an after insert trigger!
 
 
+<details><summary>
 Demo: Write a trigger!
+</summary>
+
 exercise:
 Write a trigger that does the following when an Account is created: Create a new case
 Assign the owner to your new intern
@@ -139,3 +142,5 @@ trigger testNewCase on Account(after insert) {
             insert c;
         }
 ```
+</details>
+
