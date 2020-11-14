@@ -2,7 +2,7 @@
 id: 10614a85-04d7-4ad0-a3e9-459543628f21
 title: Restful-apis
 desc: ''
-updated: 1605169974484
+updated: 1605211101892
 created: 1605090506626
 ---
 
@@ -17,7 +17,7 @@ created: 1605090506626
 - [ ] users Token same as Pirple API
 - [ ] create a JSON menu (hardcoded) name,desc, amount/price, currency like api2
 - [ ] method available GET (menu items) 
-- [ ] floow lead of API3
+- [ ] flow lead of API3
 
 
  

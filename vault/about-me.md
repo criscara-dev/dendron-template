@@ -2,7 +2,7 @@
 id: bcc23d9b-3e7a-413d-be29-ce680f1531a6
 title: About me
 desc: ''
-updated: 1604230591688
+updated: 1605347958970
 created: 1602345930962
 stub: false
 ---
@@ -102,3 +102,63 @@ I’m an experienced web developer, recently certified as Salesforce Admin and D
 I love helping clients to optimize their use of Salesforce and pursue new goals.
 I’ve been grown up in the mountains and I've been deeply in contact with nature since I was a kid, and I want to work for an organization that’s environmentally focused.
 I have only 6 months experience into the Salesforce Platform but since I started, I've already earn 2 Certifications, > 100 Trailhead badges and some Superbadges.
+
+### plan for my garden
+
+sections
+
+<details><summary>welcome
+</summary>
+#Hi
+
+### Welcome to Cristian’s [Digital Garden](https://joelhooks.com/digital-garden) 🌱
+I’m Cristian.
+I’m a Salesforce developer consultant at Revolent.
+I currently hold 2 Salesforce certifications, Admin and Platform Developer; I'm currently working on my 3rd Certification as an App Builder.
+The purpose of my Digital garden/second brain, is to put my knowledge, all in one place, easely accessible.
+
+
+
+Where you can find me:
+
+:email: : c.caratti(at)me.com
+Twitter: @criscaratti
+Github: https://github.com/criscara-dev
+LinkedIn: https://www.linkedin.com/in/cristian-caratti-00a1b7136/
+
+~~Thanks for stopping by and please do not hesitate to get in touch if you have any questions or comments.~~
+
+This static website has been built using [Dendron](https://www.dendron.so/), Jackill.
+
+</details>
+ 
+<details><summary>
+Thoughts
+</summary>
+**Lorem ipsum dolor sit amet...**
+</details>
+
+<details><summary>
+Books
+</summary>
+**Lorem ipsum dolor sit amet...**
+</details>
+ 
+<details><summary>
+Principles
+</summary>
+life
+work -> Salesforce -> ...
+</details>
+
+<details><summary>
+Sciences
+</summary>
+- Math
+- Physics
+- Astronomy
+- Chemestry
+- Computing
+
+</details>
+
