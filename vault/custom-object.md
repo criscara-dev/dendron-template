@@ -8,5 +8,6 @@ created: 1604933538762
 # Custom object
 
 - A custom object is created by a developer to capture and manage
-additional data based on specific business requirements
-- After you created it, you need to set the permission to access it to the user(s) via a custom profile or via a [[permission-set]]
+  additional data based on specific business requirements
+- After you created it, you need to set the permission to access it to the user(s) via a custom profile or via a [[salesforce-platform.permission-set]]
+

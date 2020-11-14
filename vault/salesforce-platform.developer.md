@@ -1,12 +1,36 @@
 ---
-id: 3721cb86-b855-4a3e-88be-a32d29610164
-title: Career
+id: 2a6fc1df-ac07-4af0-a2bc-074548fe58ff
+title: Developer
 desc: ''
-updated: 1605192061507
-created: 1605190897004
+updated: 1605370708753
+created: 1602404064858
+stub: false
 ---
 
-## Tipical adv on LinkedIn | 2020-11-12 14:21
+# Developer stuff
+
+## How to get token:
+- from Profile -> settings -> reset my security #token
+
+## Org types:
+ #[Dev-Hub](https://criscaraconsulting-dev-ed.lightning.force.com/lightning/setup/DevHub/home) is necessary to create #scratch-org
+Type of org:
+ #Production
+ #Sandbox:
+    - partial (contain part of the data)
+    - full (contain all the data)
+ #Developer:
+    - partial (contain part of the metadata)
+    - full (contain all the metadata)
+
+## Contribute the the sample gallery:
+[references Docs](https://developer.salesforce.com/blogs/2020/09/contribute-to-the-sample-gallery.html)
+
+((ref: [[computer-science.platform.salesforce.developer.interview-questions]]))
+
+---
+
+## Career: Tipical adv on LinkedIn | 2020-11-12 14:21
 
 <details><summary>
 Salesforce Developer and Solutions Designer
