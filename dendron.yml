@@ -1,12 +1,12 @@
-# site:
-#     copyAssets: true
-#     siteHierarchies:
-#         - root
-#     siteRootDir: docs
-#     usePrettyRefs: true
 site:
     copyAssets: true
-    siteHierarchies: [books, principles, mental-models,computer-science]
+    siteHierarchies:
+        - books
+        - principles
+        - mental-models
+        - computer-science
     siteRootDir: docs
     usePrettyRefs: true
-     
+vaults:
+    -
+        fsPath: /Users/criscara/Desktop/Dendron-cris-1/vault

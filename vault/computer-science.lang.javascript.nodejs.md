@@ -2,16 +2,26 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1605194380415
+updated: 1605351637859
 created: 1602530634233
 stub: false
 ---
 
-# Node
+## Node
 
- [[APIs | computer-science.lang.javascript.nodejs.RESTful-APIs]]
 
-### Quick answers:
+#### my APIs
+ [[RESTful APIs | computer-science.lang.javascript.nodejs.RESTful-APIs]]
+
+#### how to write snippets
+
+```javascript {cmd="node"}
+const date = Date.now()
+console.log(date.toString())
+```
+---
+
+### Summary Notes:
 
 <details><summary>
 What is a server?

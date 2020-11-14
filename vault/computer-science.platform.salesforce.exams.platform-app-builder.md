@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1605095141311
+updated: 1605349086284
 created: 1603274675484
 stub: false
 ---
@@ -851,10 +851,6 @@ You can even install a package from the #AppExchange
 
 ### Lightning Experience Specialist Superbadge
 
-- [ ] ISSUE PriceBook Entry ID... just for 1 Explorer?! 
-
- 
-
 ---
 
 ## **Reporting** 5%
@@ -1026,7 +1022,9 @@ The relationship is create on the #custom-object (detail) where you select the #
 ==The following trail contain flshcards and interesting questions==
 - [x] 2020-11-10 10:49 [Study for the Platform App Builder Exam](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
+<details><summary>
 Concepts not clear to review later:
+</summary>
 
 - [ ] look-up relationship for external object -> direct | indirect lookup
 - [ ] security in general; still not 100% correct in understanding how to give right permission/profile etc to share etc. specifically look out for criteria-based sharing rules...
@@ -1042,5 +1040,7 @@ Concepts not clear to review later:
 - [ ] How many components a dashboard can have? (up to 20)
 - [ ] Which report can be converted in a joined report? -> All, Summary, Tabular and Matrix
 - [ ] What two permissions are needed to create custom reports that all users can view? (Manage Public report | Create and customize Reports)
+</details>
+
 
 
