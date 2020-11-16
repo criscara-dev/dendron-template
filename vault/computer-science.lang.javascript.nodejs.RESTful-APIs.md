@@ -2,7 +2,7 @@
 id: 10614a85-04d7-4ad0-a3e9-459543628f21
 title: Restful-apis
 desc: ''
-updated: 1605356705799
+updated: 1605437189169
 created: 1605090506626
 ---
 
@@ -41,6 +41,7 @@ Dir Schema:
     'ping' : handlers.ping,
     'users' : handlers.users,
     'tokens' : handlers.tokens,
+    ~~'checks':handlers.checks~~, // not anymore fore this API
     'products' : handlers.products,
     'cart' : handlers.cart,
     'checkout' : handlers.checkout
@@ -50,26 +51,26 @@ Dir Schema:
     - the db pizza json items
     - function to read the db items (CRUD)
 
-- handlers are functions that let you handle the HTTP requests:
+- ==handlers== are functions needed for routing; so they let you handle the HTTP requests:
     - /ping /notFound -> to test (inherited from previous rest API)
     - /users (post,edit(put),get,delete)
-    - /tokens (post, edit(put), delete
-    - /products (get)
-    - /cart (post,edit(put),get)
-    - /checkout (post)
+    - /tokens (post, edit(put), delete | is the auth mechanism
+    - /products (get) with no payload (it's only a GET)
+    - /cart (post,edit(put),get) ==// craft HTTPS messages in helpers==
+    - /checkout (post) ==// craft HTTPS messages in helpers==
     - validateToken (inherited from previous rest API)
 
 
 - helpers: extra functions to help the 'handlers'
      - to create an email receipt
      - check email address if valid
-     - to send mailgun emails
-     - inherited from RESTFUL API Ccourse: hash, parsetoobject, createrendomstring, 
-     - create Stripe receipt cost
+     - to send mailgun emails (craft HTTPS requests)
+     - inherited from RESTFUL API course: hash, parsetoobject, createrendomstring, 
+     - create Stripe HTTPS requests + receipt cost
 
 - logs
 
 - workers are functions that helps the app run and do:
     - rotating log to dir
 
-- index: initialize the App
+- ==index==: initialize the App

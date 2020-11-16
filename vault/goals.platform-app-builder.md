@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1605349086284
+updated: 1605453439150
 created: 1603274675484
 stub: false
 ---
@@ -1040,6 +1040,13 @@ Concepts not clear to review later:
 - [ ] How many components a dashboard can have? (up to 20)
 - [ ] Which report can be converted in a joined report? -> All, Summary, Tabular and Matrix
 - [ ] What two permissions are needed to create custom reports that all users can view? (Manage Public report | Create and customize Reports)
+</details>
+<details><summary>
+Estras, nice to know
+</summary>
+
+[How to choose a report type](https://help.salesforce.com/articleView?id=reports_changing_format.htm&type=5) -> get a picture from Mimeo Amdin
+Which dev/ sandbox etc. env let do what? get picture from Mimeo Dev that I know there's one there
 </details>
 
 

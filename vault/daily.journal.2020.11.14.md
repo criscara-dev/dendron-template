@@ -2,16 +2,16 @@
 id: 43236b17-8175-404b-9a70-7c271d919a17
 title: '14'
 desc: ''
-updated: 1605365297138
+updated: 1605375652739
 created: 1605348317615
 ---
 
 ### To do
 
-- [ ] [review flashcards](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+- [x] [review flashcards](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 - [x] Node 
-- [ ] New Trailhead  
 - [x] mermaid flowchart ex.
+- [x] ask for this feature in Dendron: for clarity's sake, I think an awesome feature will be to have a different color for each level deep of hierarchies in Note Graph.
 
 ---
 

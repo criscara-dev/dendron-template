@@ -2,17 +2,20 @@
 id: d3c5b032-ccc4-483b-bad3-f325b8951be1
 title: Tech-interview
 desc: ''
-updated: 1604932749132
+updated: 1605372853961
 created: 1603706834819
 stub: false
 ---
 
-## tackling the tech interview
+## Tackling the tech interview
 
 - [ ] [tackling the tech interview](https://web.microsoftstream.com/video/91399a16-3327-416c-b76c-a948e0e8cee1?channelId=00ec9f3b-2f35-40e6-aa1e-1bea6a625a79) 2020-10-26 10:08
 
+- [ ] create flashcards from this blog: [Lightning Dev](https://www.salesforceben.com/30-salesforce-lightning-developer-interview-questions-answers/)
+- [ ] create flashcards from this blog: [SF Dev](https://www.salesforceben.com/30-salesforce-developer-interview-questions-answers/)
 
-((ref: [[computer-science.platform.salesforce.developer.interview-questions]]))
+- [Jobs Dev in search](https://www.salesforceben.com/salesforce-developers-the-most-in-demand-salesforce-job): blog post by SalesforceBen
+
 
 ### [Common answers to questions](https://docs.google.com/document/d/11z6pvtfISMzCInGJKlYu1l0gr96jsoXSF6woR4-aX1c/edit)
 

@@ -2,9 +2,11 @@
 id: 8fc05bfe-2f9f-470e-839f-8eb7ffd6f61b
 title: Development
 desc: ''
-updated: 1604936681790
+updated: 1605377502064
 created: 1604931859400
 ---
+
+## The main resource for a developer in SF
 
 <details><summary>
 What is a sandbox?
