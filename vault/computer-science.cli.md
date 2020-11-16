@@ -2,7 +2,7 @@
 id: c8f821a5-747b-4d9c-baeb-d4d47e79a722
 title: Cli
 desc: ''
-updated: 1604693004295
+updated: 1605557944183
 created: 1604563984600
 stub: false
 ---
@@ -20,3 +20,9 @@ ex.
 chmod u+x ~/Desktop/nand2tetris/tools/*.sh
 ```
 </details>
+
+
+
+
+
+du -s * | sort -nr > $HOME/Desktop/user_space_report.txt

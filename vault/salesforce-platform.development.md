@@ -2,7 +2,7 @@
 id: 8fc05bfe-2f9f-470e-839f-8eb7ffd6f61b
 title: Development
 desc: ''
-updated: 1605377502064
+updated: 1605551132011
 created: 1604931859400
 ---
 
@@ -12,6 +12,7 @@ created: 1604931859400
 What is a sandbox?
 </summary>
 
+[Sandboxes and storage limits Doc page](https://help.salesforce.com/articleView?id=data_sandbox_environments.htm&type=5)
 ![](/assets/images/2020-11-09-14-25-38.png)
 </details>
 

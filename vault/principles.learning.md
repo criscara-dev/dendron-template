@@ -2,7 +2,7 @@
 id: 3b652b1f-d1d6-4413-a9a1-fc2dc0a06f36
 title: Learning
 desc: ''
-updated: 1604916413708
+updated: 1605558186465
 created: 1604914147875
 ---
 # Learning
@@ -28,16 +28,25 @@ A[To learn something new] -->B(think about it on a piece of paper)
   ```
   ---
 
-GanTT chart:
 
-  ```mermaid
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2              :         des4, after des3, 5d
-```
+## The Art of #google-search
+
+- keep it simple and gradually add search terms
+- use descriptive words
+- use words website would use:
+  ex. "apex testing" instead of "how can i test apex"
+- use shortcuts: 
+  ex. weather \<postcode> or time \<city>
+  - search a specific fieltype:
+    ex. apex cheatsheet filetype:pdf
+- use tabs present on search result page to filter
+- use quote to restrict result: 
+  ex. "\<apex code snippets>"
+- omit some result: \<searched world> -\<to omit>
+  ex. mustang -cars
+- search specific websites: \<searched world> site:\<website url>
+  ex. apex snippets site:https://developer.salesforce.com/
+- find a page that link to a specific page/result
+  ex. link:"Tim Berners Lee" or link: link:cristiancaratti.co.uk
+- find sites that are similar to others
+    ex. related:amazon.co.uk

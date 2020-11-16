@@ -2,23 +2,27 @@
 id: 62b2aff3-626f-408d-a3dc-88a3a96d1084
 title: Visualforce
 desc: ''
-updated: 1603096143760
+updated: 1605526749981
 created: 1603096143760
 stub: false
 ---
 
 # Visualsforce
 
+## WHere
 I can create VF pages in:
 1. Setup
 2. Developer console
 3. VSCode extension
 
+## Reference material
+- [VF & Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_dev_visualforce)
+
 ## Viewing Visualforce Pages During Development:
 accomplished by accessing the page using the https://yourInstance.salesforce.com/apex/PageName URL pattern.
 Unfortunately, in Lightning Experience, I can only review the page but cannot test behaviour.
 
-## How to test a VF page:
+## How to test a VF page | [development](https://trailhead.salesforce.com/content/learn/modules/lex_dev_visualforce/lex_dev_visualforce_process):
 1. create a tab for it
 2. creating an "In development" app and add a tab to it.
 App Manager-> New Lightning App (custom app)
@@ -74,15 +78,15 @@ or from a prompt:
 ```
 
 > Summary:
-Development Mode for Visualforce is only available in Salesforce Classic
-Test early, test often, test everything.
+    - Development Mode for Visualforce is only available in Salesforce Classic
+    - Test early, test often, test everything.
 
 ---
 
 | classic | Lightning experience |
 ---------|----------|
 | VF 'own' the page | VF run in an HTML 'iframe' |
-The point here is: Lightning Experience (/lightning) is in change of the request.
+==The point here is: Lightning Experience (/lightning) is in charge of the request.==
 Session maintenance
 - $Api.Session_ID
 A “session” is basically some kind of token that your browser re-uses from request to request so that you don’t need to enter your username and password everytime. 
@@ -90,12 +94,12 @@ Scope inpact
 Just remember:  Don’t touch other contexts’ stuff.
 The **_#sforce.one_** JavaScript Utility Object, it provides a number of useful functions you can use in your own JavaScript code.
 > Summary
-Visualforce and Lightning Experience are served from different domains
+Visualforce (visual.force.com) and Lightning Experience (force.com) are served from different domains
 \<apex:page> showHeader and sidebar Attributes Are Always suppressed when pages run in Lightning Experience.
 
 ---
 
-## Managing VF navigation
+## [Managing VF navigation](https://trailhead.salesforce.com/content/learn/modules/lex_dev_visualforce/lex_dev_visualforce_navigation)
 - button
 - 'hidden' code in SF based on events happening (ex. triggered navigation due to select a value in a picklist)
 - custom code that control the application flow
@@ -129,4 +133,8 @@ Components to avoid using in Lightining for VF pages:
 Summary
 > Don’t Set window.location Directly
 
+---
 
+## Design for VF & LX
+
+- [trailhead](https://trailhead.salesforce.com/content/learn/modules/lightning_design_system)
