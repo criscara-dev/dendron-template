@@ -2,7 +2,7 @@
 id: c8f821a5-747b-4d9c-baeb-d4d47e79a722
 title: Cli
 desc: ''
-updated: 1605557944183
+updated: 1605599571390
 created: 1604563984600
 stub: false
 ---
@@ -23,6 +23,10 @@ chmod u+x ~/Desktop/nand2tetris/tools/*.sh
 
 
 
-
-
 du -s * | sort -nr > $HOME/Desktop/user_space_report.txt
+
+[Mac OS X Command Line (Terminal)](https://ss64.com/osx/) or using command:
+
+```
+> compgen -c
+```
