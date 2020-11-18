@@ -2,7 +2,7 @@
 id: 3b652b1f-d1d6-4413-a9a1-fc2dc0a06f36
 title: Learning
 desc: ''
-updated: 1605558186465
+updated: 1605635029786
 created: 1604914147875
 ---
 # Learning
@@ -50,3 +50,8 @@ A[To learn something new] -->B(think about it on a piece of paper)
   ex. link:"Tim Berners Lee" or link: link:cristiancaratti.co.uk
 - find sites that are similar to others
     ex. related:amazon.co.uk
+
+## Search fast in a Unix-like OS
+- ag [file-type] [options] PATTERN [PATH]
+  ex. ag readme -l -i -G ec$ 
+  Basically, search all files that contain 'readme' and that finishes in ec

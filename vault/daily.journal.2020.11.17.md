@@ -2,7 +2,7 @@
 id: e05f5894-e969-4d20-8fa4-80b441e0f3ea
 title: '17'
 desc: ''
-updated: 1605623469745
+updated: 1605688724038
 created: 1605599614198
 ---
 
@@ -14,9 +14,9 @@ Morning
 - [x] 10 Questions PAB
 
 Afternoon
-- [ ] 10 Questions PAB
-- [ ] Node
+- [x] 10 Questions PAB
+- [x] command line Interface: ag | cURL
 
 Evening
-- [ ] 20 questions
-- [ ] learn 5G
+- [x] 10 questions
+
