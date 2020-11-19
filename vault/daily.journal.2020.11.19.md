@@ -2,7 +2,7 @@
 id: 742e4a1f-0c80-4431-9722-700ec326c9df
 title: '19'
 desc: ''
-updated: 1605774817555
+updated: 1605821312701
 created: 1605774755474
 ---
 
@@ -13,8 +13,9 @@ Morning
 - [x] 20 Questions PAB
 
 Afternoon
-- [ ] 20 Questions PAB
+- [x] 20 Questions PAB
 
 Evening
-- [ ] 20 questions
-- [x] command line Interface - scripting? | Node?
+- [x] 20 questions
+- [x] learnt about OS and processes
+
