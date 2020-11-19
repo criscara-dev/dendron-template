@@ -2,11 +2,11 @@
 id: 2330d514-2bff-469b-a044-c9590200adef
 title: '18'
 desc: ''
-updated: 1605735402139
+updated: 1605774782701
 created: 1605688699565
 ---
 
-todo
+## todo
 
 coupon:SFAMERCERTDAYS112020MMK
 
@@ -22,4 +22,3 @@ Evening
 - [x] command line Interface
 - [x] learn about 5G technology
 
-> [code is there to explain comments to computer](https://www.youtube.com/watch?v=azcrPFhaY9k)

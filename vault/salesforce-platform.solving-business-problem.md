@@ -2,9 +2,14 @@
 id: 63fbd198-3924-471e-9377-effe9453aceb
 title: Solving-business-problem
 desc: ''
-updated: 1604749053221
+updated: 1605788894439
 created: 1604351356138
 ---
+
+
+## Which automation tool to choose?
+- [[ Automation tools? | salesforce-platform.solving-business-problem.which-automation-tool]]
+
 
 ## How to solve a business problem
 
