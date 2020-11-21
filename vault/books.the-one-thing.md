@@ -2,7 +2,7 @@
 id: a0b22a5a-f483-4632-8cf5-1c9a5ed0734c
 title: The-one-thing
 desc: ''
-updated: 1605958683862
+updated: 1605959344464
 created: 1603544432605
 stub: false
 ---
@@ -24,7 +24,7 @@ stub: false
 ```
 > The key is overtime, success is built sequentially, one thing at the time
 
-### Establish A preiority
+### Establish A priority
 
 ```mermaid
     flowchart LR
@@ -66,14 +66,14 @@ Willpower Is Always on Will-Call:
 
 ```mermaid
     flowchart LR
-    in[A Balanced Life] --> out[choose what matters mos and give it all the time it demands] 
+    in[A Balanced Life] --> out[choose what matters most and give it all the time it demands] 
 ```
 > the above require to get out of balance in relation to all other work issues
 In the personal world, this is achieve with ==awareness==
 
 ```mermaid
     flowchart LR
-    in[Big Is Bad] --> out[cno one know the ultimate ceiling for achievement] 
+    in[Big Is Bad] --> out[no one knows the ultimate ceiling for achievement] 
 ```
 > Thinking big is essential to extraordinary results.
 Success require action and action require thought.
@@ -156,8 +156,8 @@ Start earlier and increase frequency.
 > Don't work on time, like it's 5 PM. Let's go home!
 Work based on event: "My work is done. Let's go home"
 
-> Efficiency is doing things gright.
-Effectiveness is doing the right thing.
+> Efficiency is doing things right.
+==Effectiveness== is doing the right thing.
     - Peter Drucker
 
 
@@ -209,4 +209,7 @@ You are the first domino.
 
  Let the ONE Thing bring clarity to the key areas of your life. Here's a short sampling. 
 
+?
+?
+?
 
