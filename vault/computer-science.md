@@ -2,7 +2,7 @@
 id: f31057be-c46f-4621-b56f-05a0d82743f6
 title: Computer-Science
 desc: ''
-updated: 1602509248796
+updated: 1605869103871
 created: 1602509248796
 stub: false
 ---
@@ -13,3 +13,5 @@ stub: false
 [[#Apex cli|computer-science.cli.apex]]
 
 [[project-management|computer-science.project-management]]
+
+[[Think-like-a-programmer|computer-science.think-like-a-programmer]]

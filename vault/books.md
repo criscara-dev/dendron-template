@@ -2,7 +2,7 @@
 id: df025a01-f811-4f4a-aa86-5ad5316c53df
 title: Books
 desc: ''
-updated: 1602696517409
+updated: 1605883368715
 created: 1602696517409
 stub: false
 ---
@@ -10,6 +10,7 @@ stub: false
 
 [[books.antifragile]]
 [[#The book of why|books.the-book-of-why]]
+[[books.the-one-things]]
 [[books.the-model-thinker]]
 [[books.lifespan]]
 [[books.thinking-fast-and-slow]]
