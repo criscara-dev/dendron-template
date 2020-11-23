@@ -2,7 +2,7 @@
 id: d3c5b032-ccc4-483b-bad3-f325b8951be1
 title: Tech-interview
 desc: ''
-updated: 1605372853961
+updated: 1606120083128
 created: 1603706834819
 stub: false
 ---
@@ -150,5 +150,6 @@ Which are the activities of the top line in the next months?
 Which Project Management style are you using? Waterfall/AGile? Scrum, kanban… etc
 What are your metrics in evaluating an employee?
 Which big challenges are you facing today…
+Are you embracing disagreement?
 </details>
 
