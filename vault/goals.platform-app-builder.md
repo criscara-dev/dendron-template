@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1606120006852
+updated: 1606213485147
 created: 1603274675484
 stub: false
 ---
@@ -55,18 +55,14 @@ What is a Lightning App?
 </summary>
  is a collection of items that work together to serve a particular function. In Lightning Experience, Lightning apps give your users access to sets of objects, tabs, and other items all in one convenient bundle in the navigation bar.
 </details>
-<details><summary>
-What Do Compact Layouts Do?
-</summary>
-Compact layouts control which fields your users see in the highlights panel at the top of a record.
-</details>
+
 <details><summary>How to make a Lightning App?
 </summary>
 go to Setup -> #App-Manager ->  #Lightning-App-Builder since this one is used to Custom Lightning pages fo Lightning X and mobile App.
 </details>
 
 <details><summary>
-What are Compact Layouts?
+What are  (and what do) Compact Layouts?
 </summary>
 
 - Compact layouts control which fields your users see in the highlights panel at the top of a record.
@@ -223,13 +219,21 @@ LastName
 
 ### [Data Modeling](https://trailhead.salesforce.com/content/learn/modules/data_modeling?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
+
+### The Data Model
+> - objects: standard, custom, external
+    - relationships: lookup, master-details, many-to-many, ==hierarchical== (between 'user' objects), external lookup, indirect lookup
+    - fields: stnd and custom
+
+
 <details><summary>
 What's a #Data-model?
 </summary>
 It's a representation of data in a way that make sense at humans.
+
  #[design-data-model](https://help.salesforce.com/articleView?id=schema_builder.htm&type=5)
 </details>
-<br>
+
 <details><summary>
 What is a #SF-object and the difference between #Standard-object and #Custom-object?
 </summary>
@@ -237,7 +241,47 @@ It's like a table in the database, where columns are #fields and rows are #recor
 - #Standard-object(s) are objects that are included with Salesforce. Common business objects like Account, Contact, Lead, and Opportunity are all standard objects.
 - #Custom-object(s) are objects that you create to store information that’s specific to your company or industry. 
 </details>
-<br>
+
+<details><summary>
+What is an #external-object?
+</summary>
+
+Are used when data that reside externally needs to be viewed inside an org.
+![](/assets/images/2020-11-23-09-19-37.png)
+</details>
+
+<details><summary>
+What is Salesforce Connect?
+</summary>
+
+- Is a service used to connect to an external system and access and display its data using external objects.
+- It uses the model Open Data Protocol service (OData 2.0|OData 4.0) that allow the creation and consumption of query-able and interoperable RESTful APIs in a standard way.
+- setup external data source in Setup menu -> Integration -> External Data Source
+- external object use the API suffix name convention: __x
+- it bypass Governor Limits
+- data not copied into SF
+- Limitations:
+    - cannot create Record Types
+    - Location | Text Area (Rich) not supported
+    - others (see [help docs link](https://help.salesforce.com/articleView?id=platform_connect_about.htm&type=5))
+
+![](/assets/images/2020-11-23-09-25-42.png)
+</details>
+
+<details><summary>
+Example External Lookup
+</summary>
+
+![](/assets/images/2020-11-23-10-27-28.png)
+</details>
+
+<details><summary>
+Example Indirect Lookup Relationship
+</summary>
+
+![](/assets/images/2020-11-23-10-26-06.png)
+</details>
+
 <details><summary>
 What are #object-relationships and what types of relationship do you know?
 </summary>
@@ -256,13 +300,62 @@ Trailblazer Community docs on relationships: [link](https://help.salesforce.com/
 <details><summary>
 What is and what you can do with the #Schema-builder?
 </summary>
-It's a tool that let you manage the #Data-model from the #Setup menu.
-You can create Objects, fields, add relationship and all is visual and drag & drop
+
+1. It's a tool that let you manage the #Data-model from the #Setup menu.
+2. You can create Objects, fields, add relationship and all is visual and drag & drop
+3. available for both Classic and Lightning
+4. it does not add automatically to page layout (you need to edit it to display the fields)
+5. You cannot create custom Encrypted fields, External/Indirect lookup, and Geolocation fields
+6. Cannot create external objects, cannot print Schema
+---
+</details>
+
+<details><summary>
+Text (encrypted) fields?
+</summary>
+Must have the 'Require secure connections (HTTPS)' enabled.
+</details>
+
+<details><summary>
+How to choose a relationship?
+</summary>
+
+![](/assets/images/2020-11-23-09-13-09.png)
+![](/assets/images/2020-11-23-09-14-35.png)
+</details>
+
+<details><summary>
+Considerations on changing field types
+</summary>
+
+1. Not possible to change data types of Standard fields
+2. Good practice to change data types when field contain no data
+3. 'Change field type' on the field page
+</details>
+
+<details><summary>
+Which field type I can choose?
+</summary>
+
+![](/assets/images/2020-11-23-11-34-38.png)
+If I need to do any calculation...is a Formula field.
+</details>
+
+<details><summary>
+What are geolocation fields?
+</summary>
+Are compound fields; made up of Latitude and Longitude fields. Are Read-only.
 </details>
 
 ---
 
 ### [Data management](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_data_management?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
+<details><summary>
+Which format file can I use to import/export data?
+</summary>
+Only #CSV
+</details>
 
 <details><summary>
 How do you #Import-data?
@@ -280,19 +373,52 @@ I can import #CSV files with those tools:
 |Load up to 5,000,000 records (Dataloader.io limit is 100MB/file or about 500,000 to 1,000,000 records). ||:white_check_mark:
 |Load objects such as products or opportunities. ||:white_check_mark:
 |Schedule imports. ||:white_check_mark:
-|Save mappings for later use. ||:white_check_mark:
+|Save fields mappings for later use. ||:white_check_mark:
 |Export or delete data. ||:white_check_mark:
+|can Insert, Update, Upsert|:white_check_mark:||
 
 More info [link](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_data_management/lex_implementation_data_import?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential) here
 [Video-series on import](http://pages.mail.salesforce.com/gettingstarted/sales-cloud/import-export-data/)
 </details>
 
 <details><summary>
+More on Data loader
+</summary>
+
+For import, if a picklist value doesn't exist and is:
+- can be used only by admin
+- restricted -> record is NOT imported
+- unrestricted -> the record is imported but value not added
+- at the end of operation, 2 CSV fiels are provided for success and errors
+</details>
+
+<details><summary>
+More on Data Import Wizard
+</summary>
+Can import Account and Contacts, Lead, Solution, Campaign members, custom object records
+</details>
+
+<details><summary>
+Importing Knowledge articles...
+</summary>
+
+- imported one at the time
+- update zip file that contain: a .csv file | a property file | an html file
+- FLS to 'allow editing the fields'
+</details>
+
+<details><summary>
 How do I #Export-data, even for #backup data?
 </summary>
+
 In a #CSV format with those official tools:
-#Data-Loader
-#Data-export-service, accessible from #Setup menu -> #Data-export. It can even scheduled.
+- #Data-Loader
+- #Data-export-service (aka Data Export Wizard), accessible from #Setup menu -> #Data-export.
+    - It can even scheduled: once every: 7 days | 29 days
+    - for all objects
+    - email with link to download a zipped .csv file | active for 48 hrs
+    - can add Chatter filed and SF CRM content
+    - can include images, docs, and attchments
 It allows you to export data manually once every 7 days (for weekly export) or 29 days (for monthly export)
 </details>
 
@@ -307,6 +433,24 @@ Can I delete more records at once?
 </summary>
 I can mass delete records using the #Mass-delete-records.
 </details>
+
+<details><summary>
+Can I hard delete files?
+</summary>
+#Hard-Delete option is available for Data Loader and skip the recycle bin.
+</details>
+
+<details><summary>
+What about exporting reports?
+</summary>
+
+- user permission is required
+- different encoding option available
+- Format: .csv or #XLS
+- mo limits on rows/columns number
+- formatted join report can be exported in XLSX
+</details>
+
 
 ----
 
@@ -537,7 +681,7 @@ It's used to count the number of #unique-objects in a report with hundreds of re
 What are #roll-up summary fields?
 </summary>
 
-A Roll-Up Summary Fields display a value on a master record based on the values of records in a detail record.
+A Roll-Up Summary Fields (available on the master) display a value on a master record based on the values of records in a detail record.
 [Roll-up reference](https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic/roll_up_summary_fields?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 Type | Description
 -----|------------

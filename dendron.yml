@@ -10,3 +10,4 @@ site:
 vaults:
     -
         fsPath: /Users/criscara/Desktop/Dendron-cris-1/vault
+version: 0

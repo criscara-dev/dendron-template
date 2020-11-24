@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1606120404805
+updated: 1606167224285
 created: 1606052489366
 stub: false
 ---
@@ -50,3 +50,5 @@ date| coin | price | day %
 - Read on Brilliant this morning about Amazon system using chaos/random to store things in wharehouses and recover them...
 I think the same is for learnings.
 I mean: I learn stuff from a lot of different sources and then is easier to recover them (from your brain perspective)
+
+2020-11-23 21:30: [Secure OS](https://www.qubes-os.org/intro/)
