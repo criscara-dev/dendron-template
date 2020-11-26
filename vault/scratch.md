@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1606167224285
+updated: 1606294108521
 created: 1606052489366
 stub: false
 ---
@@ -52,3 +52,9 @@ I think the same is for learnings.
 I mean: I learn stuff from a lot of different sources and then is easier to recover them (from your brain perspective)
 
 2020-11-23 21:30: [Secure OS](https://www.qubes-os.org/intro/)
+
+2020-11-25 08:09 This night I woke up and couldn't sleep :s 
+So I thought and come with some ideas. Let me get them down before forget.
+- paintings
+- book on health-longevity for developers
+- plasma ray with mind control 

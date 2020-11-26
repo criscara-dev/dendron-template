@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1606213485147
+updated: 1606389486888
 created: 1603274675484
 stub: false
 ---
@@ -263,6 +263,7 @@ What is Salesforce Connect?
 - Limitations:
     - cannot create Record Types
     - Location | Text Area (Rich) not supported
+    - no WF Rules and Trigegrs for external data
     - others (see [help docs link](https://help.salesforce.com/articleView?id=platform_connect_about.htm&type=5))
 
 ![](/assets/images/2020-11-23-09-25-42.png)
@@ -569,8 +570,30 @@ Different view for profile from Dev Org and normal one.
 ![#difference-view-profile](/assets/images/2020-10-23-09-27-15.png)
 </details>
 
-- Another Security slide:
+<details><summary>
+Keys Setup links:
+</summary>
+
+- users (profile + Permission Sets)
+- Security -> Sharing Settings (for access ti Data)
+- fields: go to the field from Obj manager and 'Set Field Level Security' 
+    - visible or read-Only
+</details>
+
+<details><summary>
+VESTD access chart
+</summary>
+
 ![](/assets/images/2020-11-22-16-21-05.png)
+</details>
+
+<details><summary>
+Record Access Summary
+</summary>
+
+![](/assets/images/2020-11-25-10-02-31.png)
+</details>
+
 
 ### [Identity Basics](https://trailhead.salesforce.com/content/learn/modules/identity_basics?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 <details><summary>
@@ -849,6 +872,47 @@ Workflow rules are always nondeterministic. In regular-person language: Salesfor
 ### [Chatter Administration for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_chatter?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 <details><summary>
+Where to enable in Setup Social Accounts, Contacts, and Leads?
+</summary>
+
+- Feature Settings -> Sales -> Social Accounts and Contacts Settings
+</details>
+
+<details><summary>
+Which socials can SF connect to?
+</summary>
+
+- Twitter (on Lightning experience and Mobile app)
+- YouTube (only on classic)
+- can reply to Instagram comment from Social Publisher
+</details>
+
+<details><summary>
+What is Social Customer Service?
+</summary>
+
+Is a feature that enable users to interact with social users and create Leads and Cases from Social Media Pos
+Classic Setup -> Social Customer Service
+- Free Starter Pack can be used with FaceBook and Twitter
+- Social Studio Account for YouTube and Instagram
+- Can use Social Feed Tracking
+</details>
+
+<details><summary>
+What are Social Business Rules?
+</summary>
+Can be used to automate how inbound social content is processed and appears to support agents.
+</details>
+
+<details><summary>
+What is Social Conversation?
+</summary>
+It's a feature that pull information from social account about customer, case context and insight from previous interactions.
+</details>
+
+
+
+<details><summary>
 What is #Chatter?
 </summary>
 It's a Salesforce collaboration tool that help users to work efficiently across all the organization regardless of role or location.
@@ -1027,29 +1091,61 @@ You can even install a package from the #AppExchange
 ### [Reports & Dashboards for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_reports_dashboards?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 <details><summary>
-What are Report?
+What is a Report?
 </summary>
 A report is a list of records (like opportunities or accounts) that meet the criteria you define.
 To get the data you need, you can filter, group, do math on records and  even display them graphically in a chart.
 </details>
 
 <details><summary>
-What are Dashboard?
+What is a Dashboard?
 </summary>
+
 A dashboard is a visual display of key metrics and trends for records in your org.
 Each dashboard has a running user, whose security settings determine which data to display in a dashboard. If the running user is a specific user, all dashboard viewers see data based on the security settings of that user—regardless of their own personal security settings.
+</details>
+
+<details><summary>
+How to choose a Component for the Dashboard?
+</summary>
+
+Componets can be:
+ -chart,gauge,metric,table... and Visualforce
+![](/assets/images/2020-11-25-18-03-22.png)
+</details>
+
+<details><summary>
+What is required for using a joined dashboard component?
+</summary>
+
+The joined report MUST have a chart
 </details>
 
 <details><summary>
 What is a report type?
 </summary>
 
+==Report types are predetermined combinations of related objects and their
+records and fields that you use as starting points when building new custom reports.==
+
 Choosing a report type, you’re picking the records and fields you’ll be able to see in your report.
 
 If you add a related object, here’s how you can configure a report type’s object relationship:
 - Primary object with related object—Records
 - Primary object with or without related object
+
+==We have 2 Report types:==
+- Standard (ready-made so you don't need to do nothing but choose on wich obj/obj combo) ==with==
+- Custom (setup -> Feature Serttings -> Analytics -> Reports and Dashboards -> Report Type) ==with or without== in add to the 1ry obj, you can add till 3 rel objs |(4 levels)
 </details>
+
+<details><summary>
+Questions to ask to create a custom report
+</summary>
+
+![](/assets/images/2020-11-25-18-00-55.png)
+</details>
+
 
 <details><summary>
 Which Report formats do you know?
@@ -1057,9 +1153,10 @@ Which Report formats do you know?
 
 Report Format | Primary Use Case | Supported in Dashboards | Report Charts Supported | Bucket Fields** | Formulas** | Cross-Object Formulas**
 --------------|------------------|-------------------------|-------------------------|-----------------|------------|------------------------
-Tabular | Make a list | :white_check_mark: |  | :white_check_mark:
+Tabular | Make a list-No grouping | :white_check_mark: |  | :white_check_mark:
 Summary | Group and summarize | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
-Matrix | Group and summarize, by row and column | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Matrix | Group and summarize, by row and column-analyzing large amount data | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:
+Joined| a mix of the previous |||no
 </details>
 
 <details><summary>
@@ -1082,6 +1179,14 @@ What do you consider before create a dashboard?
 </summary>
 
 I don't want to reinvent the well, I can decide to visit the [AppExchange](https://appexchange.salesforce.com/) and look for a solution already there such as [#Salesforce CRM Dashboard](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000004g316EAA)
+</details>
+
+<details><summary>
+When are Dashboards refreshed?
+</summary>
+
+- Manually
+- Scheduled: Daily, weekly or monthly
 </details>
 
 ### [Create Reports and Dashboards for Sales and Marketing Managers](https://trailhead.salesforce.com/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
@@ -1113,6 +1218,23 @@ You can:
 * Remove All Columns
 ![](/assets/images/2020-11-04-09-29-23.png)
 </details>
+
+<details><summary>
+Report subscription?
+</summary>
+A user can subscribe to max 5 reports at the time
+- frewuency can be set to daily,weekly, monthly + at specific time
+</details>
+
+
+<details><summary>
+What are Report Snapshot?
+</summary>
+
+* They provide information on hisgtorical data by storing report data scheduled over a period of time
+* Available for Summary and Tabular reports
+</details>
+
 
 <details><summary>
 Can you export reports?
