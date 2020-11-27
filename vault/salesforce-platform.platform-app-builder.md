@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1606504852519
+updated: 1606511754859
 created: 1603274675484
 stub: false
 ---
@@ -13,7 +13,7 @@ stub: false
 Study reference:
 </summary>
 
-sources:
+Sources:
 [Trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential)
 [Trailhead exam prep](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep)
 [Salesforceben](https://www.salesforceben.com/platform-app-builder-certification-guide-tips/)
