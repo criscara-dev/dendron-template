@@ -11,8 +11,10 @@ stub: false
 - [[goals]]
 - [[daily.journal]]
 
----
+* * *
+
 ## Incoming event
+
 **Dreamforce**
 Thank you for registering for Dreamforce to You 2020.
 Your registration ID is R-01486096
@@ -20,16 +22,15 @@ Your registration ID is R-01486096
 Thank you for registering for Dreamforce to You 2020.
 Your registration ID is R-01486096
 
-
 ## Tomorrow tasks:
 
-
-
 ## Next week task
+
 - [ ] [Business admin Specialist Superbadge: Challange ](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_specialist?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential)
 
 ## Recurrent to-do:
-- [[tech interview|goals.platform-app-builder]]
+
+- [[tech interview|salesforce-platform.platform-app-builder]]
 - [ ] complete trailhead [profile](https://trailblazer.me/id)
 - [ ] [weekly review for Kathryn](https://docs.google.com/document/d/1RcVrCH8Ch0T9X_k4-lo5Z8O21agcuhXG_AA9Zsb9CFc/edit)
 - [>] #[Computational-thinking](https://www.wolfram.com/wolfram-u/cbm-cause-or-correlation/) course
@@ -37,8 +38,8 @@ Your registration ID is R-01486096
 
 ## career
 
-
 ## Reference:
+
 ```
 - [ ] : not started
 - [w] : work in progress
@@ -47,47 +48,51 @@ Your registration ID is R-01486096
 - [>] : postponed
 ```
 
----
+* * *
 
 How to style MD:
+
 ```mermaid
     flowchart LR
     cmd-shift-p -- run --> B[Markdown Preview Enhanced: Customize Css]
 ```
+
 ...
+
 <div style="display:flex">
 <div class="col2">
 <div>Week: 15 Nov</div>
 <div> 
 
-- [w] [review flashcards - Part 2](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-</div>
-<div>
+- [w][review flashcards - Part 2](<https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential>)
+  </div>
+  <div>
 
-- [w] [Business admin Specialist Superbadge](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_specialist?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential)</div>
-</div>
+- [w][Business admin Specialist Superbadge](<https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_specialist?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential>)</div>
+  </div>
 
 <div class="col2">Week: 22 Nov
 <div>
 
 - [ ] [review flashcards](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)</div>
-<div>do this</div>
-</div>
-</div>
+  <div>do this</div>
+  </div>
+  </div>
 
----
+* * *
 
 Weekly Planner
 
-| Sun  |  Mon | Tue  | Wed  | Thur  | Fri  | Sat  |   
-|---|---|---|---|---|---|---|
-|   |   |   |   |   |   |   |  
-|   |   |   |   |   |   |   |  
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |
+| Sun | Mon | Tue | Wed | Thur | Fri | Sat |
+| --- | --- | --- | --- | ---- | --- | --- |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+|     |     |     |     |      |     |     |
+
 <input type="checkbox"> 
 

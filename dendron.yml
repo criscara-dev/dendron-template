@@ -5,7 +5,7 @@ site:
         - principles
         - mental-models
         - computer-science
-        - goals.platform-app-builder.md
+        - salesforce-platform.platform-app-builder
     siteRootDir: docs
     usePrettyRefs: true
 vaults:
