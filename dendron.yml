@@ -8,6 +8,7 @@ site:
         - salesforce-platform.platform-app-builder
     siteRootDir: docs
     usePrettyRefs: true
+    assetsPrefix: dendron-template
 vaults:
     -
         fsPath: /Users/criscara/Desktop/Dendron-cris-1/vault
