@@ -4,15 +4,6 @@
       "assignedTo": {
         "name": "criscara"
       },
-      "creation_time": "2020-11-24T10:47:50.097Z",
-      "id": "7",
-      "references": [],
-      "title": "App development 8%"
-    },
-    {
-      "assignedTo": {
-        "name": "criscara"
-      },
       "category": "App Builder Prep",
       "creation_time": "2020-11-24T10:40:49.131Z",
       "description": {
@@ -22,19 +13,6 @@
       "id": "2",
       "references": [],
       "title": "Business logic and process automation Part I and II 27%"
-    },
-    {
-      "assignedTo": {
-        "name": "criscara"
-      },
-      "creation_time": "2020-11-24T10:47:35.269Z",
-      "description": {
-        "content": "FoF",
-        "mime": "text/markdown"
-      },
-      "id": "6",
-      "references": [],
-      "title": "Mobile 5%"
     },
     {
       "assignedTo": {
@@ -85,6 +63,19 @@
       "assignedTo": {
         "name": "criscara"
       },
+      "creation_time": "2020-11-24T10:47:35.269Z",
+      "description": {
+        "content": "FoF",
+        "mime": "text/markdown"
+      },
+      "id": "6",
+      "references": [],
+      "title": "Mobile 5%"
+    },
+    {
+      "assignedTo": {
+        "name": "criscara"
+      },
       "creation_time": "2020-11-24T10:48:13.836Z",
       "description": {
         "content": "FoF",
@@ -107,6 +98,15 @@
       "id": "4",
       "references": [],
       "title": "Social 3% + Reporting 5%"
+    },
+    {
+      "assignedTo": {
+        "name": "criscara"
+      },
+      "creation_time": "2020-11-24T10:47:50.097Z",
+      "id": "7",
+      "references": [],
+      "title": "App development 8%"
     }
   ]
 }

@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1606389486888
+updated: 1606473024729
 created: 1603274675484
 stub: false
 ---
@@ -611,7 +611,7 @@ Which are three main features of Salesforce Identity?
 * App Launcher
 
 And they're already avaible on your Org.
-![#identity-management-system-mapo](/assets/images/2020-10-23-10-07-18.png)
+![#identity-management-system-map](/assets/images/2020-10-23-10-07-18.png)
 </details>
 
 <details><summary>
@@ -1254,7 +1254,14 @@ Yes, right click on :arrow_down_small:, -> export in .xlsx or .csv for second op
 We are going to see three features you can use to customize the mobile app.
 
 * Mobile navigation, for Lightning apps and the Mobile Only app
-* Quick actions
+* Quick actions:
+    Standard Actions -> Setup -> ...Global Publisher Layout
+    Custom Actions -> from the Object manager -> Page Layout
+    Default Actions
+    Visualforce Pages
+    Canvas Apps
+    Mobile Smart Actions
+    Productivity Actions
 * Compact layouts
 
 <details><summary>
@@ -1302,6 +1309,73 @@ How to create a #Master-detail relationship?
 
 The relationship is create on the #custom-object (detail) where you select the #Master where you want the App to appear.
 </details>
+
+<details><summary>
+Ap Dev Lifecycle
+</summary>
+
+```mermaid
+    flowchart LR
+    a[plan]--> b[build]-->c[test]-->d[deploy]
+```
+</details>
+
+<details><summary>
+Types of sandobox
+</summary>
+
+[Sandboxes and storage limits Doc page](https://help.salesforce.com/articleView?id=data_sandbox_environments.htm&type=5)
+![](/assets/images/2020-11-09-14-25-38.png)
+</details>
+
+<details><summary>
+What is Change Set?
+</summary>
+It's a way to deploy customizations.
+They only move metadata, not actual data
+</details>
+
+<details><summary>
+How to deploy Metadata with Change Sets?
+</summary>
+
+![](/assets/images/2020-11-27-09-36-48.png)
+</details>
+
+<details><summary>
+How can I create a Package (unmanaged only in dev org)?
+</summary>
+Setup -> Apps -> Packaging -> Package Manager (Packages -> new)
+</details>
+
+<details><summary>
+Use cases Unmanaged Packages?
+</summary>
+
+![](/assets/images/2020-11-27-09-45-04.png)
+</details>
+
+<details><summary>
+Alternative routes to Change Sets?
+</summary>
+
+* VSCode
+* Ant Migration Tool
+* Specific Package/App from AppExchange
+</details>
+
+<details><summary>
+Best practices before deployment of Change Sets?
+</summary>
+
+* Plan and announce a maintenance window
+* Validate Change Sets
+* Lock out users from Production (basically, updating login hours on profiles - NOT the admin though :sweat_smile: or create a maintenance user profile (temporarely)
+* verify funcitonal changes
+* unlock users by reset original loggin hours... :+1:
+</details>
+
+<br>
 
 [App Customization Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lightning_platform_app_builder?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
