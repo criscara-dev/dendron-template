@@ -5,6 +5,7 @@ site:
         - principles
         - mental-models
         - computer-science
+        - goals.platform-app-builder.md
     siteRootDir: docs
     usePrettyRefs: true
 vaults:
