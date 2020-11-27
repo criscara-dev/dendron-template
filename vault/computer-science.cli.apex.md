@@ -2,7 +2,7 @@
 id: 78b1e12c-8d6a-4912-8eed-6c20e08c7841
 title: Apex
 desc: ''
-updated: 1605097141114
+updated: 1606505029695
 created: 1602930717556
 stub: false
 ---
@@ -40,5 +40,5 @@ fatal = error + warn + info + trace + fatal
 In which forms Apex exist?
 </summary>
 
-Apex can be written in 2 forms: as a #class or a [[ trigger|computer-science.lang.apex.trigger]] (execution is triggered during processing DML statements);
+Apex can be written in 2 forms: as a #class or a [[ trigger|salesforce-platform.lang.apex.trigger]] (execution is triggered during processing DML statements);
 </details>
