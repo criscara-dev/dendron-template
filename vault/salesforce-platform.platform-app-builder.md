@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1606511754859
+updated: 1606816606165
 created: 1603274675484
 stub: false
 ---
@@ -676,7 +676,32 @@ If a delegate (like an admin or customer support representative) makes a setup c
 
 ## **Business Logic and Process Automation** 27%
 
-https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential
+Generic questions:
+<details><summary>
+What's a record type?
+</summary>
+
+Record type define the page layout, the picklist values, and business process for the assigned records.
+Assess is defined at the Profile and Permission Sets
+Max 200 record types for object.
+</details>
+<details><summary>
+Business process for which objects?
+</summary>
+Lead, Case, Opportunity, Solutions... and for custom objects
+</details>
+<details><summary>
+Steps to create a ___ Process.
+</summary>
+
+* update Master Picklist (if you have to, ex. create new picklist values)
+* create a business process (Setup -> Feature Settings -> "Category of Process" (Sale/Lead etc.) -> Type of Process)
+* create a record type (selecting a business process)
+* assign a page layout
+</details>
+
+
+
 
 ### [Formula & Validations](https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
@@ -686,10 +711,15 @@ https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-sa
 Why #formula-fields?
 </summary>
 
+To perform calculations.
 example: what if you wanted to calculate how many days are left until an opportunity’s close date.
 Object Manager -> Oppurtunity -> fields & relationship -> new -> formula -> next -> Field label add 'Days to Close' -> select Number -> next ... -> in the formula area type or choose fields available: 
 ```java
 ClodeDate - TODAY()
+or
+ADDMONTHS(date,num)
+or
+CURRENCYRATE(IsoCode)
 ```
 </details>
 
@@ -704,6 +734,14 @@ What are #roll-up summary fields?
 </summary>
 
 A Roll-Up Summary Fields (available on the master) display a value on a master record based on the values of records in a detail record.
+
+
+Limitations:
+- Max 25 roll-ups fields for object.
+- No for lookup relationships.
+- No cross-object support
+- No Date formula support. (cannot use NOW() and TODAY() )
+
 [Roll-up reference](https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic/roll_up_summary_fields?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 Type | Description
 -----|------------
