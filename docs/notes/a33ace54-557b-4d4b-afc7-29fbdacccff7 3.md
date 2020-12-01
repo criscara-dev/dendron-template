@@ -41,7 +41,7 @@ Block to human-thinking machines is the lack of understand of causal relations
  $P(L | do(D))$
   read as: Probability of Lifespan expectancy if someone is taking the Drug
 
-  ![](dendron-template/assets//assets/images/2020-10-14-20-38-19.png)
+  ![](dendron-template//assets/images/2020-10-14-20-38-19.png)
 
  The inference engine is a machine that accepts three different kinds of inputs:
 
