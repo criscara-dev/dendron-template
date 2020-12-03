@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1606852315131
+updated: 1606911005136
 created: 1606729073072
 ---
 
@@ -53,7 +53,7 @@ How did you hear about the Turing Trust?
 ==Schedule a call back?== may need more work as some sort of processes
 
 I will create just a couples of custom fields to demo:
-1. how did you hear...sicne is a checkbox and see how is working
+1. how did you hear...since is a checkbox and see how is working
 2. how many laptops since is a normal text/number field
 ![](/assets/images/2020-12-01-19-30-40.png)
 
@@ -68,12 +68,12 @@ I will create just a couples of custom fields to demo:
 Extra fields
 - PCs - Please tell us the approximate number of desktops and / or laptops you are donating
 
-==crazy mental==
+==This is quite mental==
 I think they need to simplify the forms;
 1. tell first what you're accepting and excluding a priori what is not up to your standard
 ex. Unfortunately...We don't accept those:
 - OS (Operative Systems): Linux and other Unix-like (BSD etc.)
-- 
+ 
 2. I'm still trying to do something but need to use picklists with multiselects, I mean:
 basically custom picklist (controlling) -> to custom multi-select picklist (dependent)
 ![](/assets/images/2020-12-01-19-08-27.png)
@@ -117,5 +117,12 @@ ex.
 2. OS type (as dependent) multi-picklists
 how to link them now?
 
-- maybe 2 business processes/2 page layouts?! 
+- maybe 2 business processes/2 page layouts?!
 
+---
+
+2020-12-02 09:14 issue on checklist value called "others" since cannot be dependent or can be created ad separate text field where user can enter other known where he heard about TuringTrust
+
+==The big issue with both web to lead and  gforms is that those tools are used to create a Lead, not a lot of extra info on it, that is what the customer want.
+Good practice will be to collect these data in future steps on Opportunity==
+However 
