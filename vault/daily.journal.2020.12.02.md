@@ -2,7 +2,7 @@
 id: 03bb08ad-b934-4e7e-9c24-f3c2278b9282
 title: '02'
 desc: ''
-updated: 1606912051856
+updated: 1606985978148
 created: 1606912034039
 ---
 
@@ -17,4 +17,4 @@ Afternoon
 
 
 Evening
-- [ ] 20 questions
+- [x] 20 questions
