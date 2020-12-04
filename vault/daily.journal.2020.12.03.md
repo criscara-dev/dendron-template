@@ -2,7 +2,7 @@
 id: 852eabd8-a777-492e-9e69-6b81648b701b
 title: '03'
 desc: ''
-updated: 1606998176536
+updated: 1607072305011
 created: 1606985981171
 ---
 
@@ -10,11 +10,10 @@ created: 1606985981171
 
 Morning
 - [x] 15 questions
-- [ ] Simon Sinek - start with Why... [TED talk](https://www.youtube.com/watch?v=IPYeCltXpxw)
-- [ ] presentation fo TuringTrust / search w2l anf gforms integration
+- [x] presentation fo TuringTrust / search w2l anf gforms integration
 
 Afternoon
-- [ ] 10 questions
+- [x] meetings...
 
 Evening
-- [ ] 10 questions
+- [x] 15 questions
