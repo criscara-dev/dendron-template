@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1606898178329
+updated: 1607117905914
 created: 1602692433243
 stub: false
 ---
@@ -24,7 +24,7 @@ Your registration ID is R-01486096
 
 ## Tomorrow tasks:
 
-
+- [ ] Simon Sinek - start with Why... [TED talk](https://www.youtube.com/watch?v=IPYeCltXpxw)
 
 ## Should do
 

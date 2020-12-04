@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1606911005136
+updated: 1607117846648
 created: 1606729073072
 ---
 
@@ -121,8 +121,31 @@ how to link them now?
 
 ---
 
-2020-12-02 09:14 issue on checklist value called "others" since cannot be dependent or can be created ad separate text field where user can enter other known where he heard about TuringTrust
+2020-12-02 09:14
+issue on checklist value called "others" since cannot be dependent or can be created ad separate text field where user can enter other known where he heard about TuringTrust
 
 ==The big issue with both web to lead and  gforms is that those tools are used to create a Lead, not a lot of extra info on it, that is what the customer want.
 Good practice will be to collect these data in future steps on Opportunity==
 However 
+
+---
+2020-12-04 12:13
+
+possible google form integrations
+
+- [Automate](https://automate.io/integration/google-forms/salesforce)... pricey
+- write an [email service](https://trailblazers.salesforce.com/answers?id=9063A000000igIrQAI#ext-gen88:~:text=Here's%20an%20easy%20way%2C) to Salesforce? Not clear how...
+- create a [gscripts](https://trailblazers.salesforce.com/answers?id=9063A000000igIrQAI#ext-gen88:~:text=Here's%20an%20easy%20way%2C) old code on [GitHub](https://github.com/dhananjaykm/sfGoogleForm/blob/master/formScript.js) 
+- [webToAny](https://amigotechnotes.wordpress.com/2017/10/10/integrated-google-form-and-salesforce-through-google-sheet-and-webtoany/) on [AppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000DlGucUAF) is free, but old... and a not clear steps
+---
+[ref](https://www.youtube.com/watch?v=eCyIdtl7kbk)
+- SF Object creator??? no
+- Google sheets for SF no SF -> gsheets, we need the opposite
+- SF Data Connector no, is a move and get back...
+
+---
+
+created a [google form custom poll](https://docs.google.com/forms/d/1EuQvzcEHRJGtQaCYaTPascZWlfZAH42IwsOqRN9TsWA/edit) in case they want to keep google forms.
+
+---
+

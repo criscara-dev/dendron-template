@@ -11,5 +11,5 @@ site:
     usePrettyRefs: true
 vaults:
     -
-        fsPath: /Users/criscara/Desktop/Dendron-cris-1/vault
+        fsPath: vault
 version: 0
