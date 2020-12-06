@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1607117846648
+updated: 1607251926519
 created: 1606729073072
 ---
 
@@ -149,3 +149,14 @@ created a [google form custom poll](https://docs.google.com/forms/d/1EuQvzcEHRJG
 
 ---
 
+2020-12-06 10:48 created in my Dev Org a:
+1.  WR that send an email alert on Criteria:
+Lead Status equals Open - Not Contacted
+2. Classic Email Template -> New Lead Creation
+body:
+Hi. {!User.FirstName}.
+
+{!Lead.Name} has been created as a new Lead.
+All the details can be found in your Org.
+
+![](/assets/images/2020-12-06-10-52-00.png)
