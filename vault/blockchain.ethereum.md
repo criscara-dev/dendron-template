@@ -2,7 +2,7 @@
 id: 838a176c-8ab1-469c-8407-4c68284388e4
 title: Ethereum
 desc: ''
-updated: 1607190515265
+updated: 1607273778508
 created: 1607185174614
 ---
 
@@ -24,10 +24,43 @@ B --> C[ETH live 2015]
 * Each node can contain a full copy of the blockchain 
 * The 'blockchain' is a database that stores a recl)rd of every transaction that has ever taken place
 
-- How to work with ETHEREUM?
+<details><summary>
+How to work with ETHEREUM?
+</summary>
+
 ![](/assets/images/2020-12-05-17-15-37.png)
+
 ---
+</details>
+
+<details><summary>
 Rapsten, Kavan and Rinkeby are test networks (remote)
 localhost 8545 is a local Node
+</summary>
+
 ![](/assets/images/2020-12-05-17-25-49.png)
 ![](/assets/images/2020-12-05-17-48-34.png)
+
+---
+</details>
+
+
+<details><summary>
+What is a transaction?
+</summary>
+
+![](/assets/images/2020-12-06-16-49-27.png)
+![](/assets/images/2020-12-06-16-45-52.png)
+
+The transaction is then sent a particular node.
+Our and Other people transaction: basically those transactions are assembled into a block. 
+![](/assets/images/2020-12-06-16-53-07.png)
+```mermaid
+flowchart TD
+A[transactions into a block] --> B[the Node start running some calculations on the block aka Mining]
+
+```
+
+
+---
+</details>

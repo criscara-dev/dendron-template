@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1607251926519
+updated: 1607360465773
 created: 1606729073072
 ---
 
@@ -160,3 +160,20 @@ Hi. {!User.FirstName}.
 All the details can be found in your Org.
 
 ![](/assets/images/2020-12-06-10-52-00.png)
+
+---
+
+2020-12-07 12:56
+
+1. Business donations ok...
+2. Individual? do we want to keeo this separate steps? Is till relevant that way
+3. where do you want to redirect user after fill up the form? Do you have a thank you page? -> https://turingtrust.co.uk/
+4. can you ask your IT guy to get the "reCAPTCHA API Key Pair" so I can add it to the form?
+
+Though about WP testing need to do so I need a private page to test form before going live?
+
+2020-12-07 15:19
+- [ ] On web2lead I cannot go next if I don't fill up required fields
+BUT I didn't get any more suggestion...
+- [ ] the form doesn't do RegEx for fields... it needs to be added.
+- [ ] need to add more css for mobile view
