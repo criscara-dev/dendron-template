@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1607360465773
+updated: 1607457810426
 created: 1606729073072
 ---
 
@@ -172,8 +172,21 @@ All the details can be found in your Org.
 
 Though about WP testing need to do so I need a private page to test form before going live?
 
+---
 2020-12-07 15:19
-- [ ] On web2lead I cannot go next if I don't fill up required fields
-BUT I didn't get any more suggestion...
-- [ ] the form doesn't do RegEx for fields... it needs to be added.
-- [ ] need to add more css for mobile view
+- [ ] ==On web2lead I cannot go next if I don't fill up required fields
+BUT I didn't get any more suggestion...==
+- [x] the form doesn't do RegEx for fields... it needs to be added.
+- [x] need to add more css for mobile view
+
+---
+2020-12-08 09:21
+
+issue prettier
+[github reference](https://github.com/microsoft/vscode/issues/108447) + print screen
+
+ - [ ] point the web2 lead to right rec type!!! NOT WORKING!!!
+
+
+
+
