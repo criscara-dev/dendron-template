@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1607457810426
+updated: 1607540612272
 created: 1606729073072
 ---
 
@@ -174,19 +174,42 @@ Though about WP testing need to do so I need a private page to test form before 
 
 ---
 2020-12-07 15:19
-- [ ] ==On web2lead I cannot go next if I don't fill up required fields
-BUT I didn't get any more suggestion...==
+- [x] On web2lead I cannot go next if I don't fill up required fields
+BUT I didn't get any more suggestion...
 - [x] the form doesn't do RegEx for fields... it needs to be added.
 - [x] need to add more css for mobile view
 
 ---
 2020-12-08 09:21
 
-issue prettier
-[github reference](https://github.com/microsoft/vscode/issues/108447) + print screen
-
- - [ ] point the web2 lead to right rec type!!! NOT WORKING!!!
 
 
+ - [ ] point the web2 lead to right record type!!! NOT WORKING!!!
+
+---
+
+2020-12-09 10:50
+
+1. where do you want to redirect user after fill up the form? Do you have a thank you page? -> https://turingtrust.co.uk/ 
+They may create a thank-you page to redirection
+
+2. can you ask your IT guy to get the "reCAPTCHA API Key Pair" so I can add it to the form?
+They don't need it, since they've already plugins for security on WP.com
 
 
+3. 2 steps only for Individual forms
+
+4. email confirmation only for businesses to confirm they've sent a request
+email sent only if there's a business donation coming in to: Neil, Nicola ...
+- less than 1GB
+- 1GB or more
+- not known
+
+
+add to Busi mobile...to form non create new
+picklist only for hearing about us
+
+Stuart questions:
+bettre choose one? -> phone or mobile?
+City or Company city?
+---
