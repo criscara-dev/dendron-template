@@ -2,7 +2,7 @@
 id: 838a176c-8ab1-469c-8407-4c68284388e4
 title: Ethereum
 desc: ''
-updated: 1607273778508
+updated: 1607629803286
 created: 1607185174614
 ---
 
@@ -61,6 +61,30 @@ A[transactions into a block] --> B[the Node start running some calculations on t
 
 ```
 
-
 ---
+</details>
+
+<details><summary>
+What are Smart Contracts and how we build them?
+</summary>
+
+![](/assets/images/2020-12-10-19-36-20.png)
+---
+Notice the difference from External and Contract Account
+![](/assets/images/2020-12-10-19-37-11.png)
+---
+![](/assets/images/2020-12-10-19-38-11.png)
+</details>
+
+<details><summary>
+What is Solidity?
+</summary>
+
+![](/assets/images/2020-12-10-19-44-52.png)
+---
+Solidity is not execute directly but...
+![](/assets/images/2020-12-10-19-46-49.png)
+---
+Plus our extra JS code (plus html, css) will interact with ABI to understand the Bytecode:
+![](/assets/images/2020-12-10-19-50-02.png)
 </details>

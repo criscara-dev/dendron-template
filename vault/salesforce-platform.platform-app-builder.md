@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1607257271049
+updated: 1607959080999
 created: 1603274675484
 stub: false
 ---
@@ -40,7 +40,7 @@ In Managed Packages elements/components can be upgradeable
 <details><summary>
 AppExchange use cases?
 </summary>
-General, funcitonal, Industry-specific
+General, functional, Industry-specific
 </details>
 <details><summary>
 Which types of Accounts do you know?
@@ -112,6 +112,7 @@ What is the #Service-Cloud?
 <details><summary>
 How do you setup the #Service-Cloud?
 </summary>
+
 1. Automate #case-management
 2. Add multiple channels
 3. Capture knowledge
@@ -236,6 +237,7 @@ It's a representation of data in a way that make sense at humans.
 <details><summary>
 What is a #SF-object and the difference between #Standard-object and #Custom-object?
 </summary>
+
 It's like a table in the database, where columns are #fields and rows are #records.
 - #Standard-object(s) are objects that are included with Salesforce. Common business objects like Account, Contact, Lead, and Opportunity are all standard objects.
 - #Custom-object(s) are objects that you create to store information that’s specific to your company or industry. 
@@ -262,7 +264,7 @@ What is Salesforce Connect?
 - Limitations:
     - cannot create Record Types
     - Location | Text Area (Rich) not supported
-    - no WF Rules and Trigegrs for external data
+    - no WF Rules and Triggers for external data
     - others (see [help docs link](https://help.salesforce.com/articleView?id=platform_connect_about.htm&type=5))
 
 ![](/assets/images/2020-11-23-09-25-42.png)
@@ -285,11 +287,12 @@ Example Indirect Lookup Relationship
 <details><summary>
 What are #object-relationships and what types of relationship do you know?
 </summary>
-They're a #special-field-type that connect two objects together.
+
+==They're a #special-field-type that connect two objects together.==
 #Lookup-relationship let you 'look up' an object from another.
 There's 2 types: #one-to-one and #one-to-many.
 
-#Master-detail-relationship are 'tighter' relationship.
+==#Master-detail-relationship are 'tighter' relationship.==
 The master object controls certain behaviors of the detail object, like who can view the detail’s data.
 The detail object highly dependent on the master. In fact, if a record on the master object is deleted, all its related detail records are deleted as well. 
 In a #Master-detail-relationship the Master is always a #Standard-object and the detail is the #Custom-object.
@@ -389,7 +392,7 @@ For import, if a picklist value doesn't exist and is:
 - can be used only by admin
 - restricted -> record is NOT imported
 - unrestricted -> the record is imported but value not added
-- at the end of operation, 2 CSV fiels are provided for success and errors
+- at the end of operation, 2 CSV fields are provided for success and errors
 </details>
 
 <details><summary>
@@ -456,6 +459,8 @@ What about exporting reports?
 
 ### [Picklist amministration](https://trailhead.salesforce.com/content/learn/modules/picklist_admin?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
+![](/assets/images/2020-12-01-19-08-27.png)
+
 <details><summary>
 What are #Picklist(s)?
 </summary>
@@ -467,7 +472,7 @@ Is composet of:
 We have three type of picklists:
 1. **Standard**: the ones that are included in your Salesforce org before any customization.
 2. **Custom**: the one you create to have custom picklist's behaviour
-3. **Custom Multi-Select**: if you want the user be abke to select more than one value
+3. **Custom Multi-Select**: if you want the user be able to select more than one value
 and fields can have those properties:
 * #**Restricted-picklists** : doesn't let you add new values, even with APIs, the idea is to create consistency
 * **#Dependent** or **#Controlling**: it's based on a selection from another picklist or a checkbox (the controlling value) on the same record
@@ -487,6 +492,7 @@ Can Be a Dependent Picklist |  | :white_check_mark: | :white_check_mark:| :white
 <details><summary>
 How can I edit picklist values?
 </summary>
+
 from #Setup menu -> #Object-manager -> Object -> Fields & relationship -> choose Picklist value -> Edit...
 ex. here from trailhead: [link](https://trailhead.salesforce.com/content/learn/modules/picklist_admin/picklist_admin_manage?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 </details>
@@ -511,6 +517,7 @@ then, on a Object -> Fields & relationship -> New -> Picklist -> Next -> now sel
 <details><summary>
 What can I do to avoid duplicate data?
 </summary>
+
 Identify if there're duplicate records, using the Duplicate Management; it helps you and your sales teams quickly and easily manage duplicates for:
 Business accounts
 Contacts
@@ -633,48 +640,16 @@ Identity provider is a trusted service that enables users to access other websit
 
 ---
 
-### Security Specialist Superbadge
+## **Business Logic and Process Automation** 27%
 
 <details><summary>
-Security Superbadge?
+Automation diagrams
 </summary>
 
-1. 
-Set object-level security settings:
-    - create 3 profiles
-    - Sales executive User: set to only read access to Account and Opportunity object and View All
-    - Field sales: not delete on Opp and cannot Delete and Create Account
-    - Inside User: cannot Delete account and Opp
-
-2. 
-Set record-level security settings:
-    - create a new USer and set her as a Field Sales User
-    - create role Field User and assign it to Samantha
-    - create 2 opps
-    - create a sSharing Rule that shares Opportunities owned by Field Sales users with Inside Sales users.
-        - create a Public Group
-    - make opp private -> restrict access to Private
-    - sharing rules: for Project manager and 
-3. Qestions on Set appropriate password policies
-4. Track field-level changes
- set track field level on Account, Contact, Opportunity from Fields and Relationship -> Set History fields any fields I want since doens't say
-5. Set report, dashboard, and public list view security settings:
-for each user (3) in object permission set as requested...
-6. Set up two-factor authentication:
-I foun this trail to guide me in the setting of 2FA even if confusing since @FA has become MFA (multi factor auth.)
-7. Track changes to Salesforce settings (quiz)
-Setup-audit-trail let you track all changes in Settings
-How many days worth of changes to settings can you download?
--> from Audit trail you can read that download is up to 6 months
-How many settings changes can you view directly within Setup (without downloading history)?
-20 as at the top of Audit trail page...
-If a delegate (like an admin or customer support representative) makes a setup change on behalf of an end user, what data is logged within Setup Audit Trail?
--> both end user and delegate
+![](/assets/images/2020-12-12-11-56-05.png)
+![](/assets/images/2020-12-12-12-01-40.png)
 </details>
 
----
-
-## **Business Logic and Process Automation** 27%
 
 Generic questions:
 <details><summary>
@@ -700,8 +675,7 @@ Steps to create a ___ Process.
 * assign a page layout
 </details>
 
-
-
+---
 
 ### [Formula & Validations](https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
@@ -735,6 +709,7 @@ What are #roll-up summary fields?
 
 A Roll-Up Summary Fields (available on the master) display a value on a master record based on the values of records in a detail record.
 
+it's READ-ONLY
 
 Limitations:
 - Max 25 roll-ups fields for object.
@@ -759,6 +734,37 @@ Validation rules verify that data entered by users in records meet the standards
 It evaulate an expression that return a 'true' or 'false' value.
 [Val. rules reference](https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic/validation_rules?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 </details>
+
+<details><summary>
+Workflow Rules
+
+</summary>
+
+Action can be:
+- time-dependent actions
+- immediate actions
+
+ WR, they can:
+- send email alerts
+- creating tasks
+- update fields
+- send outbound messages: (sent in XML via API message -SOAP)
+</details>
+
+<details><summary>
+When are WR evaluated?
+</summary>
+
+* record is created
+* record is created, and every time it's edited
+* record is created, and every time it's edited to subsequently meet criteria
+
+How are criteria evaluated?
+- Criteria a re met using: ==filter logic==
+- ==formula evaluate to true==
+
+</details>
+
 
 ----
 
@@ -793,12 +799,14 @@ Approval automation | Business processes that determine how a record, like a tim
 Process builder?
 </summary>
 
-Accessible from Setup -> Precess Automation
+Accessible from Setup -> Process Automation
  #process-builder
 ```mermaid
 graph LR
-Object --> Trigger;
-Trigger --> Actions;
+Object --> Trigger-criteria;
+Trigger-criteria--> Actions;
+Actions --> Time-Delay;
+Time-Delay --> other-Actions;
 ```
 </details>
 
@@ -815,6 +823,16 @@ What are Approval Process?
 </summary>
 
 An #Approval-process automates how Salesforce records are approved in your org.
+Similar to WR, the can:
+- send email alerts
+- creating tasks
+- update fields
+- send outbound messages
+remember:
+- Once the recor di submitted for approval, it's locked for changes
+- Often has:
+    - 2 steps
+    - approval + validation rule
 [quick trailhead reference for approval process](https://trailhead.salesforce.com/content/learn/modules/business_process_automation/approvals?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 [Approval process docs](https://help.salesforce.com/articleView?id=approvals_checklist.htm&type=5)
 
@@ -893,7 +911,8 @@ When a #workflow-rule is evaluated?
 In which order #workflow-rule run?
 </summary>
 
-Workflow rules are always nondeterministic. In regular-person language: Salesforce can’t guarantee which workflow rule is evaluated first or second or seventh.
+==Workflow rules are always nondeterministic.==
+In regular-person language: Salesforce can’t guarantee which workflow rule is evaluated first or second or seventh.
 </details>
 
 ---
