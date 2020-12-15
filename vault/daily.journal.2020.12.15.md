@@ -2,7 +2,7 @@
 id: 10f932f1-a370-4b4d-a653-fa88b247fb18
 title: '15'
 desc: ''
-updated: 1608048445967
+updated: 1608066120247
 created: 1608026919808
 ---
 
@@ -13,16 +13,15 @@ Morning
 
 Afternoon
 - [x] Stuart questions for PAB
-- [ ] Trailhead review questions for PAB
+- [x] Trailhead review questions for PAB
 
 Evening
-- [ ] org notes for PAB
+- [x] org notes for PAB
+- [ ] check concenpts not 100% clear
 
 ---
 
 - [ ] redo trailheads on Admin or on Intermediate
-- [ ] Task 
-- [ ] Task 
-- [ ] Task 
+- [ ] [trail](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development) 
 - [ ] org notes and print 
  

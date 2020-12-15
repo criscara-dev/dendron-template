@@ -2,12 +2,21 @@
 id: 2a6fc1df-ac07-4af0-a2bc-074548fe58ff
 title: Developer
 desc: ''
-updated: 1605370708753
+updated: 1608062911653
 created: 1602404064858
 stub: false
 ---
 
 # Developer stuff
+
+## Application lifecycle and development
+
+## Play with a change-set trail
+[trail](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development)
+
+---
+
+[[salesforce-platform.developer.application-lifecycle]]
 
 ## How to get token:
 - from Profile -> settings -> reset my security #token
@@ -117,7 +126,6 @@ Hospital & Health Care
 Employment Type
 Full-time
 </details>
-
 
 
 ---

@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1607540612272
+updated: 1608061166271
 created: 1606729073072
 ---
 
@@ -213,3 +213,6 @@ Stuart questions:
 bettre choose one? -> phone or mobile?
 City or Company city?
 ---
+
+2020-12-15 19:37 Thinking about how to deploy... and train your userd before going live in Partial Copy Sandbox
+[this trail explain nicely how to move](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development/plan-for-changes-to-your-org) 
