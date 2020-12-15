@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1607959080999
+updated: 1608049677296
 created: 1603274675484
 stub: false
 ---
@@ -331,6 +331,7 @@ How to choose a relationship?
 Considerations on changing field types
 </summary>
 
+[changing field types](https://help.salesforce.com/articleView?id=notes_on_changing_custom_field_types.htm&type=5)
 1. Not possible to change data types of Standard fields
 2. Good practice to change data types when field contain no data
 3. 'Change field type' on the field page
@@ -928,7 +929,7 @@ In regular-person language: Salesforce can’t guarantee which workflow rule is 
 ### [Chatter Administration for Lightning Experience](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_chatter?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 <details><summary>
-Where to enable in Setup Social Accounts, Contacts, and Leads?
+Where to enable in Setup Social Accounts, Contacts, and Leads (the objs available for Socials)?
 </summary>
 
 - Feature Settings -> Sales -> Social Accounts and Contacts Settings
@@ -1014,88 +1015,6 @@ The rollout can be #profile-based. A profile-based Chatter deployment can be use
 
 ---
 
-### [Process Automation Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_process_automation?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
-
-<details><summary>
-Notes from Superbadge
-</summary>
-
-1. to do (*)
-- [x] validation rules:
-    - only US leads
-    - state field = valid US abbrev. ex. CA
-    -  country field = US, USA,United States or blank
-    <details><summary>
-    formula
-    </summary>
-    formula:
-    OR(AND(LEN(State) > 2, NOT(CONTAINS("AL:AK:AZ:AR:CA:CO:CT:DE:DC:FL:GA:HI:ID:IL:IN:IA:KS:KY:LA:ME:MD:MA:MI:MN:MS:MO:MT:NE:NV:NH:NJ:NM:NY:NC:ND:OH:OK:OR:PA:RI:SC:SD:TN:TX:UT:VT:VA:WA:WV:WI:WY", State )) ),NOT(OR(Country="US",Country ="USA",Country ="United States",ISBLANK(Country) )) )
-    </details>
-
-- [x] Queues -> two queues for leads: 
-    - Rainbow Sales (web leads)
-    - Assembly System Sales (partner and purchased list leads)
-- [x] Marketing -> Lead Assignment Rules -> create a lead assignment rule, assign the 2 criteria to the 2 Queues just created in previous step
-
-2. Automate Accounts: (***)
-- Create validation rules and account formula fields (some are Roll-up Summary fields) as specified in the business requirements
-<details><summary>
-formulas
-</summary>
-
-- IF ( Number_of_deals__c>0, (Number_of_won_deals__c / Number_of_deals__c), 0)
-
-</details>
-
-3. Create Robot Setup Object for WON deal only: (*)
-- create new custom object:  Robot Setup -> Master-detail rel on Opp.
-- Autonumber the record name, starting with 0: and format: ROBOT SETUP-{0000}
-    - Field Name -> the Master-detail on Opp
-    - Date, Date__c -> Date type
-    - Notes, Notes__c -> Text (long) type
-    - Day of the Week, Day_of_the_Week__c -> formula field-> text
-
-4. Automate Opportunities:
-    - add a stage: 'Awaiting for Approval'
-    - create checkbox field on OPP
-    - setup-> Sales Processes: create a sale process and just use this value as video:
-        - picklist values:
-            Prospecting
-            Qualification
-            Proposal/Price Quote
-            Negotiation/Review
-            ==Awaiting Approval== to add
-            Closed Won
-            CLosed Lost
-    - create a Record type from setup -> Obj Manager -> Opp -> Record Types:
-    label: RB Robotics Process RT
-    1. add a validation rules:
-    / AND (ISCHANGED (Approved__c ), OR($Profile.Name <> 'System Administrator',$Profile.Name <> 'Custom: Sales Profile')) /
-        - only Admin and Custom Sale Profile (Sale Manager) can check
-    2. new validation rules: if opp > 100.000:
-        AND(ISCLOSED = TRUE, Amount > 100.000 , Approved__c <> TRUE)
-
-5. Automation:
-    - create an Approval Process: Prospecting
-    - Email Alerts -> on Finance: Account creation
-    - Process Builder: 
-- send email to Finance Group { Customer and Prospect Accts-> Opp Won}
-- Create task for account owner
-    - Subject: Send Marketing Materials
-    - Due Date: 7 days from today
-    - Priority: High
-- ![](/assets/images/2020-10-28-09-23-29.png)
-
-6. Flow:
-create a flow to show on the Opportunity Lightning page with a checkbox with this 3 values: RainbowBot, CloudyBot, or Assembly System
-
-7. Automate setup:
-any robot setup date that would fall on Saturday or Sunday is set to the following Monday instead using:
- - a Process that start when: 'a record changes'
-</details>
-
----
-
 ## **User Interface** 14%
 
 ## [Lightning App Builder](https://trailhead.salesforce.com/content/learn/modules/lightning_app_builder?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
@@ -1109,7 +1028,6 @@ A Lightning page is a custom layout that lets you design pages for use in the Sa
 </details>
 
 <details><summary>
-
 What can you build with the Lightning App Builder?
 </summary>
 
@@ -1117,6 +1035,7 @@ SPA, Dashboard style apps, App for solving a particular task, custom home and re
 | header |
 | toolbar |
 | Lightnings Component Page | Lightning Page Canvas |Properties Pane |
+![](/assets/images/2020-12-14-22-16-12.png)
 </details>
 
 <details><summary>
@@ -1135,10 +1054,6 @@ Can you use Lightning Components in a Lightning Page?
 Yes, you can create a component(s) using the Aura Component Model or the LWC model.
 You can even install a package from the #AppExchange
 </details>
-
----
-
-### Lightning Experience Specialist Superbadge
 
 ---
 
@@ -1178,6 +1093,15 @@ The joined report MUST have a chart
 </details>
 
 <details><summary>
+What two permissions are needeed to create custom reports th at all users can view?
+</summary>
+
+1. Manage Public Reports
+2. Create and Customize Reports
+</details>
+
+
+<details><summary>
 What is a report type?
 </summary>
 
@@ -1192,7 +1116,7 @@ If you add a related object, here’s how you can configure a report type’s ob
 
 ==We have 2 Report types:==
 - Standard (ready-made so you don't need to do nothing but choose on wich obj/obj combo) ==with==
-- Custom (setup -> Feature Serttings -> Analytics -> Reports and Dashboards -> Report Type) ==with or without== in add to the 1ry obj, you can add till 3 rel objs |(4 levels)
+- Custom (setup -> Feature Serttings -> Analytics -> Reports and Dashboards -> Report Types) ==with or without== in add to the 1ry obj, you can add till 3 rel objs |(4 levels)
 </details>
 
 <details><summary>
@@ -1307,7 +1231,9 @@ Yes, right click on :arrow_down_small:, -> export in .xlsx or .csv for second op
 
 [Salesforce Mobile App Customization](https://trailhead.salesforce.com/content/learn/modules/salesforce1_mobile_app?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
+<details><summary>
 We are going to see three features you can use to customize the mobile app.
+</summary>
 
 * Mobile navigation, for Lightning apps and the Mobile Only app
 * Quick actions:
@@ -1319,6 +1245,10 @@ We are going to see three features you can use to customize the mobile app.
     Mobile Smart Actions
     Productivity Actions
 * Compact layouts
+</details>
+
+
+
 
 <details><summary>
 How and where I can set for the Mobile navigation?
@@ -1382,6 +1312,8 @@ Types of sandobox
 
 [Sandboxes and storage limits Doc page](https://help.salesforce.com/articleView?id=data_sandbox_environments.htm&type=5)
 ![](/assets/images/2020-11-09-14-25-38.png)
+or
+![](/assets/images/2020-12-15-16-21-29.png)
 </details>
 
 <details><summary>
@@ -1427,13 +1359,9 @@ Best practices before deployment of Change Sets?
 * Plan and announce a maintenance window
 * Validate Change Sets
 * Lock out users from Production (basically, updating login hours on profiles - NOT the admin though :sweat_smile: or create a maintenance user profile (temporarely)
-* verify funcitonal changes
+* verify functional changes
 * unlock users by reset original loggin hours... :+1:
 </details>
-
-<br>
-
-[App Customization Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lightning_platform_app_builder?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
 ---
 
@@ -1463,12 +1391,16 @@ Concepts not clear to review later:
 - [ ] What two permissions are needed to create custom reports that all users can view? (Manage Public report | Create and customize Reports)
 </details>
 <details><summary>
-Estras, nice to know
+Extras, nice to know
 </summary>
 
-[How to choose a report type](https://help.salesforce.com/articleView?id=reports_changing_format.htm&type=5) -> get a picture from Mimeo Amdin
+[How to choose a report type](https://help.salesforce.com/articleView?id=reports_changing_format.htm&type=5) -> get a picture from Mimeo Admin
 Which dev/ sandbox etc. env let do what? get picture from Mimeo Dev that I know there's one there
 </details>
+
+#### A lot of questions regarding admin stuff or for the App builder, not specifically for Developer can be found [here](https://help.salesforce.com/articleView?id=overview.htm&type=5)
+
+
 
 
 

@@ -2,7 +2,7 @@
 id: 3034d013-2dfc-495c-b125-c585b3fadb27
 title: '14'
 desc: ''
-updated: 1607959068443
+updated: 1608026919083
 created: 1607934642186
 ---
 
@@ -13,17 +13,7 @@ Afternoon
 - [x] questions for PAB
 
 Evening
-- [ ] questions for PAB
+- [x] questions for PAB
 
 ---
 
-tomorrow
-
-Morning
-- [ ] Stuart questions for PAB
-
-Afternoon
-- [x] Trailhead review questions for PAB
-
-Evening
-- [ ] org notes for PAB
