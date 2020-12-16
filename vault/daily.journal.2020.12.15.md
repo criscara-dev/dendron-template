@@ -2,7 +2,7 @@
 id: 10f932f1-a370-4b4d-a653-fa88b247fb18
 title: '15'
 desc: ''
-updated: 1608066120247
+updated: 1608108391502
 created: 1608026919808
 ---
 
@@ -24,4 +24,3 @@ Evening
 - [ ] redo trailheads on Admin or on Intermediate
 - [ ] [trail](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development) 
 - [ ] org notes and print 
- 
