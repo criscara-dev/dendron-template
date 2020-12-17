@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1608049677296
+updated: 1608150278061
 created: 1603274675484
 stub: false
 ---
@@ -222,7 +222,7 @@ LastName
 
 ### The Data Model
 > - objects: standard, custom, external
-    - relationships: lookup, master-details, many-to-many, ==hierarchical== (between 'user' objects), external lookup, indirect lookup
+    - relationships: lookup, master-details, many-to-many(need a junction object), ==hierarchical== (between 'user' objects), external lookup, indirect lookup
     - fields: stnd and custom
 
 
@@ -334,7 +334,7 @@ Considerations on changing field types
 [changing field types](https://help.salesforce.com/articleView?id=notes_on_changing_custom_field_types.htm&type=5)
 1. Not possible to change data types of Standard fields
 2. Good practice to change data types when field contain no data
-3. 'Change field type' on the field page
+3. 'Change field type' in setup -> Object -> on field page
 </details>
 
 <details><summary>
@@ -381,6 +381,8 @@ I can import #CSV files with those tools:
 |Export or delete data. ||:white_check_mark:
 |can Insert, Update, Upsert|:white_check_mark:||
 
+![](/assets/images/2020-12-16-19-49-46.png)
+
 More info [link](https://trailhead.salesforce.com/content/learn/modules/lex_implementation_data_management/lex_implementation_data_import?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential) here
 [Video-series on import](http://pages.mail.salesforce.com/gettingstarted/sales-cloud/import-export-data/)
 </details>
@@ -421,7 +423,7 @@ In a #CSV format with those official tools:
     - It can even scheduled: once every: 7 days | 29 days
     - for all objects
     - email with link to download a zipped .csv file | active for 48 hrs
-    - can add Chatter filed and SF CRM content
+    - can add Chatter file and SF CRM content
     - can include images, docs, and attchments
 It allows you to export data manually once every 7 days (for weekly export) or 29 days (for monthly export)
 </details>
@@ -658,7 +660,7 @@ What's a record type?
 </summary>
 
 Record type define the page layout, the picklist values, and business process for the assigned records.
-Assess is defined at the Profile and Permission Sets
+Access is defined at the Profile and Permission Sets
 Max 200 record types for object.
 </details>
 <details><summary>
@@ -690,7 +692,7 @@ To perform calculations.
 example: what if you wanted to calculate how many days are left until an opportunity’s close date.
 Object Manager -> Oppurtunity -> fields & relationship -> new -> formula -> next -> Field label add 'Days to Close' -> select Number -> next ... -> in the formula area type or choose fields available: 
 ```java
-ClodeDate - TODAY()
+CloseDate - TODAY()
 or
 ADDMONTHS(date,num)
 or
@@ -896,7 +898,7 @@ How can you migrate from Workflow rules to processes?
 
 [from Workflow rules to Processes trailhead](https://trailhead.salesforce.com/content/learn/modules/workflow_migration?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 1. map your criteria, map your actions, determines the order of your criteria
-- Is a best practice use one automation tool for objects? yes, so I can predict for that object which are tre possible behavior without getting crazy looking between many tools automated or not
+- Is a best practice use one automation tool for objects? yes, so I can predict for that object which are the possible behavior without getting crazy looking between many tools automated or not
 </details>
 
 <details><summary>
@@ -991,8 +993,20 @@ Types:
 <details><summary>
 What is #Field-tracking?
 </summary>
+
+[doc](https://help.salesforce.com/articleView?id=tracking_field_history.htm&type=5)
 Feed tracking makes it easy to see changes to critical records anytime, anywhere. You can select up to 20 fields to track.
 </details>
+
+<details><summary>
+How do you set field tracking?
+</summary>
+
+https://help.salesforce.com/articleView?id=tracking_field_history_for_standard_objects.htm&type=5#hiddenTables:~:text=From%20the%20management%20settings%20for%20the,Click%20Set%20History%20Tracking
+1. From the management settings for the object whose field history you want to track, go to the fields area.
+2. Click Set History Tracking
+</details>
+
 
 <details><summary>
 Can you use Chatter to #approval-process?
@@ -1023,7 +1037,7 @@ The rollout can be #profile-based. A profile-based Chatter deployment can be use
 What is a Lightning Page?
 </summary>
 
-A Lightning page is a custom layout that lets you design pages for use in the Salesforce mobile app or Lightning Experience. A Lightning page is composed of regions that contain components.
+A Lightning page is a ==custom layout== that lets you design pages for use in the Salesforce mobile app or Lightning Experience. A Lightning page is composed of regions that contain components.
 
 </details>
 
@@ -1041,10 +1055,11 @@ SPA, Dashboard style apps, App for solving a particular task, custom home and re
 <details><summary>
 Which pages can you create in Lightning App Builder?
 </summary>
-Home page
-App page
-Record page
-Embedded service page
+
+* Home page
+* App page
+* Record page
+* Embedded service page
 
 </details>
 
