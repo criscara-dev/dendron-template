@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1608150278061
+updated: 1608195253101
 created: 1603274675484
 stub: false
 ---
@@ -1218,7 +1218,7 @@ You can:
 Report subscription?
 </summary>
 A user can subscribe to max 5 reports at the time
-- frewuency can be set to daily,weekly, monthly + at specific time
+- frequency can be set to daily,weekly, monthly + at specific time
 </details>
 
 
