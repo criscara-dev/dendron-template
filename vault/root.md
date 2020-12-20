@@ -2,7 +2,7 @@
 id: root
 title: Root
 desc: ''
-updated: 1602345759613
+updated: 1608493374421
 created: 1602345759613
 stub: false
 ---
@@ -14,3 +14,4 @@ stub: false
 - [[agile]]
 - [[books]]
 - [[mental-models]]
+[[art]]
