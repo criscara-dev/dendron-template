@@ -2,7 +2,7 @@
 id: 49a5766e-abfa-4c5c-b89a-f388bfc6ebad
 title: Dendron
 desc: ''
-updated: 1604089320201
+updated: 1608672340672
 created: 1602405740208
 stub: false
 ---
@@ -28,3 +28,4 @@ Code -> Preferences -> Keyboard Shortcuts
 Ask yourself: In which circumstances will I want to stumble upon this note? How and when will I use this idea?
 Ex. NO #productivity YES #how-to-journal #how-to-get-feedback
 - #amoeba-pattern as a way to create notes and structure?
+
