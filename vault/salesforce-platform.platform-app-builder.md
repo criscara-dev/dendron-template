@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1608195253101
+updated: 1608671052247
 created: 1603274675484
 stub: false
 ---
@@ -79,6 +79,34 @@ Yes, Setup -> Object Manager -> Page Layout and use the drag & drop functionalit
 </details>
 
 <details><summary>
+What about page layout?
+</summary>
+
+Page layout contain the important sections: Details and Related (fields).
+- Page layout can be accessed from Setup -> object manager -> obj -> Page Layout...-> drag and drop.
+- Now you need to assign the page layout to the Profile from Page Layout Assignment from the upper right.
+![](/assets/images/2020-12-22-20-44-36.png)
+</details>
+
+<details><summary>
+What are custom links?
+</summary>
+
+Custom links can link to an external URL, such as www.google.com, a Visualforce page, or your company’s intranet.
+</details>
+
+<details><summary>
+Which three primary types of custom buttons and links that you can create?
+</summary>
+
+1. List button
+2. Detail page link
+3. Detail page button
+![](/assets/images/2020-12-22-20-55-27.png)
+</details>
+
+
+<details><summary>
 What are Quick Actions and how to set them up?
 </summary>
 We have 2 types:
@@ -89,6 +117,9 @@ We have 2 types:
 Create a Object-specific actions:
 1. Setup -> Buttons, Links, and Actions
 2. add it to the Page-Layouts:
+    Quick Actions is for the Classic and 
+    Mobile & Lightning Actions is for Lightning experience.
+    ![](/assets/images/2020-12-22-21-02-32.png)
  -> select the Page Layout you want the action be added 
  -> drag & drop the action where you want to see it
 
@@ -97,6 +128,7 @@ Create a Global Action:
 1. setup -> #Global-Actions ...
 2. add the action:
     - go to: #Publisher-Layouts -> edit -> drag & drop
+    ![](/assets/images/2020-12-22-21-04-11.png)
 </details>
 
 ---

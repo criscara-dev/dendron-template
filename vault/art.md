@@ -2,7 +2,7 @@
 id: 12806ca4-c38c-4f84-ae35-1e216a8d8c89
 title: Art
 desc: ''
-updated: 1608493377566
+updated: 1608562625985
 created: 1608493374374
 ---
 
@@ -11,7 +11,7 @@ created: 1608493374374
 ## Enough drawing:
 
 - **Mechanical drawing course**: or how to learn the expression of form over a flat surface and as harold Speed said in his II Chapter on drawing, at the end:"Yet, however is advisable to let yourself go in artistic work, during your academic training let your aim be _**a searching for accuracy**_.
-That's what my drawing course is about; not to learn the ARt of great drawing or to become a master in line drawing, mass drawing etc. but to learn to draw as a way to learn to see so can you can then trasfer this 'skill' to painting as well.
+That's what my drawing course is about; not to learn the Art of great drawing or to become a master in line drawing, mass drawing etc. but to learn to draw as a way to learn to see so can you can then trasfer this 'skill' to painting as well.
 In fact you can start to paint a great masterpiece without drawing lines for your subjects on a surface but still you need to be able to see and report the image in front of you with **accuracy**.
 Advice: paint always what you see, not what you think you see. Now how...
 
