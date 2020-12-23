@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1608061166271
+updated: 1608727705034
 created: 1606729073072
 ---
 
@@ -215,4 +215,11 @@ City or Company city?
 ---
 
 2020-12-15 19:37 Thinking about how to deploy... and train your userd before going live in Partial Copy Sandbox
-[this trail explain nicely how to move](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development/plan-for-changes-to-your-org) 
+[this trail explain nicely how to move](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development/plan-for-changes-to-your-org)
+
+---
+
+2020-12-23 12:09
+- [x] added new return thank you page
+- [ ] weird behavior form redirection on selected field Company
+- [ ] css broken... as expected
