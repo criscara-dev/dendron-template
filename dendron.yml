@@ -1,5 +1,5 @@
 site:
-    assetsPrefix: dendron-template
+    assetsPrefix:  https://criscara-dev.github.io/dendron-template
     copyAssets: true
     siteHierarchies:
         - books
