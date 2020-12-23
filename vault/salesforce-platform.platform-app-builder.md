@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1608671052247
+updated: 1608739992728
 created: 1603274675484
 stub: false
 ---
@@ -494,7 +494,7 @@ What about exporting reports?
 
 ### [Picklist amministration](https://trailhead.salesforce.com/content/learn/modules/picklist_admin?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
-![](/assets/images/2020-12-01-19-08-27.png)
+![picklist typpes](/assets/images/2020-12-01-19-08-27.png)
 
 <details><summary>
 What are #Picklist(s)?

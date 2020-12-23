@@ -2,7 +2,7 @@
 id: 49a5766e-abfa-4c5c-b89a-f388bfc6ebad
 title: Dendron
 desc: ''
-updated: 1608738986879
+updated: 1608739014265
 created: 1602405740208
 stub: false
 ---
@@ -32,6 +32,8 @@ Ex. NO #productivity YES #how-to-journal #how-to-get-feedback
 ---
 
 to publish:
+> save last changes and:
+>Git push (to repo)
 >Dendron: Build Pod
 // finished
 >Dendron: Publish
