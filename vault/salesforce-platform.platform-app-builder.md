@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1608740816954
+updated: 1608740917568
 created: 1603274675484
 stub: false
 ---
@@ -27,7 +27,6 @@ Sources:
 
 ### [Lightning Experience Customization](https://trailhead.salesforce.com/content/learn/modules/lex_customization?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
-![](/assets/images/2020-11-22-13-56-09.png)
 <details><summary>
 What is an AppExchange solution?
 </summary>
