@@ -1,5 +1,5 @@
 site:
-    assetsPrefix: dendron-template/
+    assetsPrefix: dendron-template
     copyAssets: true
     siteHierarchies:
         - books
