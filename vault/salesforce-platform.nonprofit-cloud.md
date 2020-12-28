@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1608727705034
+updated: 1609161070522
 created: 1606729073072
 ---
 
@@ -223,3 +223,7 @@ City or Company city?
 - [x] added new return thank you page
 - [ ] weird behavior form redirection on selected field Company
 - [ ] css broken... as expected
+
+---
+ 2020-12-28 13:10
+ need to add this one otherwise JS doesn't work on Elementor: https://essential-addons.com/elementor/docs/custom-js/

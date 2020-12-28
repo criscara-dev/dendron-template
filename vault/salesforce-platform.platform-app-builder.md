@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1608740917568
+updated: 1609185354038
 created: 1603274675484
 stub: false
 ---
@@ -128,7 +128,7 @@ Create a Global Action:
  It lets users create a **_object-record_** no matter where they are in Salesforce. A global action is an ideal way to do this, because the global actions menu appears at the top of every page.
 1. setup -> #Global-Actions ...
 2. add the action:
-    - go to: #Publisher-Layouts -> edit -> drag & drop
+go to: #Publisher-Layouts -> edit -> drag & drop
     ![](/assets/images/2020-12-22-21-04-11.png)
 </details>
 
@@ -754,6 +754,7 @@ Limitations:
 - No Date formula support. (cannot use NOW() and TODAY() )
 
 [Roll-up reference](https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic/roll_up_summary_fields?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
+
 Type | Description
 -----|------------
 COUNT | Totals the number of related records.
@@ -850,7 +851,7 @@ Time-Delay --> other-Actions;
 Flow builder?
 </summary>
 
-Accessible from Setup -> Precess Automation
+Accessible from Setup -> Process Automation
 #flow-builder
 </details>
 
@@ -865,7 +866,7 @@ Similar to WR, the can:
 - update fields
 - send outbound messages
 remember:
-- Once the recor di submitted for approval, it's locked for changes
+- Once the record di submitted for approval, it's locked for changes (*exceptions...)
 - Often has:
     - 2 steps
     - approval + validation rule

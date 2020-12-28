@@ -2,7 +2,7 @@
 id: 12806ca4-c38c-4f84-ae35-1e216a8d8c89
 title: Art
 desc: ''
-updated: 1608562625985
+updated: 1609077021209
 created: 1608493374374
 ---
 
@@ -15,8 +15,9 @@ That's what my drawing course is about; not to learn the Art of great drawing or
 In fact you can start to paint a great masterpiece without drawing lines for your subjects on a surface but still you need to be able to see and report the image in front of you with **accuracy**.
 Advice: paint always what you see, not what you think you see. Now how...
 
-    1. size-sight:
+   1. size-sight:
         - flat copy:
+
             part |what | to consider
             ----|----|---
             1   |shapes | just shapes
@@ -31,6 +32,7 @@ Advice: paint always what you see, not what you think you see. Now how...
         > Always in comparative measurement establish a unit of measurement, a distance that does not vary in the subject and which all distances can be compared to.
     
         - flat copy:
+
             part |what | to consider
             ----|----|---
             1   |shapes | just shapes
@@ -53,7 +55,9 @@ Advice: paint always what you see, not what you think you see. Now how...
     
 
 - **artistic drawing**: move from do things from:
+
     what | meaning | result
     ---|---|---
     photo | no emotion/sentiment | mechanical, academic but accurate
     life drawing| emotion, connection, sentiment| artistic enphasis on essential features...
+

@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1608144400992
+updated: 1609103500958
 created: 1602692433243
 stub: false
 ---
@@ -23,6 +23,7 @@ Thank you for registering for Dreamforce to You 2020.
 Your registration ID is R-01486096
 
 ## Tomorrow tasks:
+- [ ] [Mantain your credentials](https://trailhead.salesforce.com/en/content/learn/trails/maintain-your-salesforce-certifications)
 - [ ] redo trailheads on Admin or on Intermediate
 - [ ] [trail](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development) 
 
@@ -31,10 +32,6 @@ Your registration ID is R-01486096
 - [ ] solve SF business requirements: make a map/diagram
 - [ ] this [trail](https://trailhead.salesforce.com/content/learn/modules/isv_plan/isv_plan_app_type)
 - [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder before exam
-
-## Next week task
-
-- [ ] [Business admin Specialist Superbadge: Challange ](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_specialist?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential)
 
 ## Recurrent to-do:
 
