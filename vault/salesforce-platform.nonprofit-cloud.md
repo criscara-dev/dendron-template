@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1609161070522
+updated: 1609325672657
 created: 1606729073072
 ---
 
@@ -227,3 +227,16 @@ City or Company city?
 ---
  2020-12-28 13:10
  need to add this one otherwise JS doesn't work on Elementor: https://essential-addons.com/elementor/docs/custom-js/
+ ==Note==
+ the plugin above is not free
+
+ 2020-12-29 10:38
+ how to add JS to Elementor block:
+ https://www.youtube.com/watch?v=b9EDp3fWEWY
+ Plugin: CSS and JS toolbox
+
+ basically with this plugin, we can add JS to Elementor block, otherwise we need to use Gutemberg Blocks and the rest of the page cannot be built in Elementor
+ 
+
+ what about use a Gutemberg block in Elementor?
+ https://gutenberghub.com/how-to-display-gutenberg-blocks-in-other-page-builders/ but I need ti install a plugin: ACF Blocks

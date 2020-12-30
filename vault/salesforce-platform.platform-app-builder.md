@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1609185354038
+updated: 1609356880505
 created: 1603274675484
 stub: false
 ---
@@ -1080,6 +1080,7 @@ What can you build with the Lightning App Builder?
 </summary>
 
 SPA, Dashboard style apps, App for solving a particular task, custom home and record pages
+
 | header |
 | toolbar |
 | Lightnings Component Page | Lightning Page Canvas |Properties Pane |
