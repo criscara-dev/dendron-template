@@ -2,7 +2,7 @@
 id: bbc0596b-c0f5-409d-b160-c1176103d6df
 title: '30'
 desc: ''
-updated: 1609358622845
+updated: 1609413239949
 created: 1609322911862
 ---
 
@@ -21,10 +21,3 @@ Evening
 - [x] review my notes on UI on PAB and FoF
 
 ---
-
-Tomorrow
-- [ ] drawing
-- [ ] [this playlist](https://www.youtube.com/watch?v=yYbrkaW4CgM&list=PLPXY38WvYAn5SIH7wMAk9RJZoWQBtKdaX)
-- [ ] Pirple HTML & CSS Masterclass - links
-- [ ] restart course on JS by Dan Abramov (email)
-- [ ] [join JavascriptLandia](https://openjsf.org/blog/2020/12/17/introducing_javascriptlandia/?j=1804311&sfmc_sub=145406669&l=184_HTML&u=27470281&mid=100008483&jb=8)
