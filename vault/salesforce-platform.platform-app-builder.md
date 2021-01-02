@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1609356880505
+updated: 1609617916706
 created: 1603274675484
 stub: false
 ---
@@ -329,7 +329,6 @@ There's 2 types: #one-to-one and #one-to-many.
 The master object controls certain behaviors of the detail object, like who can view the detail’s data.
 The detail object highly dependent on the master. In fact, if a record on the master object is deleted, all its related detail records are deleted as well. 
 In a #Master-detail-relationship the Master is always a #Standard-object and the detail is the #Custom-object.
-The field is added always on the master side of the #Master-detail-relationship
 Trailblazer Community docs on relationships: [link](https://help.salesforce.com/articleView?id=relationships_considerations.htm&type=5)
 </details>
 
@@ -487,7 +486,7 @@ What about exporting reports?
 - different encoding option available
 - Format: .csv or #XLS
 - mo limits on rows/columns number
-- formatted join report can be exported in XLSX
+- formatted joined report can be exported in XLSX
 </details>
 
 
@@ -1261,7 +1260,7 @@ A user can subscribe to max 5 reports at the time
 What are Report Snapshot?
 </summary>
 
-* They provide information on hisgtorical data by storing report data scheduled over a period of time
+* They provide information on historical data by storing report data scheduled over a period of time
 * Available for Summary and Tabular reports
 </details>
 
@@ -1333,7 +1332,7 @@ Setup -> Object Manager (select Object interested) -> Compact Layouts -> New (gi
     How to create an app?
     </summary>
     Setup -> App Manager
-    for UI In can use: Setup -> Lightning App Builder ...
+    for UI In can use: Setup -> App Manager ... -> then: Lightning App Builder (for the new page)
     </details>
 
 2. Build the #Object-model
