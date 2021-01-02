@@ -2,7 +2,7 @@
 id: 51d07117-2802-42bb-ba31-004e2f85397e
 title: Platform-app-builder
 desc: ''
-updated: 1609617916706
+updated: 1609618057469
 created: 1603274675484
 stub: false
 ---
@@ -1420,25 +1420,6 @@ Best practices before deployment of Change Sets?
 ==The following trail contain flshcards and interesting questions==
 - [x] 2020-11-10 10:49 [Study for the Platform App Builder Exam](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)
 
-<details><summary>
-Concepts not clear to review later:
-</summary>
-
-- [ ] look-up relationship for external object -> direct | indirect lookup
-- [ ] security in general; still not 100% correct in understanding how to give right permission/profile etc to share etc. specifically look out for criteria-based sharing rules...
-- [ ] what's a group?
-- [ ] sharing rules types? (ower | criteria based)
-- [ ] extend record access? ( sharing | manual sharing rules)
-- [ ] What picklist fields are used in tru lead process are not available for record types? (Case | Lead Status)
-- [ ] approve via Email needs API Enabled permission on: profile | permission set
-- [ ] order execution for Validation Rules: VAAWPE
-- [ ] Which action is not executed after a reevaluated workflow? Time-dependent actions
-- [ ] social accounts to be seen by a user in an org, need to be linked to a personal social account first
-- [ ] What three objects can be connected to a social network? Accounts, Contacts, Leads
-- [ ] How many components a dashboard can have? (up to 20)
-- [ ] Which report can be converted in a joined report? -> All, Summary, Tabular and Matrix
-- [ ] What two permissions are needed to create custom reports that all users can view? (Manage Public report | Create and customize Reports)
-</details>
 <details><summary>
 Extras, nice to know
 </summary>
