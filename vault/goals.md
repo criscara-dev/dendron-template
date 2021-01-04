@@ -2,7 +2,7 @@
 id: 177d3c63-d7f3-4576-8177-e9aa219f7bab
 title: Goals
 desc: ''
-updated: 1605366552694
+updated: 1609702003546
 created: 1602693035450
 stub: false
 ---
@@ -27,6 +27,9 @@ stub: false
 
 - [ ] save 40% salary every month
 
+## Business Ideas
+[[Ideas|goals.ideas]]
+
 ## Interview preparation
 
 - [preparation inteview PDF](assets/pdfs/YourGuideToInterviewSuccess_Revolent_Oct20.pdf)
@@ -35,7 +38,5 @@ stub: false
 
 ## Exam to take
 
-# Exams to take:
 
-[[App Builder|salesforce-platform.platform-app-builder]]
 
