@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1609325672657
+updated: 1609790315047
 created: 1606729073072
 ---
 
@@ -240,3 +240,29 @@ City or Company city?
 
  what about use a Gutemberg block in Elementor?
  https://gutenberghub.com/how-to-display-gutenberg-blocks-in-other-page-builders/ but I need ti install a plugin: ACF Blocks
+---
+ 2021-01-04 10:33
+ 
+- [x] deactivate Headers and Footer
+- [x] deactivate CSS & JavaScript Toolbox
+ Demarc check with Nicola
+ junk folderi
+
+ not on DMARC:
+
+ 1. ok SF can send on my behalf
+ 2. create a DMKEY
+ 
+ 1. on the DNS (goDaddy i.e.) add a spf record:
+ - mx include:_spf.salesforce.com or complete:
+ - v=spf1 mx include:_spf.salesforce.com ~all
+ references:
+ - https://help.salesforce.com/articleView?id=emailadmin_create_secure_dkim.htm&type=5
+ - https://help.salesforce.com/articleView?id=000315520&type=1&mode=1
+ - https://www.youtube.com/watch?v=UfbeJ_4I24I
+ - https://www.youtube.com/watch?v=2OmK7bL8Fac
+ - https://who.is/dns/turingtrust.co.uk
+
+2. add DKIM capability from SF:
+from setupo->email->DKIM Keys...
+3. go to DNS Registrar (GoDaddy i.e.) and add 2 CNAME
