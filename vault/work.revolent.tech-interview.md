@@ -2,7 +2,7 @@
 id: d3c5b032-ccc4-483b-bad3-f325b8951be1
 title: Tech-interview
 desc: ''
-updated: 1606120083128
+updated: 1609842034696
 created: 1603706834819
 stub: false
 ---
@@ -153,3 +153,5 @@ Which big challenges are you facing today…
 Are you embracing disagreement?
 </details>
 
+2021-01-05 09:04
+- [x] session on Interview Preparation with Ryan

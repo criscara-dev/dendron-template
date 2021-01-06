@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1609790315047
+updated: 1609958229568
 created: 1606729073072
 ---
 
@@ -262,7 +262,36 @@ City or Company city?
  - https://www.youtube.com/watch?v=UfbeJ_4I24I
  - https://www.youtube.com/watch?v=2OmK7bL8Fac
  - https://who.is/dns/turingtrust.co.uk
+ - from Nicola: https://knowledge.ondmarc.redsift.com/en/articles/1221132-salesforce-spf-and-dkim-set-up
 
 2. add DKIM capability from SF:
 from setupo->email->DKIM Keys...
 3. go to DNS Registrar (GoDaddy i.e.) and add 2 CNAME
+
+????
+https://help.salesforce.com/articleView?id=000331521&type=1&mode=1
+
+
+---
+
+2021-01-05 11:36
+
+* on Chrome the Partial Copy
+* on Canary the Dev Pro
+
+- [x] how to Change Set:
+1. Create an Outbound Change Set (go to "Export" Org)
+2. Authorize a Deployment Connection on the Org accepting the a ChangeSet, so log in and then Setup -> Deployment Settings
+- Click Edit next to the org from which you want to receive outbound change sets. 
+- Select Allow Inbound Changes and click Save.
+
+
+---
+
+2021-01-06 14:11
+
+- [x] custom field just Lead and Opp to ChangeSet
+
+
+- [x] deativate their DKIM key in SF Prod
+- [x] ONDMARC add 1 to ttsf._domainkey to ttsf1._domainkey
