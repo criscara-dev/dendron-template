@@ -2,7 +2,7 @@
 id: 6a84eef0-cbab-4213-aac4-cf6eba6713e9
 title: Nonprofit-cloud
 desc: ''
-updated: 1609958229568
+updated: 1610135462619
 created: 1606729073072
 ---
 
@@ -276,9 +276,6 @@ https://help.salesforce.com/articleView?id=000331521&type=1&mode=1
 
 2021-01-05 11:36
 
-* on Chrome the Partial Copy
-* on Canary the Dev Pro
-
 - [x] how to Change Set:
 1. Create an Outbound Change Set (go to "Export" Org)
 2. Authorize a Deployment Connection on the Org accepting the a ChangeSet, so log in and then Setup -> Deployment Settings
@@ -292,6 +289,52 @@ https://help.salesforce.com/articleView?id=000331521&type=1&mode=1
 
 - [x] custom field just Lead and Opp to ChangeSet
 
-
 - [x] deativate their DKIM key in SF Prod
 - [x] ONDMARC add 1 to ttsf._domainkey to ttsf1._domainkey
+
+---
+
+2021-01-07 09:06
+* on Chrome the Partial Copy
+* on Canary the Dev Pro
+* on Firefox the Prod Org
+
+check link in company name: https://turingtrust.co.uk/give-computers/computers-individuals check!
+
+
+---
+
+2021-01-08 19:50
+
+MY manually additions:
+
+
+ISSUE cannot find how to edit live page, ask Nicola
+
+CHECK this below!!!
+Email Deliverability in Prod Org: to work properly with ONDMARC and DKIM, check that everything is disable in DKYM from Setup…see picture in UAT (to disable)
+
+Deploy web-to-lead
+
+1. Change Value attribute in the web-to-lead  form to move in published page (added to port-org.html file in TT_Test folder on Desktop). Basically copy this form from duplicate to live page and change value ID for Prod Org…
+2. Add JS to Elementor for the live page ( ID 1048 ) - click on Edit block and then bottom left (gray bar) Setting -> Advanced (paste JS) from page ID 8503.  Ref: https://essential-addons.com/elementor/docs/custom-js/
+3. Change CSS ref. To duplicate pages from:  Business .page-id-8501 to: 2669 | and from Individual .page-id-8503 to:  1048
+
+
+Deploy Change Set
+
+1. From the Org you’re developing, GO to Setup Manu -> Environments -> Change Sets -> Outbound Change Sets
+- Create Change Set and add available/changed Components (not available component changed needs to be update to new Org manually)
+2. Login into the Org accepting the ChangeSet to authorize a Deployment  Connection: Setup -> Deployment Settings
+ Click Edit next to the org from which you want to receive outbound change sets. 
+ Select Allow Inbound Changes and click Save.
+3. Upload the changeSet: From Setup, enter Outbound Change Sets, Find the change set to upload. Click Upload and choose your target org.
+4. In the same Org you want the ChangeSet go to: Environments -> Change Sets -> Inbound Change Set: validate first: Validation of a change set is a dry run of the deployment, showing the success or failure messages that occur with an actual deployment but not performing the actual work. If you’re planning a scheduled deployment and want to determine if the deployment can succeed in the time allotted, validate your change set. It makes things much more predictable.
+5. If ok, deploy
+
+
+WEB FORMS
+
+Check google sheet for IDs to update after deployed ChangeSet
+Check pic on folder UAT for setting in Prod Org Once deploy to get the right record Type.
+
