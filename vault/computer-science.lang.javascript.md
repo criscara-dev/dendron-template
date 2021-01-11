@@ -2,7 +2,7 @@
 id: 1eeab78a-4075-44c1-8316-d0d35922857a
 title: Javascript
 desc: ''
-updated: 1605287231228
+updated: 1610363719894
 created: 1602345804873
 stub: false
 ---
@@ -15,3 +15,9 @@ stub: false
 [[Data Structures|computer-science.lang.javascript.data]]
 [[Functions|computer-science.lang.javascript.functions]]
 [[Promises|computer-science.lang.javascript.promises]]
+[[Debugging|computer-science.lang.javascript.debugging]]
+
+### Rerefences
+
+- [Can I Use?](https://caniuse.com/)
+- [Which features are supported by which engine?](http://kangax.github.io/compat-table)
