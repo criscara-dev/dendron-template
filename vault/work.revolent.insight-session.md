@@ -2,7 +2,7 @@
 id: 4977e2db-add7-4bbf-92c3-4caccc2141b7
 title: Insight-session
 desc: ''
-updated: 1603474926144
+updated: 1611081343775
 created: 1603474926144
 stub: false
 ---
@@ -93,8 +93,38 @@ not sure from here...
 ![](/assets/images/2020-10-22-17-17-45.png)
 </details>
 
+
 <details><summary>
-Change Management
+Kevin Campbell at Bluewolf | 2021-01-19 14:47
 </summary>
-**Lorem ipsum dolor sit amet...**
+
+From Kevin:
+
+where is IBM bought Bluewolf to get into the SF environment.
+
+Hybrid cloud solution: SF MuleSoft etc APIs, AI, intelligent WF (Watson)
+1. Bluewolf step ahead of the customer, partner... ex James Oliver how Kevin approach the position of talking with him
+2. Advices: mentor, think big, taking the risk, tell the customer (after talking with a customer, where they can getting addictives to SF? think bigger: they ask for a WF? propone something HUGE )
+
+Is Einstein BA 
+
+==What they're looking for==:
+In general: Application Architect they're looking for
+Specific: , Field Service Lightning in EMEA
+Health CLoud... work.com
+AI
+MuleSoft
+CPQ: CPQ Salesforce, or Configure, Price, Quote Software by Salesforce is a sales tool for companies to provide accurate pricing with any given product configuration scenario.
+
+==be a Eminance, create my own brand==
+Are you a know name in the SF developer?
+Do you have a Blog? followers etc.
+
+==Design thinkings==
+
+
+pricing? how to place in the market, where the Intelligence come from?
+
+About Privacy and Security, I didn't see in your map for solution areas mention the SF Blockchain. Even if not quite big or 100% delivered, is IBM interested?
+Did you see an increase in Salesforce Blockchain usage from Orgs and again which certification/experience would you recommend to help? Is IOT Industry for Health, mostly relevant as well.
 </details>

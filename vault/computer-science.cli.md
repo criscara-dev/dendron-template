@@ -2,10 +2,12 @@
 id: c8f821a5-747b-4d9c-baeb-d4d47e79a722
 title: Cli
 desc: ''
-updated: 1608455694168
+updated: 1610959746267
 created: 1604563984600
 stub: false
 ---
+## Shell Command Language
+[link](https://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html)
 
 ## [Unix Commands training](https://www.freecodecamp.org/news/the-linux-commands-handbook/)
 

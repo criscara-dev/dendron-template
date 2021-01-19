@@ -2,7 +2,7 @@
 id: 1eeab78a-4075-44c1-8316-d0d35922857a
 title: Javascript
 desc: ''
-updated: 1610363719894
+updated: 1611082314894
 created: 1602345804873
 stub: false
 ---
@@ -16,6 +16,7 @@ stub: false
 [[Functions|computer-science.lang.javascript.functions]]
 [[Promises|computer-science.lang.javascript.promises]]
 [[Debugging|computer-science.lang.javascript.debugging]]
+[[computer-science.lang.javascript.react]]
 
 ### Rerefences
 

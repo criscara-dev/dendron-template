@@ -2,7 +2,7 @@
 id: fa357061-92c3-4f0c-8c53-9c5ccbd79894
 title: '193800'
 desc: ''
-updated: 1610642249806
+updated: 1610701104875
 created: 1610393882548
 ---
 
@@ -81,12 +81,19 @@ Copy and paste the this HTML form into a text Editor (any but VSCode is preferab
 -Add all necessary styles and if you have:
 - record types -> add:
 <input id="recordType" name="recordType" type="hidden" value="get this value from record type URL 15 characters" />
-- extra info such as Lead Source
+- extra info such as Lead Source with predefined valued of web:
 <input id="lead_source" name="lead_source" type="hidden" value="Web" />
 
-- [ ] where to get record types and what they are (trailheads)
-- [ ] how to create via code links: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto 
+- where to get record types and what they are (trailheads)
+- how to create via code links: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto 
 
  Trails recommended:
- - Reports: https://trailhead.salesforce.com/content/learn/projects/quickstart-reports
- - 
+ - Create Reports and Dashboards for Sales and Marketing Managers: https://trailhead.salesforce.com/en/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers?trail_id=learn-admin-essentials but special this module: 
+    - Reports: https://trailhead.salesforce.com/content/learn/projects/quickstart-reports
+ - Configure an Email Letterhead and Template: https://trailhead.salesforce.com/en/content/learn/projects/customize-an-org-to-support-a-new-business-unit/configure-an-email-letterhead-and-template?trail_id=learn-admin-essentials
+ - All this trail (3 Modules) but a special recommendation for: 
+    - Customize a Sales Path (create a Sale Process and Record Type): https://trailhead.salesforce.com/en/content/learn/projects/customize-a-sales-path-for-your-team/customize-a-sales-path?trail_id=learn-admin-essentials
+- Customize a Salesforce Object: https://trailhead.salesforce.com/en/content/learn/projects/customize-a-salesforce-object?trail_id=learn-admin-essentials
+
+- Create and Convert Leads: https://trailhead.salesforce.com/content/learn/modules/leads_opportunities_lightning_experience/create-and-convert-leads-lightning?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential
+- Work Your Opportunities: https://trailhead.salesforce.com/content/learn/modules/leads_opportunities_lightning_experience/work-your-opportunities?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential
