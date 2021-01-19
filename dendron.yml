@@ -3,10 +3,10 @@ site:
     copyAssets: true
     siteHierarchies:
         - books
-        - principles
         - mental-models
         - computer-science
         - salesforce-platform.platform-app-builder
+        - salesforce-platform.javascript-developer-1
     siteRootDir: docs
     usePrettyRefs: true
 vaults:
