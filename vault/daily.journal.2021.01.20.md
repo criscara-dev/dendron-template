@@ -1,19 +1,21 @@
 ---
-id: 582f4f99-de2c-4a8b-8d03-1908ca2d97b8
-title: '2021-01-19'
+id: c44290a2-2299-4a8b-be47-7ebc9867252f
+title: '2021-01-20'
 desc: ''
-updated: 1611088114676
-created: 1611046492754
+updated: 1611147572635
+created: 1611133647299
 ---
 
 ## Should do:
 
 - [x] shortcut on MAC to full screen CMD+CTRL+F)
-- [x] [Lightning Design System for Developers](https://trailhead.salesforce.com/content/learn/modules/lightning_design_system?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
-- [x] [React Udemy](https://www.udemy.com/course/react-for-the-rest-of-us/learn/lecture/17797254#overview)
+- [webcomponents](https://github.com/WICG/webcomponents)
+- [ ] finishing Netflix copy homepage
+- [ ] [React Udemy](https://www.udemy.com/course/react-for-the-rest-of-us/learn/lecture/17797254#overview)
 
 
 future:
+- [ ] https://trailhead.salesforce.com/en/content/learn/trails/build-flows-with-flow-builder
 - [ ] to create Issue tracker SF:
 [today's issue solved](https://trailblazers.salesforce.com/answers?id=9063A000000E5zSQAS): reset password to auth everytime the org...
 [another issue](https://trailblazers.salesforce.com/answers?id=9064S000000DIGiQAO): as picture below
@@ -24,9 +26,7 @@ issue: cannot authorize org:
 
 
 afternoon
-- [ ] finishing Netflix copy homepage
 
 - [ ] Pirple HTML & CSS Masterclass - links
 https://www.salesforceben.com/5-tips-every-salesforce-developer-needs-in-2021/
 https://www.salesforceben.com/10-important-trailhead-badges-to-achieve-in-2021/
-
