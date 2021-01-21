@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1611146742325
+updated: 1611226105920
 created: 1610206576325
 ---
 
@@ -347,6 +347,143 @@ How ti use the Navigation Service?
 You can use a Visualforce page within Lightning Experience.
 Visualforce and Lightning web components can also coexist on the same page and interact.
 Use the [Lightning Components for Visualforce](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_message_channel) JavaScript Library when you want to include a Lightning web component in a specific location on a Visualforce page
+
+---
+
+[Lightning Web Components for Aura Developers ](https://trailhead.salesforce.com/content/learn/modules/lightning-web-components-for-aura-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+
+Lightning Web Components is an implementation of the W3C’s Web Components standards.
+
+> ⚠️
+Important
+✅ allowed Aura components can contain Lightning web components.
+❌ not allowed Lightning web components can’t contain Aura components.
+
+
+Aura | LWC
+---|---
+.cpm starting with `<aura:component>` |.html file starting with: `<template>` and can have nested `<template>` 
+attributes: `<aura:attribute>` | ...become JS props `@api recordId; property;...`
+Basic Aura Expressions | ...Become HTML Expressions
+Migrate `<aura:if>` tags in an Aura component to <br> `<aura:if isTrue="{!v.property.Broker__c}">` | `if:true` or `if:false` directives in a Lightning web component’s HTML file <br> `<template if:true={property.data}>`
+Complex Aura Expressions <br> `<aura:if isTrue="{!v.page > 1}">` | ...Become JavaScript Logic <br> `<template if:false={isFirstPage}>`
+Aura Iterations <br> `<aura:iteration items="{!v.properties}" var="property">` | ...Become HTML Iterations <br> `<template for:each={properties.data.records} for:item="property">`
+Aura Initializers <br> `<aura:handler name="init" value="{!this}" action="{!c.onInit}" />` | ... Become Lifecycle Hooks `connectedCallback()`
+Aura CSS <br> Remove the proprietary `THIS`<br> `java.THIS .lower-third {` class that Aura components use. | ...Becomes Standard CSS
+Lightning Web Components Inherit Aura Component Styling | &nbsp;
+
+<details><summary>
+Migrating a component from Aura to LWC
+</summary>
+
+This Aura component uses the lightning:formattedNumber base component.
+```java
+<aura:component>
+    <lightning:formattedNumber value="5000" style="currency"
+      currencyCode="USD" />
+</aura:component>
+```
+To migrate this markup to a Lightning web component:
+
+* Change the colon that separates the namespace (`lightning`) and component name (`formattedNumber`) to a dash.
+* Change the camel-case component name (`formattedNumber`) to a dash-separated name (formatted-number).
+* Change the camel-case attribute name (`currencyCode`) to a dash-separated name (`currency-code`).
+Here’s the equivalent Lightning web component.
+
+```java
+<template>
+    <lightning-formatted-number value="5000" style="currency"
+      currency-code="USD">
+    </lightning-formatted-number>
+</template>
+```
+</details>
+
+> 💯
+The main takeaway is that Lightning web components use standard JavaScript modules
+
+==Use Third-Party JavaScript Libraries==
+> To use a third-party JavaScript library in an Aura component or a Lightning web component, you must upload the library as a static resource.
+
+Aura | LWC
+-|-
+`<ltng:require>` such as <br> `<ltng:require scripts="{!$Resource.resourceName}" afterScriptsLoaded="{!c.afterScriptsLoaded}" />`| ...become `import resourceName from '@salesforce/resourceUrl/resourceName';`
+In an Aura component, you can dynamically create a component in JavaScript using $A.createComponent(). | There’s no equivalent for dynamically creating a component in a Lightning web component.
+2 ways data binding | 1 way data binding (check below)
+
+
+<details><summary>
+How do you access an ES6 module in Aura component?
+</summary>
+
+e added an `aura:id` so that we can get a reference to the module in JavaScript code.
+</details>
+
+Ref.
+[Use 3rd party JS Lib](https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.create_third_party_library)
+
+> ⚠️ Use the Wire Service to Get Data
+To read Salesforce data, Lightning web components use a reactive wire service, which is built on Lightning Data Service. Components use @wire in their JavaScript class to read data from one of the wire adapters in the lightning/ui*Api namespace. For the list of wire adapters that Salesforce provides, see the Resources section of this unit. You can’t write your own custom wire adapters.
+
+> ⚠️ Important - Use JavaScript API Methods to Write Data
+Don’t use @wire to create, update, or delete a record. The wire service delegates control flow to the Lightning Web Components engine. Delegating control is great for read operations, but it isn’t great for create, update, and delete operations. As a developer, you want complete control over operations that change data. That’s why you perform create, update, and delete operations with a JavaScript API instead of with the wire service.
+
+> Use Apex for Custom Data Access
+
+> Use the Wire Service to Call an Apex Method:
+- If an Apex method is cacheable (it doesn’t mutate data), you can invoke it from a component via the wire service. You must annotate the method with @AuraEnabled(cacheable=true)
+
+> Call an Apex Method Directly
+- If an Apex method mutates (creates, updates, or deletes) data and therefore isn’t cacheable, you must call the method directly in code.
+
+> ⚠️ Note
+Don’t `@wire` an Apex method that creates, updates, or deletes data.
+
+> ⚠️  Work with External APIs
+Working with external APIs in a Lightning web component is similar to Aura components. By default, you can’t make calls to third-party APIs from JavaScript code in Lightning web components. Add a remote site as a CSP Trusted Site to allow JavaScript component code to load assets from and make API requests to that site’s domain.
+
+> ⚠️  Aura Component Data Binding
+- Aura components can use two forms of expression syntax for data binding: {!expr} or {#expr}. We won’t go into the differences here, but let’s look at a simple example.
+In Aura components, this data binding is two way. Changes to the `fName` attribute are passed into the child component’s `firstName` attribute, and changes in the value of the `firstName` attribute in the child component are passed back to the `fName` attribute of the owner component. This bidirectional data binding can be expensive for performance, and can create hard-to-debug errors due to the propagation of data changes, especially if you have deeply nested components
+- Lightning Web Component Data Binding:
+The data-binding behavior is intentionally simpler and more predictable in Lightning web components. The child component must treat any property values passed from the owner component as read-only. If the child component changes a value passed from an owner component, you see an error in the browser console.
+
+To trigger a mutation for the property value provided by the owner component, the child component can send an event to the parent. If the parent owns the data, the parent can change the property value, which propagates down to the child component via the one-way data binding.
+
+Aura | LWC
+-|-
+Instead of the proprietary `Event` object in Aura components | use the `Event` or `CustomEvent` standard DOM interfaces, as a pub-sub (publish-subscribe) pattern |
+`event.fire()`| `this.dispatchEvent(myEvent)`
+handle event with `<aura:handler> ` | ... become `<c-child onnotification={handleNotification}></c-child>` note the use of `on`
+
+<details><summary>
+What the Application Events Become a Publish-Subscribe Pattern?
+</summary>
+
+To have:The pubsub module exports three methods.
+
+- **register**
+Registers a callback for an event.
+- **unregister**
+Unregisters a callback for an event.
+- **fire**
+Fires an event to listeners.
+
+
+</details>
+
+<details><summary>
+What does a component event in Aura map to in a Lightning web component?
+</summary>
+to web-standard DOM events in Lightning web components. 
+</details>
+
+<details><summary>
+What prefix does an Aura handler add to the event name of a Lightning web component?
+</summary>
+**Lorem ipsum dolor sit amet...**
+</details>
 
 
 ---
