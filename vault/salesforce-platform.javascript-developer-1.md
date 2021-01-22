@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1611226105920
+updated: 1611319661013
 created: 1610206576325
 ---
 
@@ -484,6 +484,68 @@ What prefix does an Aura handler add to the event name of a Lightning web compon
 </summary>
 **Lorem ipsum dolor sit amet...**
 </details>
+
+---
+
+## [Lightning Web Components and Salesforce Data](https://trailhead.salesforce.com/content/learn/modules/lightning-web-components-and-salesforce-data?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+:this trail and challenges teach you how to create LWC via:
+    - LDS with LWC
+    - APex classes + LWC
+
+1. ==Lightning Data Service is the preferred (and easiest) way to work with Salesforce data. With Lightning Data Service, developers use JavaScript to connect components to Salesforce data. Lightning Data Service also provides security by making server calls to secure [User Interface API](https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/) endpoints.==
+    - read data: use the `lightning-record-form` base component;
+    - to create, edit, delete records you need a but you need a [LDS function](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api)
+> Note
+When we invoke an LDS function imperatively, it returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) (a JavaScript object that simplifies performing asynchronous calls).
+
+2. Another mothid to work with dat and LWC is via the `@wire` connector (or [LWD wire adapters](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_ui_api));
+    - with property ord function ( 🤢 🤮 sintax)
+
+> ⚠️  Note
+When an `@AuraEnabled`method is cacheable, Data Manipulation Language (DML) operations are not allowed.
+
+### Call Apex Methods from LWC
+==There are two ways to interact with Apex methods from Lightning web components: either wire the method or call the method imperatively.== Let’s consider both approaches.
+
+1. Call Apex Using `@wire`
+2. Call Apex Imperatively
+An alternative to calling Apex with @wire is to call Apex imperatively. Call Apex imperatively when you need to control the invocation of read operations, and when you modify records
+
+> 👁‍🗨 Note
+The preferred way to work with lists of records in Lightning web components is to use the `lightning-datatable` base component. Use `lightning-datatable` to create tables of data with features such as infinite scrolling, inline editing, header and row-level actions, resizing, and more. This UI component needs to be fed data. The most common way to generate that data is to call Apex in any of the ways explained earlier in this module.
+
+### Handle Server Errors
+
+How to handle server errors:
+- that occur when you wire a property;
+- that occur when you wire a function;
+<details><summary>👁‍🗨 </summary>
+> Note
+The reduceErrors helper function in this example comes from the ldsUtils module of the LWC Recipes sample app. [LWC Recipes](https://github.com/trailheadapps/lwc-recipes) contains easy-to-digest examples of common patterns implemented as Lightning web components. Feel free to copy the ldsUtils module into your project, and use the reduceErrors function.
+</details>
+- that occur when you call an LDS function or Apex imperatively;
+
+#### Wrap up: Use Cases for Interacting with Salesforce Data
+|Use Case|Recommended Solution|Notes|
+|--- |--- |--- |
+|View or edit a record specifying its layout or a list of fields|`lightning-record-form`||
+|View a record with a custom form layout or custom rendering of record data|`lightning-record-view-form`||
+|Edit a record with a custom form layout, custom rendering of record data, or prepopulated field values|`lightning-record-edit-form`||
+|Read metadata or read data for one record|LDS wire adapters|Can be combined, but operations will run on independent transactions|
+|Create, edit, or delete one record|LDS functions|Can be combined, but operations will run on independent transactions|
+|Read multiple records|Call Apex with `@wire`|Annotate the Apex method with `cacheable=true`|
+|Read multiple records on a one-time invocation or modify multiple records|Call Apex imperatively|For reads, annotate the Apex method with `cacheable=true`|
+
+When you work with data in Lightning web components, error handling varies. How you access errors depends on how you’re interacting with the data.
+
+Handling Server Errors
+
+|How to Work with Data|How to Access Server Errors|
+|--- |--- |
+|Use either an LDS wire adapter or an Apex method, and decorate a property|Use `reduceErrors` to handle the error that’s returned to the wired property in `decoratedProperty.error`|
+|Use either an LDS wire adapter or an Apex method, and decorate a function|Use `reduceErrors` to handle the error that’s returned in the object parameter received by the wired function `decoratedFunction({data, error}) {...}`|
+|Imperatively invoke either an LDS wire function or an Apex method|Use reduceErrors to handle the error that’s received as a parameter on the catch method's callback function `functionToInvoke().then(data => {...}).catch(error => {...});`|
+
 
 
 ---

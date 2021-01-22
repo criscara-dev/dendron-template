@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1611175160412
+updated: 1611259194409
 created: 1611082314842
 ---
 
@@ -197,4 +197,7 @@ const LikeArea = ()=>{
 
 ---
 
-## useEffect
+## useEffect to create persistency in data in the context of React
+
+Using localStorage from the browser and useEffect in React
+
