@@ -2,7 +2,7 @@
 id: e6521dcd-fa92-4f79-a338-6b6783204d9f
 title: '2021-01-22'
 desc: ''
-updated: 1611304400054
+updated: 1611356057059
 created: 1611304381493
 ---
 
@@ -25,6 +25,8 @@ issue: cannot authorize org:
 1. sfdx force:org:list --all   ... and get the USERNAME of the org you want to use 
 2. sfdx force:auth:web:login -a <you-org-name>
 
+2021-01-22 22:10 ISUUE: [Deploy the LWC Recipes App](https://trailhead.salesforce.com/content/learn/projects/quick-start-lwc-recipes-app/deploy-and-get-to-know-the-lwc-recipes-app) I could not add Permission set via CLI so... I did it manually for _recipes_ App on my user.
+
 issue on setting vscode:
 cannot add default sintax for react:
 ```
@@ -33,8 +35,7 @@ cannot add default sintax for react:
   }
 ```
 
-afternoon
 
-- [ ] Pirple HTML & CSS Masterclass - links
 https://www.salesforceben.com/5-tips-every-salesforce-developer-needs-in-2021/
 https://www.salesforceben.com/10-important-trailhead-badges-to-achieve-in-2021/
+

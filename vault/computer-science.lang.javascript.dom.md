@@ -2,7 +2,7 @@
 id: b3475804-ac8c-411a-a250-e460c901d3b2
 title: Dom
 desc: ''
-updated: 1611246907495
+updated: 1611347509849
 created: 1611246255818
 ---
 
@@ -13,4 +13,5 @@ created: 1611246255818
 `<template>`
 `<slot>`
 
-ES^ Modules concepts: import and export tags
+ES6 Modules concepts: import and export tags
+

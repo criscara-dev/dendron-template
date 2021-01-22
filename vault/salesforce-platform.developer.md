@@ -2,7 +2,7 @@
 id: 2a6fc1df-ac07-4af0-a2bc-074548fe58ff
 title: Developer
 desc: ''
-updated: 1608062911653
+updated: 1611355389260
 created: 1602404064858
 stub: false
 ---
@@ -13,6 +13,7 @@ stub: false
 
 ## Play with a change-set trail
 [trail](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development)
+![[salesforce-platform.developer.deployment]]
 
 ---
 
@@ -32,11 +33,19 @@ Type of org:
     - partial (contain part of the metadata)
     - full (contain all the metadata)
 
+---
+
 ## Contribute the the sample gallery:
 [references Docs](https://developer.salesforce.com/blogs/2020/09/contribute-to-the-sample-gallery.html)
 
 ((ref: [[computer-science.platform.salesforce.developer.interview-questions]]))
 
+[Deploy the LWC Recipes App](https://trailhead.salesforce.com/content/learn/projects/quick-start-lwc-recipes-app/deploy-and-get-to-know-the-lwc-recipes-app)
+
+
+
+
+---
 ---
 
 ## Career: Tipical adv on LinkedIn | 2020-11-12 14:21
