@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1611319661013
+updated: 1611403545020
 created: 1610206576325
 ---
 
@@ -545,7 +545,81 @@ Handling Server Errors
 |Use either an LDS wire adapter or an Apex method, and decorate a property|Use `reduceErrors` to handle the error that’s returned to the wired property in `decoratedProperty.error`|
 |Use either an LDS wire adapter or an Apex method, and decorate a function|Use `reduceErrors` to handle the error that’s returned in the object parameter received by the wired function `decoratedFunction({data, error}) {...}`|
 |Imperatively invoke either an LDS wire function or an Apex method|Use reduceErrors to handle the error that’s received as a parameter on the catch method's callback function `functionToInvoke().then(data => {...}).catch(error => {...});`|
+---
 
+## [Lightning Web Components Tests](https://trailhead.salesforce.com/content/learn/modules/test-lightning-web-components?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+> “Any bug not detected in the design phase will cost ten times more time to detect at the coding phase and an additional ten times more at the debugging phase.” 
+        Dr. Nikolai Bezroukov, The Art of Debugging
+
+### There are two types of tests that are commonly performed for Salesforce applications:
+_unit tests_ and _end-to-end tests_. Their differences are in their scope and purpose.
+
+||Unit Testing|End-to-End Testing|
+|--- |--- |--- |
+|Tests run fast|Yes|No|
+|Tests are reliable|Yes|No|
+|Tests are precise and allow you to identify exact problems|Yes|No|
+|Tests cover many features of an application at once|No|Yes|
+|Simulates a real user|No|Yes|
+
+### What do you need to run the tests?
+1. Jest is a powerful tool with rich features for writing JavaScript tests
+Install Jest from SF CLI with the command: `sfdx force:lightning:lwc:test:setup`
+
+2. Node is important: The `@salesforce/sfdx-lwc-jest` Node module lets you write, run, and debug Jest tests for Lightning Web Components. The Salesforce CLI makes it easy to install Jest and its dependencies into the project.
+
+For to runt tests, watch etc. from package.json
+```javascript
+"scripts": {
+    "lint": "npm run lint:lwc && npm run lint:aura",
+    "lint:aura": "eslint **/aura/**",
+    "lint:lwc": "eslint **/lwc/**",
+    "test": "npm run test:unit",
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage",
+    "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
+    "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\""
+  },
+  ```
+
+### Testing @Wire Service
+Lightning web components use a reactive wire service built on Lightning Data Service to read Salesforce data. Components use `@wire` in their JavaScript class to read data from one of the wire adapters in the `lightning/ui*Api` modules.
+Reactive variables are prefixed with a `$`.
+==We import the test utility API from `sfdx-lwc-jest` to mock the data so our test isn’t dependent on unpredictable factors like remote invocation or server latency.==
+
+[There are three adapters for mocking wire service data.](https://trailhead.salesforce.com/content/learn/modules/test-lightning-web-components/write-a-jest-test-for-wire-service?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential) 
+* **Generic wire adapter**: The generic adapter emits data on demand when you call the emit() API. It does not include any extra information about the data itself.
+* **Lightning Data Service (LDS) wire adapter**: The LDS adapter mimics Lightning Data Service behavior and includes information about the data’s properties.
+* **Apex wire adapter**: The Apex wire adapter mimics calls to an Apex method and includes any error status.
+
+
+<details><summary>
+What is a "stub" and why use it for mocking?
+</summary>
+
+Mocking Base Components
+The sfdx-lwc-jest package lets us run Jest on Lightning Web Components. It sets up all the necessary Jest configs to run tests without any additional changes. We’ve been using it extensively in the prior modules. This package includes a set of stubs (programs that simulate components that a module undergoing tests depends on) for all components in the Lightning namespace. This includes all the Lightning Base Components. The stubs are installed in the `src/lightning-stubs` directory in the `node-modules/@salesforce/sfdx-lwc-jest` directory.
+
+  **stub**  needs an .html and .js files
+---
+</details>
+
+
+---
+---
+
+Last Trailheads to DO:
+
+- [ ] [JavaScript Dev I Cert Prep: Variables, Collections, Functions, Classes](https://trailhead.salesforce.com/content/learn/modules/javascript-dev-i-cert-prep-variables-collections-functions-classes)
+
+- [ ] [JavaScript Dev I Cert Prep: Browsers, Async Programming, Server Side JavaScript](https://trailhead.salesforce.com/content/learn/modules/javascript-dev-i-cert-prep-browsers-async-programming-server-side-javascript)
+
+- [ ] [JavaScript Dev I Cert Prep: Debugging, Error Handling, Testing](https://trailhead.salesforce.com/content/learn/modules/javascript-developer-i-certification-prep-debugging-error-handling-testing) 
+
+- [ ] [trail just before exam to recap](https://trailhead.salesforce.com/en/content/learn/trails/study-for-the-salesforce-javascript-developer-i-exam) 
 
 
 ---
