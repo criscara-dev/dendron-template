@@ -2,9 +2,9 @@ site:
     assetsPrefix:  /dendron-template
     copyAssets: true
     siteHierarchies:
-        - computer-science
-        - salesforce-platform.platform-app-builder
         - salesforce-platform.javascript-developer-1
+        - salesforce-platform.platform-app-builder
+        - computer-science
     siteRootDir: docs
     usePrettyRefs: true
 vaults:
