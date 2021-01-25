@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1611339735278
+updated: 1611418967550
 created: 1611082314842
 ---
 
@@ -212,7 +212,41 @@ Checklist
 - [ ] to run `npm install react react-dom` 
 - [ ] to run React in the browser install _webpack_ from npm 
 - [ ] to run `npm install webpack webpack-cli webpack-dev-server`
-- [ ] create a file in the root folder _webpack.config.js_ 
+- [ ] create a file in the root folder _webpack.config.js_ and add this configutation code:
+  ```javascript
+  const path = require("path")
+    module.exports = {
+      entry: "./app/Main.js",
+      output: {
+        publicPath: "/",
+        path: path.resolve(__dirname, "app"),
+        filename: "bundled.js"
+      },
+      mode: "development",
+      devtool: "source-map",
+      devServer: {
+        port: 3000,
+        contentBase: path.join(__dirname, "app"),
+        hot: true,
+        historyApiFallback: { index: "index.html" }
+      },
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /(node_modules)/,
+            use: {
+              loader: "babel-loader",
+              options: {
+                presets: ["@babel/preset-react", ["@babel/preset-env", { targets: { node: "12" } }]]
+              }
+            }
+          }
+        ]
+      }
+    }
+    ```
+
 - [ ] to run:  `npm install @babel/core @babel/preset-env @babel/preset-react babel-loader`
 - [ ] add this to package.json: 
   ```javascript

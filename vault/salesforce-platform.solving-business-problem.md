@@ -2,7 +2,7 @@
 id: 63fbd198-3924-471e-9377-effe9453aceb
 title: Solving-business-problem
 desc: ''
-updated: 1605788894439
+updated: 1611497827371
 created: 1604351356138
 ---
 
@@ -111,4 +111,5 @@ L—Look critically at the completed solution. How can you improve it? Is there 
 
 #### [Project management Plan Lite](https://trailhead.salesforce.com/content/learn/modules/project-management-plan-lite)
 
-[test]
+
+[[salesforce-platform.solving-business-problem.project-management]]
