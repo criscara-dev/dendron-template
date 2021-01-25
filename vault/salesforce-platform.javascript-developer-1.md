@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1611403545020
+updated: 1611590635447
 created: 1610206576325
 ---
 
@@ -11,7 +11,155 @@ created: 1610206576325
 ### References:
 [JS Trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-javascript-developer-i-credential)
 
-[Module:JavaScript Skills for Salesforce Developers](https://trailhead.salesforce.com/content/learn/modules/javascript-essentials-salesforce-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+---
+
+## [Module:JavaScript Skills for Salesforce Developers](https://trailhead.salesforce.com/content/learn/modules/javascript-essentials-salesforce-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+Learn JavaScript Core Concepts
+
+#### JavaScript runtime
+The JavaScript runtime is an engine that interprets JavaScript code. It can be part of a browser, or other runtime environment like a server. Modern JavaScript engines are sophisticated and powerful to optimize execution and designed to conform to the ECMAScript standard.
+
+Keyword|Scope|Mutable Assignment|
+|--- |--- |--- |
+|var|function|yes|
+|let|block|yes|
+|const|block|no|
+
+JS has **implicit type coercion**:
+```javascript
+let num1 = 9 * "3";
+console.log(num1); // 27 (a number)
+let num2 = 9 + "3";
+console.log(num2); // "93" (a string)
+```
+ ==A browser’s primary job is to act as a client for a web server.==
+![](/assets/images/2021-01-25-14-50-28.png)
+
+The ==DOM==
+When a page is requested and then received by a browser, the browser parses the HTML and creates a description, or a model, of that page. This model is used to draw the page in the browser’s viewport. It’s also surfaced to JavaScript through the DOM.
+`window.document.body.<...>`
+
+[Conditional Rendering](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/create_conditional)
+When writing Lightning web components, you can explicitly define sections of the UI that are rendered only when certain conditions are met. You can do this by adding an `if:true` or `if:false` directive to a nested `template` tag. 
+
+#### [Creating Objects in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+1. ` Object.create()`
+2. Object Literal Notation: basically create object straight away such as: `const obj ={}`
+3. with Constructor _f_ such as:
+```javascript
+function Bike(gears, startGear) {
+  this.gears = gears;
+  this.currentGear = startGear;
+}
+```
+4. Object.assign()
+Assigning Properties and Functions to Objects
+
+Using:
+1. . notation: `bike.frontGearIndex` or `bike.calculateGearRatio()`
+2. [] notation `bike['frontGearIndex']` or `bike.['calculateGearRatio']()`
+
+> ⚠️ Object mutability: DON'T mutate Objects!!! 
+
+Inheritance: in JS use Prototypical inheritance, not 'Class' inheritance (btw, in JS classes are special types of function, not such as other OOP languages, try for example to type: `typeof class {}` in browser/JS console)
+Under the covers, the engine is still using `Object.create` and there is still no class (in the object-oriented sense), just that in-memory prototype object that is the actual source of inheritance. 
+
+#### Functions
+1. Function declaration(assignment): `function <name> (){ // code block here }`
+2. Function call(invocation): `<name>()`
+3. Function expression `const <name> = () => { // code block here }`
+A function need to do something, at least it needs to return:
+
+``javascript
+function name (name){ 
+    // code block here 
+    const example = `Hi, ${name}` 
+    // or
+    return name
+    }
+    ```
+4. Anonymous Functions: such as the HOF `map()`
+`let myArray = [1, 5, 11, 17]; let newArray = myArray.map( function(item){ return item / 2 } );`
+5. function as Event handlers: `var handleClick = function(event) {
+}`
+6. Assigning Event Handlers via DOM APIs (not used) in pure html: `<button onclick="handleClick(event)">Click to Go</button>`
+
+#### Context, Scope, and Closures
+
+- Context and this
+As we explored, JavaScript revolves around objects. When a function is invoked, there is always an object container around that function. This object container is its context and the `this` keyword points to that context. 
+==So context is not set when a function is declared, but rather where the function is invoked==
+
+- The Global Object
+In a browser, the global context is the `window` object. 
+`this === window; // true`
+
+- What is a Closure?
+When a function is declared, it holds a reference to any variables or arguments declared within it, and any variables it references in the scope that it is contained within. This combination of its variables and arguments along with local variables and arguments from its containing scope is called a closure. 
+
+#### Write Asynchronous JavaScript
+
+You need to understand:
+1. Callback Pattern
+A callback is simply a function passed into another function that invokes it at some point in the future. 
+```javascript
+setTimeout(callback, timer)
+Element.addEventListener(event, callback)
+Array.map(function(item){...})
+```
+2. Arrow Functions: `(arg1, arg2) => {...function body...}`
+Thanks to them we don't have anymore to bind `this`...
+3. Promises & `Async/Await`
+Promises developed as libraries to handle asynchronous code in a way that made it easier to reason about when your code succeeded or failed. 
+
+<details><summary>
+Apex vs LWC
+</summary>
+
+Consider the following Apex class and method: 
+```javascript
+public with sharing class ContactController {
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> findContacts(String searchKey) {
+        if (String.isBlank(searchKey)) {
+            return new List<Contact>();
+        }
+    String key = '%' + searchKey + '%';
+    return [SELECT Id, Name, Title, Phone, Email, Picture__c FROM Contact WHERE Name LIKE :key AND Picture__c != null LIMIT 10];
+    }
+...
+```
+VS
+Lightning Web Components surfaces this method using a promise-based API. You would invoke it like this: 
+```javascript
+import { LightningElement } from 'lwc';
+import findContacts from '@salesforce/apex/ContactController.findContacts';
+export default class ApexImperativeMethodWithParams extends LightningElement {
+    searchKey = '';
+    contacts;
+    error;
+    handleSearch() {
+        findContacts({ searchKey: this.searchKey })
+        .then(result => {
+            this.contacts = result;
+            this.error = undefined;
+        })
+        .catch(error => {
+            this.error = error;
+            this.contacts = undefined;
+        });
+    }
+}
+```
+</details>
+
+
+
+
+
+---
 
 [Module:Modern JavaScript Development](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
 

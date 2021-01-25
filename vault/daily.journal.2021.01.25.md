@@ -2,7 +2,7 @@
 id: d7e2e2ee-8610-4c11-9efc-4f2e5cf455b9
 title: '2021-01-25'
 desc: ''
-updated: 1611565094824
+updated: 1611587263449
 created: 1611565066268
 ---
 
@@ -12,6 +12,7 @@ created: 1611565066268
 - [ ] https://trailhead.salesforce.com/en/content/learn/trails/get-started-with-technical-project-management
 - [webcomponents](https://github.com/WICG/webcomponents)
 - [ ] [React Udemy](https://www.udemy.com/course/react-for-the-rest-of-us/learn/lecture/17797254#overview)
+- [ ] Cristian Florea idea about Company that make React Apps
 
 tomorrow:
 

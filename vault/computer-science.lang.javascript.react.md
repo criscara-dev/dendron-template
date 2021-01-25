@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1611418967550
+updated: 1611606284016
 created: 1611082314842
 ---
 
@@ -257,4 +257,12 @@ Checklist
 - [ ] `npm run dev`  
 - [ ] under `React.render(...|)` add: `if (module.hot) {module.hot.accept()}`
  
- 
+---
+
+## Move between pages
+Client-side routing
+- [ ] run in terminal: `npm install react-router-dom` or `npm i react-router-dom`
+- [ ] import in the main App JS adding: `import {BrowserRouter, Switch, Route } from 'react-router-dom'`
+
+We are not using server-side routing so we cannot use traditional html tag and its attribute `<a href="">`;
+In React become `<Link to="">` tag; and where we want to use them we need to import: `import {Link} from 'react-router-dom'`
