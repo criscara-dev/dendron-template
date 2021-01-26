@@ -2,13 +2,14 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1611590635447
+updated: 1611662987221
 created: 1610206576325
 ---
 
 ## JavaScript Developer 1 Certification
 
 ### References:
+![[computer-science.lang.javascript]]
 [JS Trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-javascript-developer-i-credential)
 
 ---
@@ -63,7 +64,7 @@ Using:
 
 > ⚠️ Object mutability: DON'T mutate Objects!!! 
 
-Inheritance: in JS use Prototypical inheritance, not 'Class' inheritance (btw, in JS classes are special types of function, not such as other OOP languages, try for example to type: `typeof class {}` in browser/JS console)
+Inheritance: in JS use Prototypical inheritance, not 'Class' inheritance (btw, in [JS classes](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/work-with-classes?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential) are special types of function, not such as other OOP languages, try for example to type: `typeof class {}` in browser/JS console)
 Under the covers, the engine is still using `Object.create` and there is still no class (in the object-oriented sense), just that in-memory prototype object that is the actual source of inheritance. 
 
 #### Functions
@@ -72,14 +73,15 @@ Under the covers, the engine is still using `Object.create` and there is still n
 3. Function expression `const <name> = () => { // code block here }`
 A function need to do something, at least it needs to return:
 
-``javascript
+```javascript
 function name (name){ 
     // code block here 
     const example = `Hi, ${name}` 
     // or
     return name
     }
-    ```
+   ```
+
 4. Anonymous Functions: such as the HOF `map()`
 `let myArray = [1, 5, 11, 17]; let newArray = myArray.map( function(item){ return item / 2 } );`
 5. function as Event handlers: `var handleClick = function(event) {
@@ -155,13 +157,53 @@ export default class ApexImperativeMethodWithParams extends LightningElement {
 ```
 </details>
 
-
-
-
-
 ---
 
 [Module:Modern JavaScript Development](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+- Feature supported by engine type: http://kangax.github.io/compat-table/es6/
+
+<div>
+  <iframe src="http://kangax.github.io/compat-table/es6/" height="315" width="560" allowfullscreen="" frameborder="0">
+  </iframe>      
+</div>
+<br>
+- [JS Classes](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/work-with-classes?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential) 
+
+|Member|Description|Example|
+|--- |--- |--- |
+|Constructor|The constructor is executed automatically when creating a new instance of the class. It guarantees that an initialization function is always called. This helps maintain a valid state for the class. But you don’t have to create a constructor. If one is not included, then the JavaScript engine creates an empty one for you.|`constructor(name) { this.name = name; }`|
+|Static Methods|Static methods are not part of any instance of the class, meaning that you can refer to these methods without referring to an instance. The concept of static class members is not new to ES6, but the static keyword is. Prior to ES6, you had to put any methods you wanted static in the constructor. Now you can put them wherever you want in the class and just use the static keyword.|`static methodName() {return 'something';}`|
+|Prototype Methods|These methods do not include the static keyword and must be referenced with an instance.|`printName() { console.log(this.name);}`|
+|Getters and Setters|These accessor functions work just like object literals and work the same as they did in ES5. Essentially you just put the get and set keywords in front of the property name. If you define a getter without a setter, then the property becomes read-only.| `get area() { return this.height * this.width; }` `set area(value) { this.area = value; }`|
+
+- [Modules](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/organize-code-with-modules?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+- [Asynch JS & Promises](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/write-asynchronous-javascript?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential):
+The Promise object includes four methods that you may want to check out for more advanced promise scenarios. They include:
+* `Promise.all`(iterable)—Returns promise only after all the promises in the iterable have resolved or rejected.
+* `Promise.race`(iterable)—Returns promise after the first promise in the iterable has resolved or rejected.
+* `Promise.resolve`(reason)—Returns promise that is resolved with the reason passed in as a parameter.
+* `Promise.reject`(value)—Returns a promise that is rejected with the value passed in as a parameter.
+
+[Testing & BDD](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/test-your-javascript?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+- One of the more popular behavior-driven tools is [Jasmine](https://jasmine.github.io/).
+![](/assets/images/2021-01-26-12-06-55.png)
+
+Ex Jasmine test
+```javascript
+describe("A test suite is just a function", function() {
+    it("This is a positive test", function() {
+      expect(true).toBe(true);
+    });
+    it("This is a negative test", function() {
+      expect(false).not.toBe(true);
+    });
+});  
+```
+
+---
 
 
 [Lightning Web Components Basics](https://trailhead.salesforce.com/content/learn/modules/lightning-web-components-basics)
