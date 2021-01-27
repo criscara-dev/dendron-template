@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1611606284016
+updated: 1611691752478
 created: 1611082314842
 ---
 
@@ -199,6 +199,21 @@ const LikeArea = ()=>{
 
 ## useEffect to create persistency in data in the context of React
 
+Can be used twice:
+```javascript
+// Only run once the first time this component is rendered
+useEffect( ()=> {
+  // for instance 
+ if (localStorage.getItem('exampleData')){
+   setArraydata(JSON.parse(localStorage.getItem('exampleData'))) // function that let set update the state in the component
+ }
+}, [])
+// run every time our pet state changes ... and save it to the local Storage, for instance
+useEffect(()=>{
+  localStorage.setItem('exampleData',JSON.stringify(array))
+}, [array])
+```
+
 Using localStorage from the browser and useEffect in React
 
 ---
@@ -266,3 +281,7 @@ Client-side routing
 
 We are not using server-side routing so we cannot use traditional html tag and its attribute `<a href="">`;
 In React become `<Link to="">` tag; and where we want to use them we need to import: `import {Link} from 'react-router-dom'`
+
+## Created Container and Page components in order to sue Composition over Inheritance and avoid to reuse the same code in different places.
+
+- Use of `{props.children}` inside Parent component to show children content component.
