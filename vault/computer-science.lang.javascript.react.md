@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1611691752478
+updated: 1611859613214
 created: 1611082314842
 ---
 
@@ -285,3 +285,59 @@ In React become `<Link to="">` tag; and where we want to use them we need to imp
 ## Created Container and Page components in order to sue Composition over Inheritance and avoid to reuse the same code in different places.
 
 - Use of `{props.children}` inside Parent component to show children content component.
+
+
+
+## Setup a backend
+
+Signup for a free account on MongoDB.com...Atlas
+
+create a collection:
+- DB name: ...
+- collection:...
+
+then Connect -> add a IP Address (whitelisted and temporarly) 0.0.0.0/0
+
+2021-01-28 18:43
+
+## Login / logout
+
+Building components with different logic: 
+- headerLoggedOut
+
+```javascript {.line-numbers highlight=5-6}
+import React, { useEffect,useState } from "react"
+import Axios from 'axios'
+
+function HeaderLoggedOut() {
+  const [username,setUsername] = useState()
+  const [password,setPassword] = useState()
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    try {
+    const response = await Axios.post('http://localhost:8080/login', { username, password })
+    // console.log(response.data)
+    response.data ? console.log(response.data) : console.log('Incorrect username / password')
+    } catch(e) {
+    console.log('There was a problem.')
+    }   
+  }
+  return (
+    <form onSubmit={handleSubmit} className="mb-0 pt-2 pt-md-0">
+          <div className="row align-items-center">
+            <div className="col-md mr-0 pr-md-0 mb-3 mb-md-0">
+              <input onChange={e => setUsername(e.target.value) } name="username" className="form-control form-control-sm input-dark" type="text" placeholder="Username" autoComplete="off" />
+            </div>
+            <div className="col-md mr-0 pr-md-0 mb-3 mb-md-0">
+              <input onChange={e => setPassword(e.target.value)} name="password" className="form-control form-control-sm input-dark" type="password" placeholder="Password" />
+            </div>
+            <div className="col-md-auto">
+              <button className="btn btn-success btn-sm">Sign In</button>
+            </div>
+          </div>
+        </form>
+  )
+}
+export default HeaderLoggedOut
+```

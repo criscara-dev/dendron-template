@@ -2,7 +2,7 @@
 id: 53f601c5-a9fa-4ad6-9b86-e810726e76ea
 title: Objects
 desc: ''
-updated: 1611666379466
+updated: 1611775510608
 created: 1611666250726
 ---
 
@@ -37,3 +37,4 @@ const murderRobotDog = (name)  => {
 const bruno =  murderRobotDog('bruno')
 bruno.bark()
 ```
+
