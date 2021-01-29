@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1605351637859
+updated: 1611939941853
 created: 1602530634233
 stub: false
 ---
@@ -120,6 +120,8 @@ module.exports = whatever
 What is a REPL?
 </summary>
 Read Eval Print Loop (infinite repeated task)
+
+`fs.(after the dot, press tab to see suggestions)`
 </details>
 
 <details><summary>

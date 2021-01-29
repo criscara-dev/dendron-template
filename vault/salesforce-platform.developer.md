@@ -2,7 +2,7 @@
 id: 2a6fc1df-ac07-4af0-a2bc-074548fe58ff
 title: Developer
 desc: ''
-updated: 1611355389260
+updated: 1611912918789
 created: 1602404064858
 stub: false
 ---
@@ -17,13 +17,14 @@ stub: false
 
 ---
 
-[[salesforce-platform.developer.application-lifecycle]]
+### App lifecycle & development
+[SLDS and Models](https://trailhead.salesforce.com/en/content/learn/modules/application-lifecycle-and-development-models)
 
-## How to get token:
+### How to get token:
 - from Profile -> settings -> reset my security #token
 
-## Org types:
- #[Dev-Hub](https://criscaraconsulting-dev-ed.lightning.force.com/lightning/setup/DevHub/home) is necessary to create #scratch-org
+### Org types:
+ - [Dev-Hub](https://criscaraconsulting-dev-ed.lightning.force.com/lightning/setup/DevHub/home) is necessary to create #scratch-org
 Type of org:
  #Production
  #Sandbox:
@@ -33,9 +34,11 @@ Type of org:
     - partial (contain part of the metadata)
     - full (contain all the metadata)
 
+- [Authorize DevHub in Setup and create Scratch Org](https://trailhead.salesforce.com/content/learn/projects/set-up-your-lightning-web-components-developer-tools/create-a-lightning-web-component)
+create a LWC from CLI: `sfdx force:lightning:component:create -n myFirstWebComponent -d force-app/main/default/lwc --type lwc`
 ---
 
-## Contribute the the sample gallery:
+### Contribute the the sample gallery:
 [references Docs](https://developer.salesforce.com/blogs/2020/09/contribute-to-the-sample-gallery.html)
 
 ((ref: [[computer-science.platform.salesforce.developer.interview-questions]]))
@@ -48,7 +51,7 @@ Type of org:
 ---
 ---
 
-## Career: Tipical adv on LinkedIn | 2020-11-12 14:21
+### Career: Tipical adv on LinkedIn | 2020-11-12 14:21
 
 <details><summary>
 Salesforce Developer and Solutions Designer

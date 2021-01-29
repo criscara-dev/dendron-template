@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1611843428498
+updated: 1611921188888
 created: 1611746683478
 ---
 
@@ -105,8 +105,8 @@ Vlocity Industry Process Library (VPL)
 ### VPE 1
 2021-01-28 10:02
 Notes:
-ex. levels: 1/2/3 from easy to hard
-Assistance: my Group, Vlocity Community, Vlocity Industry Process Library and click on a process component
+Exercises levels: 1/2/3 from easy to hard
+Where to get assistance: my Group, Vlocity Community, Vlocity Industry Process Library and click on a process component
 
 #### VPE 1-1
 <details><summary>
@@ -163,6 +163,7 @@ What is a DataRaptor?
 <details><summary>
 What are Integration Procedures?
 </summary>
+
 Vlocity Integration Procedures are declarative, **server-side processes** that execute **multiple actions in a single server call**.
 </details>
 
@@ -176,6 +177,7 @@ They are another important cross-industry tool that allows us to configure compl
 <details><summary>
 What is Newport Design System?
 </summary>
+
 **Newport Design System** is a Vlocity CSS framework tool for designers and web developers to easily restyle all Vlocity components in a single place and generate custom, optimized CSS that can be used in all future pages including non-Vlocity and non-Salesforce pages
 </details>
 
@@ -192,7 +194,7 @@ VPE 1-2
 Where Vlocity is available?
 </summary>
 
- Vlocity is Accessible throught multiple channels (on Any Device and Any Channel)
+ Vlocity is Accessible through multiple channels (on Any Device and Any Channel)
 </details>
 
 ![](/assets/images/2021-01-28-13-45-27.png)
@@ -215,3 +217,44 @@ Natively, data in Vlocity is expressed in JSON format as JSON Nodes and Subnodes
 
 
 ![](/assets/images/2021-01-28-14-16-52.png)
+
+---
+
+2021-01-29 10:06
+VP 2-0
+
+Concepts:
+1. Web Components
+2. Shadow DOM
+
+<details><summary>
+Which are 4 LWC benefits?
+</summary>
+
+* Low Total Cost of Ownership (TCO)
+* High Performance (LWC will load up to 300% faster than their predecessors)
+* They’re OmniChannel-enabled
+* They’re extremely flexible
+</details>
+
+In Vlocity, Omniscript or FlexCard is an **LWC control**. 
+![](/assets/images/2021-01-29-10-41-17.png)
+![](/assets/images/2021-01-29-10-43-05.png)
+LWC in Vlocity are extensible
+
+You can deploy Vlocity LWC via:
+`dfsx force:source:push`
+
+|File|Description|
+|--- |--- |
+|HTML (.html)|Required for all Lightning web components that render UI.Optional for service Lightning web components.|
+|JavaScript (.js)|Required for all Lightning web components.If the component renders UI, the JS file specifies which HTML file to return if there's more than one.If you extend a component and create your own custom HTML file, you must modify the JS file to return your custom HTML file rather than the base Vlocity HTML file.|
+|CSS (.css)|Required only if the component needs custom styles.If it doesn't, the component uses Salesforce Lightning (SLDS) or Newport (NDS) CSS based on your OmniScript configuration.|
+|XML Metadata Configuration(js-meta.xml)|Required for all Lightning web components.|
+
+Type of LWC in Vlocity:
+![](/assets/images/2021-01-29-11-49-33.png)
+
+* **Base**: Basic components used by the entire Vlocity platform
+* **Platform**: Specific to FlexCards and OmniScripts
+* **Vertical**: Digital Commerce: Specific to Communications, Media, and Energy
