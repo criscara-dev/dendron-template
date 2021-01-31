@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1611851443707
+updated: 1612112251115
 created: 1610206576325
 ---
 
@@ -303,18 +303,33 @@ Semantic MarkUp:
 
 ---
 ## [Lightning Design System for Developers](https://trailhead.salesforce.com/content/learn/modules/lightning_design_system?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
-Notes:
+
+> The CSS is fully namespaced with the `slds-` prefix and scoped with the `slds-scope` class to avoid CSS conflicts.
+
 [lightningdesignsystem.com](https://www.lightningdesignsystem.com/)
 BEM system:
-* A block represents a high-level component (e.g. .car)
-* An element represents a descendant of a component (e.g. .car__door)
-* A modifier represents a particular state or variant of a block or element (e.g. .car__door_red)
+* A **block** represents a high-level component (e.g. .car)
+* An **element** represents a descendant of a component (e.g. .car__door)
+* A **modifier** represents a particular state or variant of a block or element (e.g. `.car__door_red`)
 Grid System
 [CSS-tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 Data:
--  in the current release the Design System doesn’t support built-in Visualforce components — the <apex:*>, <chatter:*> and other components
-- the use of [Remote Objects,](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_remote_objects.htm) JavaScript Remoting or the REST API to access Salesforce data from your Visualforce pages based on Design System markup
-Avatar, Icons and [SVG Sprite](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
+-  in the current release the Design System doesn’t support built-in Visualforce components — the `<apex:*>`, `<chatter:*>` and other components
+
+- The **grid** system:
+```javascript
+<div class="slds-grid">
+ <div class="slds-col">Column 1</div>
+ <div class="slds-col">Column 2</div>
+ <div class="slds-col">Column 3</div>
+</div>
+```
+- The **Data Table** Component
+The Data Table component is an enhanced version of a HTML table for displaying tabular data with the Lightning UI styling. A Data Table is created by applying the `slds-table` class to a `<table>` tag. Use the `slds-table_bordered` class to apply a border.
+
+- the use of [Remote Objects](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_remote_objects.htm) JavaScript Remoting or the REST API to access Salesforce data from your Visualforce pages based on Design System markup.
+
+- Avatar, Icons and [SVG Sprite](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
 
 <details><summary>
 What is a Card and a Tile component?

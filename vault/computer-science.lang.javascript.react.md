@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1612082950637
+updated: 1612108159656
 created: 1611082314842
 ---
 
@@ -354,3 +354,16 @@ and then passing them down as `props` as it 's necessary.
 Default axios URL:
 `Axios.defaults.baseURL = 'http://localhost:8080/'` into the main file and then use Axios only with th `/link-path` 
 ---
+
+2021-01-31 15:39
+
+To use `React router` to use history and redirect after succesfully create a post to the post itself, we need to:
+```javascript
+// at the top
+import {withRouter} from 'react-router-dom'
+
+// code block
+
+// at the bottom
+export default withRouter(CreatePost)
+```
