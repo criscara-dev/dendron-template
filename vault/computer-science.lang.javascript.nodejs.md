@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1612022672326
+updated: 1612122435902
 created: 1602530634233
 stub: false
 ---
@@ -208,3 +208,14 @@ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out c
 ### Node Objects
 
 `global.process.`: so, Instead of introducing I/O overhead operations, I can use  the `process.nextTick()` instead of `setTimeout()`, if the App grow I/O is going to have impact in your server.
+
+```javascript
+>vim fileName.js
+....code here
+
+:x + enter to save and exit
+```
+
+or use `nano` instead of vim
+
+explore the use of `global` object in node.

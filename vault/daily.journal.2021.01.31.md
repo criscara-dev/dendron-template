@@ -2,7 +2,7 @@
 id: 6d46fd8f-8feb-487c-9b25-d5f3806046f2
 title: '2021-01-31'
 desc: ''
-updated: 1612083003362
+updated: 1612116500290
 created: 1612082996808
 ---
 
@@ -12,9 +12,11 @@ Ref: [JS I cert](https://trailhead.salesforce.com/en/users/strailhead/trailmixes
 
 - [x] shortcut on MAC to full screen CMD+CTRL+F)
 - [webcomponents](https://github.com/WICG/webcomponents)
-- [ ] Vlocity VPE1
+- [x] [review L dsign system](https://trailhead.salesforce.com/content/learn/modules/lightning_design_system?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+
+tomorrow:
+- [ ] Vlocity VPE3
 - [ ] review: [Lightning Web Components for Visualforce Developers](https://trailhead.salesforce.com/content/learn/modules/lwc-for-visualforce-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
-- [ ] [review](https://trailhead.salesforce.com/content/learn/modules/lightning_design_system?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
 - [ ] [challenge 4 LWC Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lwc_specialist?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
 - [ ] [React Udemy](https://www.udemy.com/course/react-for-the-rest-of-us/learn/lecture/17797254#overview)
 
@@ -24,7 +26,7 @@ future:
 - [ ] [Flow trail](https://trailhead.salesforce.com/en/content/learn/trails/build-flows-with-flow-builder)
 
 ---
-Limbo:
+Limbo Issues :
 - [ ] to create Issue tracker SF:
 [today's issue solved](https://trailblazers.salesforce.com/answers?id=9063A000000E5zSQAS): reset password to auth everytime the org...
 [another issue](https://trailblazers.salesforce.com/answers?id=9064S000000DIGiQAO): as picture below
@@ -42,3 +44,4 @@ cannot add default sintax for react:
       "*.js":"javascriptreact"    
   }
 ```
+---
