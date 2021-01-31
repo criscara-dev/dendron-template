@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1611939941853
+updated: 1612022672326
 created: 1602530634233
 stub: false
 ---
@@ -202,3 +202,9 @@ cmd to generate keys for HTTPS?
 ->
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 </details>
+
+---
+
+### Node Objects
+
+`global.process.`: so, Instead of introducing I/O overhead operations, I can use  the `process.nextTick()` instead of `setTimeout()`, if the App grow I/O is going to have impact in your server.

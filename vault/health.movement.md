@@ -2,7 +2,7 @@
 id: d1d4216d-f486-465c-8af7-0c7684960ff8
 title: Movement
 desc: ''
-updated: 1602502573338
+updated: 1612009407751
 created: 1602502573338
 stub: false
 ---
@@ -26,3 +26,8 @@ THURSDAY
 LESS VOLUME
 SATURDAY
 ALL OUT EVERYTHING
+
+## Front Split course
+
+[[health.movement.front-split]]
+[[health.movement.middle-split]]

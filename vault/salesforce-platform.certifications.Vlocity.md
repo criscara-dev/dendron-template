@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1611921188888
+updated: 1612016529082
 created: 1611746683478
 ---
 
@@ -258,3 +258,9 @@ Type of LWC in Vlocity:
 * **Base**: Basic components used by the entire Vlocity platform
 * **Platform**: Specific to FlexCards and OmniScripts
 * **Vertical**: Digital Commerce: Specific to Communications, Media, and Energy
+
+
+2021-01-30 14:19
+
+Flexcards Overview VPE 3-0
+
