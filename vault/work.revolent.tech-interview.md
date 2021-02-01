@@ -2,7 +2,7 @@
 id: d3c5b032-ccc4-483b-bad3-f325b8951be1
 title: Tech-interview
 desc: ''
-updated: 1609842034696
+updated: 1612204023291
 created: 1603706834819
 stub: false
 ---
@@ -15,6 +15,8 @@ stub: false
 - [ ] create flashcards from this blog: [SF Dev](https://www.salesforceben.com/30-salesforce-developer-interview-questions-answers/)
 
 - [Jobs Dev in search](https://www.salesforceben.com/salesforce-developers-the-most-in-demand-salesforce-job): blog post by SalesforceBen
+
+- [ ] [30 questions from SalesforceBen](https://www.salesforceben.com/30-salesforce-developer-interview-questions-answers/)
 
 
 ### [Common answers to questions](https://docs.google.com/document/d/11z6pvtfISMzCInGJKlYu1l0gr96jsoXSF6woR4-aX1c/edit)

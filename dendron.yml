@@ -3,7 +3,7 @@ site:
     copyAssets: true
     siteHierarchies:
         - salesforce-platform.javascript-developer-1
-        - salesforce-platform.platform-app-builder
+        - salesforce-platform.certifications.Vlocity
         - computer-science
     siteRootDir: docs
     usePrettyRefs: true
