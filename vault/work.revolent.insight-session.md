@@ -2,7 +2,7 @@
 id: 4977e2db-add7-4bbf-92c3-4caccc2141b7
 title: Insight-session
 desc: ''
-updated: 1611081343775
+updated: 1612193934457
 created: 1603474926144
 stub: false
 ---
@@ -116,7 +116,7 @@ AI
 MuleSoft
 CPQ: CPQ Salesforce, or Configure, Price, Quote Software by Salesforce is a sales tool for companies to provide accurate pricing with any given product configuration scenario.
 
-==be a Eminance, create my own brand==
+==be a Eminence, create my own brand==
 Are you a know name in the SF developer?
 Do you have a Blog? followers etc.
 
@@ -128,3 +128,6 @@ pricing? how to place in the market, where the Intelligence come from?
 About Privacy and Security, I didn't see in your map for solution areas mention the SF Blockchain. Even if not quite big or 100% delivered, is IBM interested?
 Did you see an increase in Salesforce Blockchain usage from Orgs and again which certification/experience would you recommend to help? Is IOT Industry for Health, mostly relevant as well.
 </details>
+
+---
+
