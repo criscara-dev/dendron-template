@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1606294108521
+updated: 1612210027346
 created: 1606052489366
 stub: false
 ---
@@ -58,3 +58,13 @@ So I thought and come with some ideas. Let me get them down before forget.
 - paintings
 - book on health-longevity for developers
 - plasma ray with mind control 
+
+
+2021-02-01 20:06
+> "Bitcoin is a bank in cyberspace,
+run by incorruptible software,
+offering a global, affordable, simple,
+& secure savings account to billions of
+people that don't have the option or desire
+to run their own hedge fund."
+Michael J. Saylor

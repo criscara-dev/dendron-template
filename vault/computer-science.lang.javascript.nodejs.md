@@ -2,7 +2,7 @@
 id: 0b782372-9d92-4227-9895-a846ed7364ed
 title: Nodejs
 desc: ''
-updated: 1612122435902
+updated: 1612212789860
 created: 1602530634233
 stub: false
 ---
@@ -219,3 +219,60 @@ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out c
 or use `nano` instead of vim
 
 explore the use of `global` object in node.
+
+
+#### modules
+
+Export single functions:
+```node
+var PI = Math.PI;
+
+exports.area = function(r){
+	return PI * r * r
+}
+
+exports.circumference = function(r) {
+	return 2 * PI * r
+}
+```
+in the folder containing the `circle.js` file open `node` on terminal:
+```node
+var circle = require('./circle.js') or 
+var circle = require('./circle') // setting up the variable - .js is the default and I can avoid to use it, it's what Node is doing already
+> circle.area(4)
+// 50.26548245743669
+> circle.circumference(4)
+// 25.132741228718345
+```
+
+Entire Module to export:
+```node
+var PI = Math.PI;
+
+module.exports = function(r){
+	return {
+	area: function(){
+		return PI * r * r
+		},
+	circumference:  function() {
+	return 2 * PI * r
+	}
+}
+}
+...
+> var myCircle2 = circle(4)
+> myCircle2.area()
+50.26548245743669
+...
+> myCircle2.circumference()
+25.132741228718345
+
+```
+
+#### NPM
+1. check npm website
+2. use command `npm i -g --save`: 
+  - `-g` flag install the package globally
+  - the flag `--save` is saving the dependency in `package.json`
+  - the flag`--save-dev` is saving the dev dependency in `package.json`
+  - wildcards: `~` and/or `^` and/or `*` (last version) AVOID USE START! - for versioning: `1.0.0` i.e. `major.minor.patch`
