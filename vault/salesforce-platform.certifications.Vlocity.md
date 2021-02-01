@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612016529082
+updated: 1612181869544
 created: 1611746683478
 ---
 
@@ -260,7 +260,58 @@ Type of LWC in Vlocity:
 * **Vertical**: Digital Commerce: Specific to Communications, Media, and Energy
 
 
-2021-01-30 14:19
+---
 
-Flexcards Overview VPE 3-0
+2021-02-01 10:45
 
+### Flexcards Overview: VPE 3-0
+
+<details><summary>
+What FlexCard are and what they can do?
+</summary>
+
+**FlexCards summarize contextual information at a glance.**
+- Most FlexCards provide this combination of **information** and **actions**.
+**FlexCards are the beginning and ending point for customer transactions**
+**We can view FlexCards on any device or channel**
+**A FlexCard can display data from multiple data sources**
+**We build FlexCards quickly using drag and drop elements** (Within OmniStudio)
+**FlexCards have a WYSIWYG editor for controlling their layout and style**
+**FlexCard Actions are relevant to the context of the card**
+- id est (that is), Update Case action opens a second tab for the Update Case Details guided interaction, which is an LWC OmniScript.
+**FlexCards are reusable and embeddable in other FlexCards** (a.k.a. Child FlexCards)
+**FlexCards display more detail on demand with Flyouts**
+- A Flyout is another FlexCard that appears when you click an action on a FlexCard. A Flyout displays:
+additional of secondary information
+**FlexCards have multiple states that display based on conditions**
+- i.e., a _FlexCard state_ determines what the user **can see and do** on the card.
+**We can embed a FlexCard inside an OmniScript**
+Obviously, the action that start has a visual UI... i.e. a a FlexCard in a LWC OmniScript
+</details>
+
+<details><summary>
+Which are the building elements currently available in the FlexCard Designer?
+</summary>
+
+Simple UI elements include: | The more advanced UI elements are: 
+--|--
+Action | Chart
+Block | Custom LWC
+Field | Datatable
+Icon | FlexCard
+Image | State
+Menu | &nbsp;
+Text | &nbsp;
+Toggle | &nbsp;
+</details>
+
+### FlexCard Designer
+
+Go to the App: Vlocity Digital Studio -> FlexCards
+Available area to work with:
+- header 
+- canvas
+- Build Panel (Build, Properties, Style, and Setup Panels)
+- Preview
+- Publish options (click Activate)
+- In-Product Help and Tool Tips: Click `❓` to view detailed documentation about an element in a slide-out help tray
