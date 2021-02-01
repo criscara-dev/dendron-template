@@ -2,12 +2,11 @@ site:
     assetsPrefix:  /dendron-template
     copyAssets: true
     siteHierarchies:
-        - salesforce-platform.javascript-developer-1
         - salesforce-platform.certifications.Vlocity
+        - salesforce-platform.javascript-developer-1
         - computer-science
     siteRootDir: docs
     usePrettyRefs: true
 vaults:
-    -
-        fsPath: vault
+    - fsPath: vault
 version: 0

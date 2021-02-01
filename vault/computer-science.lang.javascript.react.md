@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1612198363334
+updated: 1612207181478
 created: 1611082314842
 ---
 
@@ -367,10 +367,11 @@ import {withRouter} from 'react-router-dom'
 // at the bottom
 export default withRouter(CreatePost)
 ```
-
+---
 2021-02-01 16:35
 
-`context`
+### `context`
+[Official Doc: `context`](https://reactjs.org/docs/context.html)
 Which problem is solving?
 - It solves what is it called __component drilling__, we pass a component as a container:
 `<ExampleContext.Provider value={addFlashMessage}>` around our component and then we can pass the value to any child component no matters how level deep they are!
@@ -384,4 +385,12 @@ In the chid component :
   `import ExampleContext from "../ExampleContext"`
   - In the component:
     - `const addFlashMessage = useContext(ExampleContext)`
-  
+
+---
+
+### `useReducer`
+[Official Doc: `useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer)
+Is preferable to useState when you have complex state logic
+`const [state,dispatch] = useReducer()` : the state and what is used to update state...
+the `dispatch({...})` is going to be pass into the reducer function...i.e. `ourReducer(state, action){...}`
+check React documentation to get more clarification
