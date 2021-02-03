@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1612295655814
+updated: 1612373421379
 created: 1611082314842
 ---
 
@@ -372,6 +372,7 @@ export default withRouter(CreatePost)
 2021-02-01 16:35
 
 ### `context`
+==EASY TO SHARE DATA THROUGH THE ENTIRE APPLICATION==
 [Official Doc: `context`](https://reactjs.org/docs/context.html)
 Which problem is solving?
 - It solves what is it called __component drilling__, we pass a component as a container:
@@ -390,8 +391,29 @@ In the chid component :
 ---
 
 ### `useReducer`
+== TO KEEP ALL THE LOGIC IN ONE CENTRALLY LOCATED PLACE==
 [Official Doc: `useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer)
 Is preferable to useState when you have complex state logic
 `const [state,dispatch] = useReducer()` : the state and what is used to update state...
 the `dispatch({...})` is going to be pass into the reducer function...i.e. `ourReducer(state, action){...}`
 check React documentation to get more clarification
+
+
+---
+
+### Using useReducer and Context
+
+This is not optimal:
+`<ExampleContext.Provider value={{ state, dispatch }}>`
+
+We need to set 2 Context.Provider:
+### Immer
+
+==MAKE VERY EASY TO WORK WITH COMPLEX OBJECTS IN IMMUTABLE FASHION==
+Improving usage of `state` via Immer:
+`npm i immer use-immer`
+and import where needed: `import {useImmerReducer} from 'use-immer'
+` basically use as replacement for React useReducer function
+and change from: `const [state,dispatch] = useReducer(ourReducer, initialState)` to `const [state,dispatch] = useImmerReducer(ourReducer, initialState)`
+
+Basically Immer give us a draft copy of the state and then we can use it and modify it as much as we like.

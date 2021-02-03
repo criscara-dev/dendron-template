@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612281670939
+updated: 1612357541948
 created: 1611746683478
 ---
 
@@ -349,3 +349,16 @@ Name = AccountClosed, Author = CustomerSales
 #### [Questions I need to be able to answer](https://vlocity-university.litmos.com/course/3108482/module/6580306/Scorm?LPId=104370)
 
 #### [VPE 3-2 Review Questions](https://vlocity-university.litmos.com/course/3108482/module/6580307/Scorm?LPId=104370)
+
+#### VPE 3-3:
+* Make a collapsible block
+* Clone a FlexCard
+* Configure a field to display a date properly
+* Push data from a parent FlexCard to a child FlexCard
+
+> Activating FlexCards and Publish Options
+Activate a FlexCard to generate a Lightning web component (LWC). Publish an active FlexCard to a Lightning or Community page. Once activated, a FlexCard can't be edited. You must deactivate it, make your changes, then activate it again.
+
+**A flyout** is a type of action that displays additional data in a modal window or popover.
+
+#### [VPE 3-3 Review Questions](https://vlocity-university.litmos.com/course/3108482/module/6580308/Scorm?LPId=104370)
