@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1612207181478
+updated: 1612295655814
 created: 1611082314842
 ---
 
@@ -346,13 +346,14 @@ export default HeaderLoggedOut
 
 #### Managing states that reside in another part of the UI
 
-From Header to Main component... **I need to left the state up**
-and then passing them down as `props` as it 's necessary.
+From Header to Main component... **I need to left the state up** and then passing them down as `props` as it 's necessary.
+
 ---
 2021-01-30 16:32
 
 Default axios URL:
 `Axios.defaults.baseURL = 'http://localhost:8080/'` into the main file and then use Axios only with th `/link-path` 
+
 ---
 
 2021-01-31 15:39

@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612181869544
+updated: 1612281670939
 created: 1611746683478
 ---
 
@@ -266,10 +266,8 @@ Type of LWC in Vlocity:
 
 ### Flexcards Overview: VPE 3-0
 
-<details><summary>
-What FlexCard are and what they can do?
-</summary>
 
+#### What FlexCard are and what they can do?
 **FlexCards summarize contextual information at a glance.**
 - Most FlexCards provide this combination of **information** and **actions**.
 **FlexCards are the beginning and ending point for customer transactions**
@@ -287,11 +285,9 @@ additional of secondary information
 - i.e., a _FlexCard state_ determines what the user **can see and do** on the card.
 **We can embed a FlexCard inside an OmniScript**
 Obviously, the action that start has a visual UI... i.e. a a FlexCard in a LWC OmniScript
-</details>
 
-<details><summary>
-Which are the building elements currently available in the FlexCard Designer?
-</summary>
+
+#### Which are the building elements currently available in the FlexCard Designer?
 
 Simple UI elements include: | The more advanced UI elements are: 
 --|--
@@ -315,3 +311,41 @@ Available area to work with:
 - Preview
 - Publish options (click Activate)
 - In-Product Help and Tool Tips: Click `❓` to view detailed documentation about an element in a slide-out help tray
+
+---
+2021-02-02 09:53
+VPE 3-1
+
+Creating a FlexCard - Using the Data Source Wizard
+
+- [x] Hands-on-challenge: Create a FlexCard for the Account Detail
+- [ ] Step 1: New FlexCard (Configure Basic Settings)
+    - ![](/assets/images/2021-02-02-10-37-06.png)
+- [ ] Step 2: Select Data Source Type (Integration Procedures)
+    - ![](/assets/images/2021-02-02-10-15-53.png)
+- [ ] Step 3: Select Data Source:
+    Input parameters (Input Map) define what variables to pass to the data source
+    - ![](/assets/images/add%20picture%20here.png)
+- [ ] Step 4: Configure Inputs (Test Parameters and Test Response)
+    - ![](/assets/images/2021-02-02-10-47-54.png)
+- [ ] Additional FlexCard **Setup** Properties
+
+
+<details><summary>
+Best Practices?
+</summary>
+
+FlexCard Names:
+
+Must begin with a letter
+Combination of Name and Author must be unique in an org
+Only contains underscores and alphanumeric characters, no spaces
+Can’t end with an underscore or have two consecutive underscores
+Examples:
+Name = AccountActive, Author = CustomerSales
+Name = AccountClosed, Author = CustomerSales
+</details>
+
+#### [Questions I need to be able to answer](https://vlocity-university.litmos.com/course/3108482/module/6580306/Scorm?LPId=104370)
+
+#### [VPE 3-2 Review Questions](https://vlocity-university.litmos.com/course/3108482/module/6580307/Scorm?LPId=104370)

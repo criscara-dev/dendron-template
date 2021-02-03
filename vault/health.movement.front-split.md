@@ -2,7 +2,7 @@
 id: 20373efa-ee50-4a7b-829a-cd2b73e8b25f
 title: Front Split
 desc: ''
-updated: 1612107331328
+updated: 1612291232996
 created: 1612006925293
 ---
 
@@ -24,6 +24,8 @@ Younger you are easier it is even thought I recommend this type of training from
 2. Special strength exercises can stimulate the muscle fibers to grow longer and elongate the fibrous connective tissue associated with the muscle.
 3. measure your progress: you need to make a _Split Journal_ or bought mine;
 > You need to measure to see your progress: count set, reps and rest.
+4. barbell strategy:a void the middle: O-------o
+(stretch light always) -------- (train strength 2 times a week very hard)
 
 ### Sequences of stretches in a workout:
 1. dynamic
@@ -47,6 +49,7 @@ Younger you are easier it is even thought I recommend this type of training from
     -   contract tight / relax antagonists... and repeat
 5. lunges static and isometric with yoga block under buttock.
 6. loaded front-split (get creative ... and my way)
+7. tights stretch on the floor
 
 ### Training routine:
 

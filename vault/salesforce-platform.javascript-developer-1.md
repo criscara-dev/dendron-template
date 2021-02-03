@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1612112251115
+updated: 1612256272124
 created: 1610206576325
 ---
 
@@ -345,10 +345,6 @@ A [tile](https://www.lightningdesignsystem.com/components/tiles/) is a grouping 
 
 ---
 
-## [Lightning Web Components Basics](https://trailhead.salesforce.com/content/learn/modules/lightning-web-components-basics?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
-
-
-
 ## [Lightning Web Components Basics](https://trailhead.salesforce.com/content/learn/modules/lightning-web-components-basics)
 
 
@@ -458,7 +454,7 @@ References:
 - [ ] https://trailhead.salesforce.com/content/learn/modules/lightning-web-components-basics/add-styles-and-data-to-a-lightning-web-component?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential
 ---
 
-[Lightning Web Components for Visualforce Developers](https://trailhead.salesforce.com/content/learn/modules/lwc-for-visualforce-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+## [Lightning Web Components for Visualforce Developers](https://trailhead.salesforce.com/content/learn/modules/lwc-for-visualforce-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
 
 - Pre-requisites: [Learn to work with the JS](https://trailhead.salesforce.com/en/content/learn/trails/learn-to-work-with-javascript)
 - [Mobile App customization](https://trailhead.salesforce.com/content/learn/modules/salesforce1_mobile_app)

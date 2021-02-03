@@ -2,7 +2,7 @@
 id: 9da6d4c5-b0bd-4cb3-8d63-94362c64dd68
 title: Ideas
 desc: ''
-updated: 1609702085678
+updated: 1612290528741
 created: 1609701979868
 ---
 
@@ -11,3 +11,7 @@ created: 1609701979868
 
 
 ## APPS
+
+## EXPERIMENTS
+
+thought experiments:

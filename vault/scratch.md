@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1612210027346
+updated: 1612284774813
 created: 1606052489366
 stub: false
 ---
@@ -68,3 +68,10 @@ offering a global, affordable, simple,
 people that don't have the option or desire
 to run their own hedge fund."
 Michael J. Saylor
+
+>...Rotation of **appearance** of skills and acumen (_vs_) to the **actual essence** of skills and acumen  
+
+2021-02-02 16:52
+> Lexis Hanson:
+But every job posting seemed to be senior, senior, senior. And Steven James, who is a colleague at Salesforce, and I worked with on an open source project as part of my transition, his advice was that a lot of engineering managers, they don’t want to keep people from applying that are overqualified. So in other words, putting a job rec out with the senior title casts the widest net for engineering managers, and then they can take that pool.
+
