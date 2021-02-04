@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612357541948
+updated: 1612437859213
 created: 1611746683478
 ---
 
@@ -362,3 +362,47 @@ Activate a FlexCard to generate a Lightning web component (LWC). Publish an acti
 **A flyout** is a type of action that displays additional data in a modal window or popover.
 
 #### [VPE 3-3 Review Questions](https://vlocity-university.litmos.com/course/3108482/module/6580308/Scorm?LPId=104370)
+
+#### VPE 3-4
+Basically I notice the documentation is well organized, how my work should.
+
+make a schema of how I have to proceed.
+
+- Review:
+Confirm your understanding by answering these questions.
+• What is a benefit of bringing in external data like the Weather to your FlexCard?
+-> to help the agent to assess the condition for the intervention...
+• How can you pull an image into a card for display?
+-> via URL or file upload or... just click the question mark for the tooltip!
+• What weather data are you bringing into your FlexCard?
+-> The current Condition, temperature and Location/city
+
+Review
+Confirm your understanding by answering these questions.
+• What is an advantage of using a datatable to display information?
+-> see data in a table format
+• What is a flyout and how might you use one?
+-> It's an `action` it let open another FlexCard/URL from int/ext site to get more date what otherwise will make everything to cluttered
+• How do you create a flyout?
+From the `properties` of a FlexCard in Action type
+• Why might you not be able to view a flyout in a FlexCard?
+-> ==because is not set in `action type?==
+• Can you embed a child FlexCard in another child FlexCard?
+-> Yes
+• What is the Repeat Records feature and why must it be disabled for a datatable?
+-> in Vlocity, Datatables already loop over list of records.
+`Repeat Records` loops as well over list for multiple records, so disable it. 
+
+> Best Practices
+BEST PRACTICES
+FlexCard state display top to bottom.
+The first state that has true conditions displays.
+A a best practice, always keep a card state at the bottom that hasn't any conditions. This card becomes the default card state when no conditions are met.
+
+#### [Review Questions VPE 3-4](https://vlocity-university.litmos.com/course/3108482/module/6580310/Scorm?LPId=104370)
+
+#### [Review Questions VPE 3-5](https://vlocity-university.litmos.com/course/3108482/module/6580314/Scorm?LPId=104370)
+
+#### [Review Questions VPE 3-4](https://vlocity-university.litmos.com/course/3108482/module/6580310/Scorm?LPId=104370)
+
+### [FlexCard wrap-up](https://vlocity-university.litmos.com/course/3108482/module/6666592/Scorm?LPId=104370)

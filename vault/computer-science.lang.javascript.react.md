@@ -2,7 +2,7 @@
 id: 8cf2c2a1-a833-48f5-93d8-928fb316ee76
 title: React
 desc: ''
-updated: 1612373421379
+updated: 1612379944290
 created: 1611082314842
 ---
 
@@ -391,7 +391,7 @@ In the chid component :
 ---
 
 ### `useReducer`
-== TO KEEP ALL THE LOGIC IN ONE CENTRALLY LOCATED PLACE==
+==TO KEEP ALL THE LOGIC IN ONE CENTRALLY LOCATED PLACE==
 [Official Doc: `useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer)
 Is preferable to useState when you have complex state logic
 `const [state,dispatch] = useReducer()` : the state and what is used to update state...
