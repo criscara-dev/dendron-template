@@ -2,10 +2,11 @@
 id: bcc23d9b-3e7a-413d-be29-ce680f1531a6
 title: About me
 desc: ''
-updated: 1605347958970
+updated: 1612471225567
 created: 1602345930962
 stub: false
 ---
+
 # User-Guide on Me
 
 What I know something about
@@ -23,6 +24,8 @@ how you look at problems
 what your blind spots
 areas of growth are
 and how to build trust with you.
+
+##  [[website|about-me.website]]
 
 ## Programming languages skills:
 

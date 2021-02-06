@@ -2,7 +2,7 @@
 id: 1eeab78a-4075-44c1-8316-d0d35922857a
 title: Javascript
 desc: ''
-updated: 1612197040437
+updated: 1612642243027
 created: 1602345804873
 stub: false
 ---
@@ -20,6 +20,8 @@ stub: false
 [[DOM|computer-science.lang.javascript.dom]]
 [[Objects|computer-science.lang.javascript.objects]]
 [[HOF|computer-science.lang.javascript.hof]]
+<a name="closure">Closures</a>
+
 
 ## Scope & Context
 1. **Scope** is the biggest source of confusion regarding variables.
@@ -81,7 +83,28 @@ greeting()
 ```
 ---
 
+
+[Closure](#closure):
+```javaScript
+
+let workshop = 'JavaScript'
+
+function parent() {
+    const par = 'cris'
+    return function child() {
+    const chi = 'cara'
+    }
+}
+console.log(workshop, par, chi) // JavaScript cris cara
+```
+[1].map( (cb) => cb)
+
+It's a way to amintain a variable private from the outside scope.
+The `cb` is a closure because is nested function within a function that has access to its parent scope
+---
 ### Rerefences
 
 - [Can I Use?](https://caniuse.com/)
 - [Which features are supported by which engine?](http://kangax.github.io/compat-table)
+
+

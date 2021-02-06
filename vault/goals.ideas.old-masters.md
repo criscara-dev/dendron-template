@@ -2,7 +2,7 @@
 id: e5d57b53-dbbb-442d-9798-1c400f575b33
 title: Old Masters
 desc: ''
-updated: 1612466118115
+updated: 1612538819461
 created: 1612465111754
 ---
 
@@ -40,3 +40,9 @@ Can be like a path in order to make it a book?
 28. art vs craft
 29. interviewing a fellow old master copy painter
 30. how to draw like an old master
+
+---
+
+[google sheet](https://docs.google.com/spreadsheets/d/1x0dcgu76KHO5K02SZY2ufhTPEYZ6Pl_sbSnC2-Mx_3U/edit#gid=454111211)
+
+[Trello board](https://trello.com/b/9i9htaDb/master-art-copy)
