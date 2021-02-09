@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612437859213
+updated: 1612883352093
 created: 1611746683478
 ---
 
@@ -406,3 +406,169 @@ A a best practice, always keep a card state at the bottom that hasn't any condit
 #### [Review Questions VPE 3-4](https://vlocity-university.litmos.com/course/3108482/module/6580310/Scorm?LPId=104370)
 
 ### [FlexCard wrap-up](https://vlocity-university.litmos.com/course/3108482/module/6666592/Scorm?LPId=104370)
+
+---
+
+## VPE-4 Key Capabilities of Vlocity OmniScripts
+
+### VPE 4-0 Overview
+
+<details><summary>
+What is a A Vlocity OmniScript?
+</summary>
+
+1. A Vlocity OmniScript is declarative scripting tool that behave as a guided path to complete a business process.
+Basically is a way to complete business processes digitally
+2. An OmniScript displays both internal data from Salesforce and external data from a website or a 3rd-party legacy system. (AOIs)
+3. We rebrand OmniScripts to suit our customers
+4. We use OmniScripts to manage signed documents (and we can create dynamic documents with Vlocity from templates)
+
+</details>
+
+<details><summary>
+Example of Omniscript?
+</summary>
+A customer service agent adds a new customer and captures details for a service implementation, such as network configuration requirements
+A customer steps through a selling process, such as choosing a new insurance plan
+An insurance agent updates a policy
+A customer completes a self-service interaction such as troubleshooting a service outage
+A customer completes forms for different services, such as government benefits, insurance policies, and healthcare coverage
+</details>
+
+![](/assets/images/2021-02-08-12-11-19.png)
+
+<details><summary>
+What are OmniOut and CardOut?
+</summary>
+The capability of hosting OmniScripts and FlexCards on any server is called OmniOut and CardOut.
+</details>
+
+VPE 4-1
+### Guidelines for Planning OmniScripts
+
+* Map the business process to the proposed OmniScript structure. It's easier to make edits to your process before you begin building.
+* Plan what data is involved and where it is needed. This tells you what data must be available for each guided step.
+* Decide what data you want to gather and where to save it.
+
+Outline the flow: **Data Process** and **Agent actions**
+
+<details><summary>
+What makes each OmniScript unique?
+</summary>
+Type, Subtype, and Language define the unique identity of the OmniScript
+Only one active OmniScript may have the same Type, Subtype, and Language at any time.
+The Name is required, but does not have to be unique.
+Type must start with a lower case letter.
+Use PascalCase...not camelCase
+</details>
+
+### [Review VPE 4-1](https://vlocity-university.litmos.com/course/3108510/module/6580384/Scorm?LPId=104370)
+
+---
+
+### VPE 4-2 Getting Salesforce Data for the OmniScript
+
+- When an OmniScript is launched from a Card, the **RecordId** for the card is passed to the OmniScript where it is stored in a variable called **ContextId**.
+
+[VPE 4-2 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580385/Scorm?LPId=104370)
+• What are the advantages of using Vlocity Integration Procedures as data sources?
+-> They can be versioned, so when updated, you don’t have to change your OmniScript or Card configuration. (e.g. Stub data to live data)
+Multiple DataSources (SF, API, Apex) can be combined in one server call.
+
+• Why did you use the same value in the Name and Field Label of the Integration Procedure?
+->However best practice when working with LWC is to enter the name in the Field Label. This is because the field label does display in the Action Debugger. Later, when you configure multiple integration procedures, **having descriptive labels** for them helps you confirm if they are pulling and pushing the data correctly.
+
+• What determines the JSON structure of an OmniScript?
+-> Aside from the header data, the structure of OmniScript elements determines the JSON structure of an OmniScript.
+
+• How does an OmniScript match incoming data with elements?
+-> **OmniScripts have a parser that matches incoming data with the elements based on the element name**. To populate the fields in the UI, you need to change the element names to match the input field names from the Integration Procedure by adding “Account” to the beginning of each element name. 
+
+• Why did we update the mask?
+-> Remove the mask as the phone number does not display in a Lightning web component with a mask in place.
+
+---
+[VPE 4-3 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580386/Scorm?LPId=104370)
+<details><summary>
+What are best practices for sending data out of an OmniScript?
+</summary>
+Use the Action Debugger to get the JSON for Expected Input.
+</details>
+
+<details><summary>
+What is the merge field syntax for OmniScript? 
+</summary>
+%node:subnode%
+</details>
+
+<details><summary>
+What are some uses for the OmniScript Action Debugger? 
+</summary>
+View the data flow into and out of the OmniScript and copy the JSON to build DataRaptors (which you do in VPE 5).
+</details>
+
+<details><summary>
+What does a Navigate Action do?
+</summary>
+Redirects the user to another page or component.
+</details>
+---
+
+[VPE 4-4 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580387/Scorm?LPId=104370)
+
+<details><summary>
+Why shouldn't you let a user edit the Name field?
+</summary>
+It is read only in Salesforce. Even if you try to update it, no changes will be made.
+If you want to let the use edit the name, you can add First Name and Last Name elements, like those in the last block.
+</details>
+
+<details><summary>
+What are some of the ways you can change the UI of OmniScript elements?
+</summary>
+Changing the field size with the Control Width slider
+Marking a field as Read-only so the user can't manipulate the data
+Marking a field as Required so the user must enter data or they can't move forward in the flow
+Hiding elements
+</details>
+
+<details><summary>
+ow is a Salesforce record uniquely identified?
+</summary>
+The RecordId is a unique identifier for a Salesforce record.
+</details>
+
+<details><summary>
+What variable identifies the context of an OmniScript?
+</summary>
+The ContextId variable identifies the context of an OmniScript.
+</details>
+
+---
+
+[VPE 4-5 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580389/Scorm?LPId=104370)
+
+<details><summary>
+How do you get an element that has a conditional view to populate?
+</summary>
+Pre-select the most likely path
+</details>
+
+<details><summary>
+Which OmniScript elements allow users to select from a set of options? What are the differences between them?
+</summary>
+Radio - one selection as buttons
+Select - one selection from dropdown list
+Multiselect - one or more selections as checklist
+</details>
+
+<details><summary>
+What are some best practices for building OmniScripts with conditional views?
+</summary>
+Minimize them
+Use functions to combine logic
+Test thoroughly with sad paths 
+</details>
+
+
+
