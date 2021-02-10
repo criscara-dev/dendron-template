@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612883352093
+updated: 1612967644200
 created: 1611746683478
 ---
 
@@ -570,5 +570,146 @@ Use functions to combine logic
 Test thoroughly with sad paths 
 </details>
 
+---
 
+### VPE 6 Using the Type Ahead Functionality in the UI
+
+When you begin typing, the Type Ahead functionality finds items with similar spelling and displays them in a list. When you choose the contact name you want, the Contact Email for the contact also displays.
+
+[VPE 4-6 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580392/Scorm?LPId=104370)
+
+<details><summary>
+What three elements need to be configured for a Type Ahead Block to work?
+</summary>
+The Type Ahead Block
+The Data Element in the Type Ahead Block (e.g. DataRaptor Extract Action)
+The Data data source called by the element (e.g. DataRaptor Extract)
+</details>
+
+<details><summary>
+What three OmniScript elements can be a data source for a Type Ahead Block?
+</summary>
+DataRaptor Extract Action
+HTTP Action
+Remote Action
+</details>
+
+<details><summary>
+Where do you configure what data is displayed in the Type Ahead dropdown?
+</summary>
+In the Type Ahead Block PROPERTIES in the Typeahead Key Field.
+</details>
+
+<details><summary>
+What JSON node contains the text that the user types into a Type Ahead Block?
+</summary>
+The node for the Type Ahead Block in the data JSON.
+</details>
+
+<details><summary>
+How do you make an element invisible in the UI?
+</summary>
+Edit as JSON and change the hide node value to true.
+</details>
+
+<details><summary>
+What are some more ways to change the UI OmniScript Elements
+</summary>
+Configure the Type Ahead Block edit button and edit mode.
+</details>
+
+
+### VPE 4-7 Validation Data and Handling errors
+
+#### The SAD path
+
+> The idea here is de-activate the `IP` do that we have no more data and we can see if the real data is not coming through once added, what this can means in terms of issues on the App.
+
+[VPE 4-7 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580393/Scorm?LPId=104370)
+
+<details><summary>
+What is a requirement for a step to have error checking?
+</summary>
+At least one element checked as required
+</details>
+
+<details><summary>
+What is a “Sad path”? In this exercise, how did you simulate one?
+</summary>
+A "Sad path" is a path where something is wrong in the process. In this case, it can be simulated by deactivating the Integration Procedure Action.
+</details>
+
+<details><summary>
+What options are there for creating complex logical conditions in an OmniScript?
+</summary>
+Use multiple Conditions for each element. You must build them several times and take a performance hit. 
+Use an equation to evaluate the logic once and then use that element for Conditions. This minimizes conditions. 
+</details>
+
+<details><summary>
+What are advantages and disadvantages for each?
+</summary>
+Use multiple Conditions for each element. You must build them several times and take a performance hit. This is good if you only have to evaluate the complex logic once.
+Use an equation to evaluate the logic once and then use that element for Conditions. This minimizes conditions. It is good if the same logic needs to be evaluated many times.
+</details>
+
+<details><summary>
+What settings are required for a Set Errors Element?
+</summary>
+Conditional View
+Element Error Map
+Instructional text to the Value field
+</details>
+
+
+### VPE 4-8 Adding external data to an Omniscript
+
+[VPE 4-8 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580395/Scorm?LPId=104370)
+
+<details><summary>
+What are examples of external data that a service agent could find useful?
+</summary>
+Billing data from an onsite database
+Weather data
+Order tracking information from an order management system
+Mapping or other geolocation information
+</details>
+
+<details><summary>
+What is the merge field syntax for JSON sub nodes in OmniScripts?
+</summary>
+%node|1:array%, basically from here( %parent|n:node% )
+</details>
+
+<details><summary>
+Which OmniScript element is basically a rich-text formatted HTML code block?
+</summary>
+A Text Block
+</details>
+
+### VPE 4-9 Adding a warning Banner to an Omniscript
+
+Use merge field syntax to display JSON data in the message text: %Current:Condition%
+
+[VPE 4-10 Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580398/Scorm?LPId=104370)
+
+<details><summary>
+Which OmniScript element do you use to add a warning banner?
+</summary>
+Messaging Element
+</details>
+
+<details><summary>
+Which types/colors of notification banner are available for the OmniScript?
+</summary>
+Blue, green, yellow, and red
+</details>
+
+<details><summary>
+What is special about the Requirement message type? Why do you need to be careful when using it?
+</summary>
+It makes the element required and enforces error checking
+</details>
+
+78
 

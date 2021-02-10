@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1612284774813
+updated: 1612957166818
 created: 1606052489366
 stub: false
 ---
@@ -75,3 +75,5 @@ Michael J. Saylor
 > Lexis Hanson:
 But every job posting seemed to be senior, senior, senior. And Steven James, who is a colleague at Salesforce, and I worked with on an open source project as part of my transition, his advice was that a lot of engineering managers, they don’t want to keep people from applying that are overqualified. So in other words, putting a job rec out with the senior title casts the widest net for engineering managers, and then they can take that pool.
 
+2021-02-10 11:39
+You can find this on your statement. We convert your annual simple rate into a daily rate by dividing it by the number of days in a year (365). We then apply the daily rate and add it to the amount you owe each day. For example, if you owed £1,000 and had a simple rate of 20%, the amount you would pay in interest for one year would be 20% of £1,000, which is £200. This amount would then be divided by the number of days in a year: £200 ÷ 365, which is 55p. The interest is added to your account every day, so the following day you would pay interest on a balance of £1,000.55. This is known as compound interest, it means you pay interest on the interest you’re charged, not just on the things you buy. If you pay off your balance in full each month, you won’t pay any interest. You also won’t pay interest on any late payment, fees or returned payment we add to your balance.
