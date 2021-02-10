@@ -2,7 +2,7 @@
 id: 1eeab78a-4075-44c1-8316-d0d35922857a
 title: Javascript
 desc: ''
-updated: 1612642243027
+updated: 1612990920426
 created: 1602345804873
 stub: false
 ---
@@ -20,6 +20,12 @@ stub: false
 [[DOM|computer-science.lang.javascript.dom]]
 [[Objects|computer-science.lang.javascript.objects]]
 [[HOF|computer-science.lang.javascript.hof]]
+[[Spread operator|computer-science.lang.javascript.spread-operator]]
+[[Destructuring|computer-science.lang.javascript.destructuring]]
+[[computer-science.lang.javascript.modules]]
+[[computer-science.lang.javascript.generators]]
+
+<a name="arrayfrom">Array From</a>
 <a name="closure">Closures</a>
 
 
@@ -83,6 +89,14 @@ greeting()
 ```
 ---
 
+[Array From](#arrayfrom):
+```javaScript
+Array.from( ... ) // to convert a DOM list (Nodes) or other type of iterable collection on the front side into array to be able to use Array methods like map, filter, reduce...
+}
+console.log(workshop, par, chi) // JavaScript cris cara
+```
+
+---
 
 [Closure](#closure):
 ```javaScript
