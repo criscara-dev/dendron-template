@@ -2,7 +2,7 @@
 id: 1eeab78a-4075-44c1-8316-d0d35922857a
 title: Javascript
 desc: ''
-updated: 1612990920426
+updated: 1613059186819
 created: 1602345804873
 stub: false
 ---
@@ -21,9 +21,12 @@ stub: false
 [[Objects|computer-science.lang.javascript.objects]]
 [[HOF|computer-science.lang.javascript.hof]]
 [[Spread operator|computer-science.lang.javascript.spread-operator]]
+[[rest parameters|computer-science.lang.javascript.rest-parameters]]
 [[Destructuring|computer-science.lang.javascript.destructuring]]
-[[computer-science.lang.javascript.modules]]
-[[computer-science.lang.javascript.generators]]
+[[modules|computer-science.lang.javascript.modules]]
+[[genertors|computer-science.lang.javascript.generators]]
+[[Maps-weakMaps|computer-science.lang.javascript.Map-WeakMaps]]
+[[computer-science.lang.javascript.fetch]]
 
 <a name="arrayfrom">Array From</a>
 <a name="closure">Closures</a>

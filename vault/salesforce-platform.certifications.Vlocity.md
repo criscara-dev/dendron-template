@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1612967644200
+updated: 1613037397154
 created: 1611746683478
 ---
 
@@ -414,6 +414,16 @@ A a best practice, always keep a card state at the bottom that hasn't any condit
 ### VPE 4-0 Overview
 
 <details><summary>
+More simple, what is an OmniScript?
+</summary>
+A way for a person to complete a business process.
+3 Steps:
+* Get data
+* Change Data
+* Save Data
+</details>
+
+<details><summary>
 What is a A Vlocity OmniScript?
 </summary>
 
@@ -422,7 +432,6 @@ Basically is a way to complete business processes digitally
 2. An OmniScript displays both internal data from Salesforce and external data from a website or a 3rd-party legacy system. (AOIs)
 3. We rebrand OmniScripts to suit our customers
 4. We use OmniScripts to manage signed documents (and we can create dynamic documents with Vlocity from templates)
-
 </details>
 
 <details><summary>
@@ -443,8 +452,7 @@ What are OmniOut and CardOut?
 The capability of hosting OmniScripts and FlexCards on any server is called OmniOut and CardOut.
 </details>
 
-VPE 4-1
-### Guidelines for Planning OmniScripts
+### VPE 4-1 Guidelines for Planning OmniScripts
 
 * Map the business process to the proposed OmniScript structure. It's easier to make edits to your process before you begin building.
 * Plan what data is involved and where it is needed. This tells you what data must be available for each guided step.
@@ -711,5 +719,43 @@ What is special about the Requirement message type? Why do you need to be carefu
 It makes the element required and enforces error checking
 </details>
 
-78
+---
 
+### VPE 4-10 Launching an Omniscript with a Vlocity Action
+
+[Review Questions](https://vlocity-university.litmos.com/course/3108510/module/6580399/Scorm?LPId=104370)
+
+<details><summary>
+What is a Vlocity Action?
+</summary>
+A Vlocity Action is a configurable way to launch a URL including an OmniScript.
+</details>
+
+<details><summary>
+Can you deploy an Action if it is not active? 
+</summary>
+No. If an Action isn't active, it can't be deployed.
+</details>
+
+<details><summary>
+Why did you not use the full URL? 
+</summary>
+You didn't use the full URL so the action would work in a different org. The full URL would always try to launch in the custom My Domain.
+</details>
+
+---
+
+### VPE 4-11 Adding an Interaction Launcher to a Console
+
+==Purpose of  this lesson, is to add an Interaction Launcher to a Console toolbar==
+
+There're 3 types of Interaction Launchers:
+- class based;
+- object-based;
+- OmniScript-based;
+
+<details><summary>
+What is the Customer Interaction? What can it be used for?
+</summary>
+To add the Interaction Launcher as a Utility Item on your Console toolbar, start in Setup and locate the App Manager using Quick Find.
+</details>
