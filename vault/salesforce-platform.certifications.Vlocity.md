@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1613037397154
+updated: 1613747580516
 created: 1611746683478
 ---
 
@@ -759,3 +759,81 @@ What is the Customer Interaction? What can it be used for?
 </summary>
 To add the Interaction Launcher as a Utility Item on your Console toolbar, start in Setup and locate the App Manager using Quick Find.
 </details>
+
+### VPE-5 Integration procedure
+
+Integration procedures are optimal when:
+
+* You need to access and transform data from third-party sources
+* No user interaction is required
+* Moving the workload from client to server is preferable
+
+![](/assets/images/2021-02-19-10-06-05.png)
+![](/assets/images/2021-02-19-10-14-15.png)
+![](/assets/images/2021-02-19-10-15-27.png)
+![](/assets/images/2021-02-19-11-25-29.png)
+
+- Explore the Vlocity Integration Procedure Designer
+All blocks have one property in common: Execution Conditional Formula. If this formula evaluates to true or is not defined, the block is executed. If it evaluates to false, the block is skipped. 
+
+<details><summary>
+What is a Vlocity DataRaptors in a Nutshell?
+</summary>
+Vlocity DataRaptor is a configurable service for retrieving, transforming, and updating data. Depending on the DataRaptor type, it's a way to:
+
+Get and transform data from Salesforce (DataRaptor Extract)
+Transform and save data to Salesforce (DataRaptor Load)
+Transform any data (DataRaptor Transform)
+</details>
+
+![](/assets/images/2021-02-19-11-40-06.png)
+
+<details><summary>
+What are DataRaptor Formulas and Functions?
+</summary>
+Formulas
+A DataRaptor Formula element might contain a formula to:
+
+Perform mathematical operations on numbers.
+String together (concatenate) text by using algebraic operators like = + - * / < > and ^.
+
+Functions
+A function is an equation you use for operations to:
+
+Manipulate data about date and time
+String text together
+Determine a result based on logic
+Perform mathematical operations
+
+Here are the types of functions available:
+
+Numerical: +, -, *, /, ^, ROUND
+Aggregate: SUM, AVG, MAX, and MIN 
+Logical: OR, AND and IF.
+Example: If the customer's age is less than 18 years old, return a value of "Minor". Otherwise, return a value of "Adult". To make this functionality work, the function would be: IF(AGE<18, "Minor", "Adult").
+String: Concatenate
+Example: Display city and state together, separated by a comma.
+Date and time: AGE, AGEON, DATEDIFF.
+Example: TODAY() returns today's date and NOW() returns the current data and time.
+</details>
+
+Nmaespaces
+-The namespaces in your org will also include the initials of your industry, such as **ins**, **cmt**, and **ps**.
+
+[Object relationship](https://trailhead.salesforce.com/en/content/learn/modules/data_modeling/object_relationships)
+
+[What is a Package?](https://trailhead.salesforce.com/en/content/learn/modules/isv_app_development/isv_app_development_packaging)
+
+[Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629059/Scorm?LPId=104370)
+
+
+
+1. What does it mean that Vlocity is additive to Salesforce?
+- Vlocity either adds additional custom sObjects and fields, or enhances existing, standard sObjects and fields.
+2. What offers a visual representation of the sObjects and their links in an org? 
+- The [Schema Builder](https://trailhead.salesforce.com/en/content/learn/modules/data_modeling/schema_builder).
+3. Where can you find a list of sObjects and fields in your org? 
+- In the Object Manager.
+
+---
+

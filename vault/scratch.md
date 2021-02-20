@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1612957166818
+updated: 1613754736338
 created: 1606052489366
 stub: false
 ---
@@ -77,3 +77,6 @@ But every job posting seemed to be senior, senior, senior. And Steven James, who
 
 2021-02-10 11:39
 You can find this on your statement. We convert your annual simple rate into a daily rate by dividing it by the number of days in a year (365). We then apply the daily rate and add it to the amount you owe each day. For example, if you owed £1,000 and had a simple rate of 20%, the amount you would pay in interest for one year would be 20% of £1,000, which is £200. This amount would then be divided by the number of days in a year: £200 ÷ 365, which is 55p. The interest is added to your account every day, so the following day you would pay interest on a balance of £1,000.55. This is known as compound interest, it means you pay interest on the interest you’re charged, not just on the things you buy. If you pay off your balance in full each month, you won’t pay any interest. You also won’t pay interest on any late payment, fees or returned payment we add to your balance.
+
+2021-02-19 17:11
+[Ars Memoriae](https://www.amazon.it/Arte-della-memoria-Giordano-Bruno-ebook/dp/B00IFQ8S0A/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gianni+golfera&qid=1613753641&sr=8-3)
