@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1613747580516
+updated: 1613812951578
 created: 1611746683478
 ---
 
@@ -836,4 +836,8 @@ Nmaespaces
 - In the Object Manager.
 
 ---
+
+### VPE-5 
+
+[Vlocity Data Model](https://docs.vlocity.com/en/Vlocity-Data-Model.html)
 

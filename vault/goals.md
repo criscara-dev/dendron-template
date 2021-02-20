@@ -2,7 +2,7 @@
 id: 177d3c63-d7f3-4576-8177-e9aa219f7bab
 title: Goals
 desc: ''
-updated: 1609702003546
+updated: 1613847063770
 created: 1602693035450
 stub: false
 ---
@@ -23,9 +23,9 @@ stub: false
 
 * * *
 
-## Financial
-
-- [ ] save 40% salary every month
+## 
+Becoming millionaire following my Personal trading Academy
+[[Finance|goals.financial]]
 
 ## Business Ideas
 [[Ideas|goals.ideas]]

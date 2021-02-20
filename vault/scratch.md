@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1613754736338
+updated: 1613846928055
 created: 1606052489366
 stub: false
 ---
@@ -80,3 +80,10 @@ You can find this on your statement. We convert your annual simple rate into a d
 
 2021-02-19 17:11
 [Ars Memoriae](https://www.amazon.it/Arte-della-memoria-Giordano-Bruno-ebook/dp/B00IFQ8S0A/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=gianni+golfera&qid=1613753641&sr=8-3)
+
+2021-02-20 18:06
+
+> Didn't You Say We Can Learn Anything?
+Yes! I said that Anyone, Anywhere can learn Anything. But that doesn't mean that we don't have things we are better suited to than others. With our limited time, our job is to figure out what to pursue based on our existing skills, and the skills we can develop. Sometimes we have to know when to turn around and pick the right path in order to use our resources efficiently.
+I'm 33 now. I probably don't have a shot at becoming a gold medallist in gymnastics unfortunately :(
+    Andrei Nogoie
