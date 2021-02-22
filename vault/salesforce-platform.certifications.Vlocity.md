@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1613899172621
+updated: 1613994389031
 created: 1611746683478
 ---
 
@@ -863,3 +863,28 @@ Use abbreviations
 
 3. What edits did you make to your existing Integration Procedure in this lesson? Removed the Set Values component and added a DR Extract Action component that identified the DR you built. Then changed the response action to send data from the DR Extract Action.
 </details>
+
+---
+
+### VPE 5-3 Saving data for the OmniScripts with an Integration Procedure
+![](/assets/images/2021-02-22-09-28-51.png)
+
+[5-3 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629062/Scorm?LPId=104370)
+
+1. What did you copy from the OmniScript to create your DataRaptor mappings? We copied the OmniScript JSON with stub data to create the DataRaptor mappings using QuickMatch.
+
+2. What prevents duplicate records in Salesforce in a DataRaptor Load? To ensure you don't create duplicate records in Salesforce when you create your DataRaptor Load, define an Upsert Key.
+
+3. Why did you preview the DataRaptor? Element level testing. Remember that DataRaptor Loads update live data in Salesforce.
+
+---
+
+### VPE 5-4 Getting Primary Contact Data with an Integration Procedure
+
+[5-4 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629063/Scorm?LPId=104370)
+
+1. What two sObjects are used to pull data for the OmniScript in this lesson? The Account and Contact sObjects.
+
+2. What did adding r.FIELDNAME to the end of the field names do? It created a relationship query within your SOQL query.
+
+3. Why did you preview the DataRaptor and your updated OmniScript? To confirm it worked correctly with element level testing.
