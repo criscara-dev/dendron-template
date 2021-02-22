@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1613812951578
+updated: 1613899172621
 created: 1611746683478
 ---
 
@@ -841,3 +841,25 @@ Nmaespaces
 
 [Vlocity Data Model](https://docs.vlocity.com/en/Vlocity-Data-Model.html)
 
+[VPE 5-2 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629060/Scorm?LPId=104370)
+
+<details><summary>
+Questions
+</summary>
+
+1. What are naming conventions for DataRaptors? 
+Requirements:
+
+Name must be unique within the org
+Name must have no spaces
+Best Practices:
+
+Use prefixVerbObjectDetail in name
+Use camelCase
+Use an action verb and descriptive nouns
+Use abbreviations
+
+2. What type of DataRaptor do you build to pull data from Salesforce? A DataRaptor Extract.
+
+3. What edits did you make to your existing Integration Procedure in this lesson? Removed the Set Values component and added a DR Extract Action component that identified the DR you built. Then changed the response action to send data from the DR Extract Action.
+</details>

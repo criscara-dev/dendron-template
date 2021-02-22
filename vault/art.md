@@ -2,11 +2,57 @@
 id: 12806ca4-c38c-4f84-ae35-1e216a8d8c89
 title: Art
 desc: ''
-updated: 1609077021209
+updated: 1613938105144
 created: 1608493374374
 ---
 
 # Art
+
+- connected on Fortmatic on Brave
+
+## NFT
+
+sell digital Art NFT: markets
+
+Best 2 guides to start:
+* https://justincone.com/posts/nft-skeptics-guide/#2-tokenize-the-thing
+* https://coopahtroopa.mirror.xyz/PF42Z9oE_r6yhZN9jZrrseXfHaZALj9JIfMplshlgQ0
+
+[nifty](https://niftygateway.com/become-creator)
+here:
+[rarible & co](https://justincone.com/posts/nft-skeptics-guide/#3-choose-a-minting-platform:~:text=Here%20are%20some%20popular%20NFT%20minting%20platforms%20with%20low%20learning%20curves%3A)
+
+[Opensea](https://opensea.io/wallet/install?referrer=%2Fcollections)
+
+[Asynch](https://help.async.art/en/collections/2654184-artists)
+
+## Become an hot artist
+
+Here’s a curated selection of tips related to cultivating hotness (although Jones doesn’t call it that):
+
+Organise a solo or group physical art exhibition as you’ll learn important lessons, organisational skills, marketing, etc that will be transferable to the digital NFT world.
+Build your brand.
+Research marketing skills and apply them even if you hate this part.
+Generate publicity whenever possible.
+Network whenever you can.
+Build a crypto media email contact list.
+Make friends with crypto journalists.
+Learn how to write a good press release.
+Organise an exhibition or giveaway for charity.
+Show your work at crypto conferences.
+
+## [Pak artist example](https://www.loop-news.com/p/interview-with-pak)
+[Who is Pak](https://thecontrol.co/who-is-pak-e89b12b0f0af)
+[Pak interview](https://www.loop-news.com/p/interview-with-pak)
+[Pak Patreon](https://www.patreon.com/join/pak)
+
+
+## [generative AI](https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70/)
+
+- [generative artistry](https://www.freecodecamp.org/news/an-introduction-to-generative-art-what-it-is-and-how-you-make-it-b0b363b50a70/)
+
+
+---
 
 ## Enough drawing:
 

@@ -2,24 +2,12 @@
 id: 9da6d4c5-b0bd-4cb3-8d63-94362c64dd68
 title: Ideas
 desc: ''
-updated: 1613829252929
+updated: 1613929732177
 created: 1609701979868
 ---
 
 ## ART
 [[goals.ideas.old-masters]]
-
-sell digital Art NFT: markets
-
-Best 2 guides to start:
-* https://justincone.com/posts/nft-skeptics-guide/#2-tokenize-the-thing
-* https://coopahtroopa.mirror.xyz/PF42Z9oE_r6yhZN9jZrrseXfHaZALj9JIfMplshlgQ0
-
-[nifty](https://niftygateway.com/become-creator)
-here:
-[rarible & co](https://justincone.com/posts/nft-skeptics-guide/#3-choose-a-minting-platform:~:text=Here%20are%20some%20popular%20NFT%20minting%20platforms%20with%20low%20learning%20curves%3A)
-
- connected on Fortmatic on Brave
 
  ### About RenArt
 
@@ -46,6 +34,8 @@ The works reflect my attitude of life and of painting 'less is more'.
 In times of overload of visual impressions, I try to send the viewer on a journey of discovery and re-discovery* across the painting surface and sensitive him for the few and less in color, structures, cracks and textures. “Material, color and composition, a perpetual challenge to create something new"
 
 *Leonardo cit. from see things in walls spots...
+
+[Moon](https://www.britannica.com/place/Moon)
 
 
 ## APPS
