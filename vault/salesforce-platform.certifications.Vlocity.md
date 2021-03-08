@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1613994389031
+updated: 1614780844891
 created: 1611746683478
 ---
 
@@ -13,6 +13,38 @@ Reference: [Trello board](https://trello.com/b/fTeWCQ5f/vlocity)
 
 ==Vlocity is a Managed Packager in the AppExchange==
 
+## Master Vlocity Plan:
+
+- [ ] Roadmap ready?
+    - [ ] who is going to give me feedback? 
+    - [ ] rewards and stakes at place? 
+    - [ ] applied Pareto? 
+    - [ ] did you chunk down the work you need to do? 
+    - [ ]  did you set the Tree roots? (most basic general elements first?)
+    - [ ] did you set space repetition?
+    - [ ] did you apply interleaving?
+- [ ] Workspace ok? 
+- [ ] 3 sets Pomodoro tech? (short and intense practice) and uses of senses
+- [ ] feeling?
+    - [ ] slept well? 
+    - [ ] exercise ok? 
+    - [ ] brain ok? 
+    - [ ] Feeling good, happy?    
+    - [ ] dressed properly, professional?   
+- [ ] schedule ready? 
+- [ ] work music ok? 
+- [ ] start!
+...
+- [ ] feedback (test yourself): 
+    - [ ] did you feel a little uncomfortable? (good for push forward, butterfly in stomach feeling)
+    - [ ] community? 
+    - [ ] self-testing: NOT re-reading YES re-call!
+    - [ ] Task 
+  
+
+
+
+---
 
 Buzzwords: | time to complete
 --|--
@@ -888,3 +920,126 @@ Use abbreviations
 2. What did adding r.FIELDNAME to the end of the field names do? It created a relationship query within your SOQL query.
 
 3. Why did you preview the DataRaptor and your updated OmniScript? To confirm it worked correctly with element level testing.
+
+---
+
+### VPE 5-5 Getting Data for Type Ahead Block
+
+![](/assets/images/2021-02-23-08-39-19.png)
+![](/assets/images/2021-02-23-08-39-05.png)
+
+[5-5 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629355/Scorm?LPId=104370)
+
+---
+
+### VPE 5-6 Updating a Primary Contact in a Branching Integration Procedure
+
+[VPE 5-6 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629358/Scorm?LPId=104370)
+Why did you go through all three branches before pasting the JSON into the Integration Procedure? To populate the OmniScript JSON with all of the conditional options in order to copy the JSON to help build both the Integration Procedure and DataRaptors.
+
+2. What did you use to identify which DataRaptor should execute? In the integration procedure, a Conditional Execution Formula in each DataRaptor Post Action element.
+
+3. How do you create a new Salesforce record with a DataRaptor Load? Don’t set an upsert key and ensure that you have all the required fields for that record type.
+
+4. What is one example of the power of DataRaptors that you utilized in this exercise? Linking records. The ability to create a record, hold information from that new record (that is a different object type) and use it to link to and update a second record with the same data.
+
+---
+
+### VPE 5-7 getting data for FexCard
+
+![](/assets/images/2021-02-24-09-27-48.png)
+
+[5-7 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629367/Scorm?LPId=104370)
+
+DR -> Account:vlocity_cmt__PrimaryContactId__c
+IP -> team/getMasterAccountDetails > Team Starter Get Master Account (Version 1). -> to a new Version: Team Get Master Account
+FC -> team > teamMasterAccount (Version 1). -> new version: 
+
+
+1. What is a benefit of using an Integration Procedure? It allows you to combine different data sources and transform data. The Integration Procedure is versioned to update it without updating the calling tool.
+
+2. How do you recognize a Node in the JSON? There is a colon after the Node name.
+
+3. Why is the order of Extract Steps in a DataRaptor important? Any step that references data from another step must be after that step. For example, the PriContact Step in the teamGetMasterAccountDetails DataRaptor.
+
+4. Where did you preview the Integration Procedure? You previewed the Integration Procedure response in the Card Designer. But you could also have previewed it the Integration Procedure Designer. Try out element level testing whenever possible because it makes troubleshooting easier.
+
+Challenge Exercise VPE 5-7.1: Update the PriContact Extract Path
+
+---
+
+
+### VPE 5-8 Extracting External Data with an Integration Procedure
+
+![](/assets/images/2021-02-24-11-30-11.png)
+
+[5-8 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629371/Scorm?LPId=104370)
+
+
+
+1. What are ways to use weather data in your own project? Think about how weather affects your customers.
+
+2. How do you build your API Return URL? Enter the appropriate parameters into the weatherbit.io Swagger site.
+
+3. What Integration Procedure elements do you use to incorporate external data? Set Values to save the API key and 1 HTTP Action (or 2 if you did the challenge).
+
+==last bit==
+You will need a second input; call this input Days.
+This is what the Integration OmniScript and Card Layout send to this Integration Procedure.
+(Hint: don’t forget your Response JSON Path) ???? what I need to do?s
+
+---
+
+### VPE 5-9 Using a DataRaptor Transform in a Integration Procedure
+
+[5-9 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629373/Scorm?LPId=104370)
+
+1. What does a DataRaptor Transform allow you to do? It allows you to map and transform from one JSON to another. It can also transform XML and custom data schema.
+
+2. How did you update the way the City and State display in the results? used the concatenate formula.
+
+3. What does the Response Action do? It sends the data back to the FlexCard/OmniScript.
+
+---
+
+### vPE 5-10 Testing the count Console End to end
+
+No review qwestion
+
+
+### VPE 5-11 Building Calculation Matrix
+
+
+[5-10 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629412/Scorm?LPId=104370)
+
+1. What is a Calculation Matrix? A Calculation Matrix is a lookup table.
+
+2. What are some uses for a Calculation Matrix? 
+
+Insurance premiums matching characteristics of insured to premiums
+Age, gender and smoking status for life insurance
+Driver age and driving record for an auto insurance policy
+Weather alert matrix based on weather conditions 
+Demographic data based on a location (such as wages) 
+Pricing matrices (like the one created)
+
+3. Can you have multiple Inputs or Outputs to your data? You can have multiple input columns and the combination of inputs for each row must be unique. You can have multiple output columns and none of the elements need to be unique.
+
+4. If two matrices are both enabled at the same time, which one will be called? The one with the highest priority with 1 as the lowest priority.
+
+---
+
+### VPE 5-12
+
+[5-11 Review Questions](https://vlocity-university.litmos.com/course/3108512/module/6629420/Scorm?LPId=104370)
+
+1. What does a Calculation Procedure do in Vlocity? Take inputs as formatted JSON data, use lookup matrices, algebraic operations, and aggregation operations to calculate new data, and output specified data in formatted JSON.
+
+2. What are the two different options for a Calculation step in a Calculation Procedure? Calculation and Matrix Lookup.
+
+3. What is important about the input JSON? It must be on a node called input (with a lower case i).
+
+4. If two Calculation Procedures are both active at the same time, which one will be called? The one with the highest priority with the number 1 as the lowest priority.
+
+5. Where can you get the expected input and output JSON from a Calculation Procedure? From the simulation.
+

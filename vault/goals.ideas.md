@@ -2,7 +2,7 @@
 id: 9da6d4c5-b0bd-4cb3-8d63-94362c64dd68
 title: Ideas
 desc: ''
-updated: 1613929732177
+updated: 1614451710374
 created: 1609701979868
 ---
 
@@ -37,6 +37,22 @@ In times of overload of visual impressions, I try to send the viewer on a journe
 
 [Moon](https://www.britannica.com/place/Moon)
 
+
+What fo you like ab out J.M.W.Turner?
+The grandeur of the scene, to be involved into the landscape the sense of it, the air, the sun...the way to the abstraction. Were just a man can reach and read, welcome to the ...
+
+2021-02-27 18:44
+ link: https://www.gerhard-richter.com/en/quotes/subjects-2/abstract-paintings-7
+ > Sometimes your abstract paintings give the impression of a landscape. Are you looking for realism again in abstraction?
+I believe I am looking for rightness. My work has so much to do with reality that I wanted to have a corresponding rightness. That excludes painting in imitation. In nature everything is always right: the structure is right, the proportions are good, the colours fit the forms. If you imitate that in painting, it becomes false.
+Interview with Anna Tilroe, 1987
+
+> I find the Romantic period extraordinarily interesting. My landscapes have connections with Romanticism: at times I feel a real desire for, an attraction to, this period, and some of my pictures are a homage to Caspar David Friedrich.
+Conversation with Paolo Vagheggi, 1999SOURCE
+
+
+
+---
 
 ## APPS
 

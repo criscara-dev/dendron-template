@@ -2,12 +2,51 @@
 id: 3b652b1f-d1d6-4413-a9a1-fc2dc0a06f36
 title: Learning
 desc: ''
-updated: 1605635029786
+updated: 1615195543644
 created: 1604914147875
 ---
 # Learning
 
-## Silly example :smile:
+## How to Learn
+
+### Roadmap:
+
+- [ ] Roadmap ready?
+    - [ ] who is going to give me feedback? 
+    - [ ] rewards and stakes at place? 
+    - [ ] applied Pareto? 
+    - [ ] did you chunk down the work you need to do? 
+    - [ ]  did you set the Tree roots? (most basic general elements first?)
+    - [ ] did you set space repetition?
+    - [ ] did you apply interleaving?
+- [ ] Workspace ok? 
+- [ ] 3 sets Pomodoro tech? (short and intense practice) and uses of senses
+- [ ] feeling?
+    - [ ] slept well? 
+    - [ ] exercise ok? 
+    - [ ] brain ok? 
+    - [ ] Feeling good, happy?    
+    - [ ] dressed properly, professional?   
+- [ ] schedule ready? 
+- [ ] work music ok? 
+- [ ] start!
+...
+- [ ] feedback (test yourself): 
+    - [ ] did you feel a little uncomfortable? (good for push forward, butterfly in stomach feeling)
+    - [ ] community? 
+    - [ ] self-testing: NOT re-reading YES re-call!
+    - [ ] Task 
+
+--- 
+
+<iframe src="https://coggle.it/diagram/Xe6iV4XedHQFQQOJ/t/%F0%9F%94%A5-efficient-learning-zero-to-mastery-blueprint-%F0%9F%94%A5/5b1fdfcfdfe6e65371ac91bceb8826e905aa80e6a3e5612383710eaef9390944" title="Road to learn" width="800" height="400"></iframe>
+
+### Principles
+
+> lorem ipsum
+
+---
+
 
 ### Learn fast something for quick usage:
 
@@ -55,3 +94,6 @@ A[To learn something new] -->B(think about it on a piece of paper)
 - ag [file-type] [options] PATTERN [PATH]
   ex. ag readme -l -i -G ec$ 
   Basically, search all files that contain 'readme' and that finishes in ec
+
+  ---
+
