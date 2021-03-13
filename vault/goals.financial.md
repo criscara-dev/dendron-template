@@ -2,7 +2,7 @@
 id: 1eec90b3-6054-4103-be84-b2020d41dcc4
 title: Financial
 desc: ''
-updated: 1615195441466
+updated: 1615230210764
 created: 1613847036984
 ---
 
@@ -41,6 +41,10 @@ if oversold... it's time to buy!
 ---
 
 ## 3Commas
+
+Custom signals from TradingView: **signals@robot.3commas.io**
+
+[Setting TradingView Alert from a Chart](https://3commas.io/blog/trade-automation-with-trading-view-in-3commas#post-795:~:text=Setting%20TradingView%20Alerts.,the%20following%20address%20%20%E2%80%93%20signals%40robot.3commas.io.)
 
 **Heikin Ashi** candles: shows the strength of the trend and are more fluid
 

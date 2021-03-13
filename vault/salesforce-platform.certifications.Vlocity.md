@@ -2,7 +2,7 @@
 id: 0b544b48-373b-4938-9dd3-c75cbe8067c2
 title: Vlocity
 desc: ''
-updated: 1614780844891
+updated: 1615394583280
 created: 1611746683478
 ---
 
@@ -1042,4 +1042,6 @@ Pricing matrices (like the one created)
 4. If two Calculation Procedures are both active at the same time, which one will be called? The one with the highest priority with the number 1 as the lowest priority.
 
 5. Where can you get the expected input and output JSON from a Calculation Procedure? From the simulation.
+
+
 
